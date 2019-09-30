@@ -5,7 +5,9 @@
 week3
 ----
 * Linked list 
-* Leetcode #707design linked list  #206reverse linked list(iterative & <font color=red>recursive</font>)
+* Leetcode 
+#707design linked list  
+#206reverse linked list(iterative & <font color=red>recursive</font>)
 
 
 <img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
