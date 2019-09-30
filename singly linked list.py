@@ -145,15 +145,3 @@ new_linked_list.reversal()
 new_linked_list.traversal()
 
         
-
-
-
-
-
-
-
-
-
-
-
-
