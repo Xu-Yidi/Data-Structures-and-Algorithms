@@ -8,4 +8,4 @@ week3
 * Leetcode #707 design linked list #reverse linked list
 
 
-<img width="150" height="150" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
+<img width="175" height="225" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
