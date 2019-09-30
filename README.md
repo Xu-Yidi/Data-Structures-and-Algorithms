@@ -4,5 +4,7 @@
 
 week3
 ----
+*Linked list
+*Leetcode #707
 
 
