@@ -4,7 +4,7 @@
 
 week3
 ----
-*Linked list
-*Leetcode #707
+* Linked list 
+* Leetcode #707
 
 
