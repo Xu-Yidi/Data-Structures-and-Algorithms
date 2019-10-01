@@ -4,7 +4,9 @@
 
 week3
 ----
-* Linked list 
+* Handout  
+#singly linked list  
+#stack
 * Leetcode  
 #707design linked list  
 #206reverse linked list
