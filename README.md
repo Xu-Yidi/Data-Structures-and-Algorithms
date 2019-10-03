@@ -6,7 +6,7 @@ week3
 ----
 * Handout  
 #singly linked list  
-#stack
+#stack(list & singly linked list)
 * Leetcode  
 #707design linked list  
 #206reverse linked list(Hint:Iterative & Recursive)  
