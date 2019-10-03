@@ -9,7 +9,8 @@ week3
 #stack
 * Leetcode  
 #707design linked list  
-#206reverse linked list
+#206reverse linked list  
+#155min stack(Hint:use two stacks, one to store actual stack elements and another to store minimum values)
 
 
 <img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
