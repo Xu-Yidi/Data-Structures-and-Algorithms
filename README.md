@@ -9,7 +9,7 @@ week3
 #stack
 * Leetcode  
 #707design linked list  
-#206reverse linked list(Hint:Iterative & Recursive)
+#206reverse linked list(Hint:Iterative & Recursive)  
 #155min stack(Hint:use two stacks, one to store actual stack elements and another to store minimum values)
 
 
