@@ -48,37 +48,31 @@ class StackNode:
         self.next = link
 
 class Stack:
-    #create an empty stack
+          
     def __init__(self):
         self.top = None
         self.size = 0
-    #return True if the stack is empty 
+    
     def isEmpty(self):
         return self.top is None
-    #return the number of items in the stack
+    
     def getSize(self):
         return self.size
-    #return the top item on the stack without removing it
+    
     def peek(self):
         assert not self.isEmpty(), "Cannot peek at an empty stack"
         return self.top.item
-    #remove and returns the top item on the stack
+    
     def pop(self):
         assert not self.isEmpty(), "Cannot pop at an empty stack"
         node = self.top
         self.top = self.top.next
         self.size -= 1
         return node.item
-    #pushes an item onto the top of the stack
+    
     def push(self, item):
         self.top = StackNode(item, self.top)
         self.size += 1
         
-
-
-
-
-
-
 
 
