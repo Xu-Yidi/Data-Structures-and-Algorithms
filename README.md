@@ -7,7 +7,7 @@ week3
 * Handout  
 #Singly Linked List  
 #Stack(list & singly linked list)  
-#Queue(circular array)
+#Queue(circular array & priority queue)
 * Leetcode  
 #707design linked list  
 #206reverse linked list(Hint:Iterative & Recursive)  
