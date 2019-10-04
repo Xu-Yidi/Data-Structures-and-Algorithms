@@ -39,7 +39,7 @@
 (4)**`dequeue()`**: removes and returns the front item from the queue, an item can not be dequeued from an empty queue<br>
 (5)**`getFront()`**: return a reference to the element at the front of queue without removing it, and an error occurs if the queue is empty<br>
 (6)**`getRear()`**: return a reference to the element at the back of queue without removing it<br>
--**Implementing the Queue**<br>
+- **Implementing the Queue**<br>
 1.implementation of the Queue ADT using a Python list<br>
 2.**Using a Circular Array**<br>
 (1)a circular array is simply an array viewed as a circle instead of a line
