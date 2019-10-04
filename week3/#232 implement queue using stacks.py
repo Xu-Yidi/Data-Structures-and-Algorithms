@@ -1,40 +1,26 @@
-class QueueNode:
-    def __init__(self, item):
-        self.item = item
-        self.next = None
-
 class MyQueue:
 
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        self.front = None
-        self.rear = None
-        self.count = 0
-        
+        self._items = list()
+
     def push(self, x: int) -> None:
         """
         Push element x to the back of queue.
         """
-        node = QueueNode(x)
-        if self.empty():
-            self.front = node
-        else:
-            self.rear.next = node
-        self.rear = node
-        self.count += 1        
-
+        self._items.append(x)
+        
     def pop(self) -> int:
         """
         Removes the element from in front of queue and returns that element.
         """
         if self.empty():
             return
-        node = self.front
-        self.front = self.front.next
-        self.count -= 1
-        return node.item        
+        else:
+            return self._items.pop(0)
+        
 
     def peek(self) -> int:
         """
@@ -42,13 +28,14 @@ class MyQueue:
         """
         if self.empty():
             return
-        return self.front.item
-        
+        else:
+            return self._items[0]
+
     def empty(self) -> bool:
         """
         Returns whether the queue is empty.
         """
-        return self.count == 0
+        return len(self._items) == 0
         
 
 
