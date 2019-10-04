@@ -17,17 +17,17 @@
 
 
 ## week3
+### Stacks
+1.inserted and removed sccording to the last-in, first-out(LIFO) principle<br>
+2.top of the stack/ base of the stack<br>
+3.basic operations:<br>
+(1)isEmpty(): returna boolean value indicating if the stack is empty<br>
+(2)getSize(): returns the number of items in the stack<br>
+(3)pop(): remove and returns the top item of the stack, if the stack is not empty, and the next item on the stack becomes the new top item<br>
+(4)push(item): adds the given item to the top of the stack<br>
+(5)peek(): returns a reference to the item on top of a non-empty stack without removing it<br>
+4.the stack ADT can be implemented by the use of Python list and a linked list
 
-* Handout  
-#Singly Linked List  
-#Stack(list & singly linked list)  
-#Queue(circular array & priority queue)
-* Leetcode  
-#707design linked list  
-#206reverse linked list(Hint:Iterative & Recursive)  
-#155min stack(Hint:use two stacks, one to store actual stack elements and another to store minimum values)  
-#232implement queue using stacks  
-#622design circular queue
 
 
 <img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
