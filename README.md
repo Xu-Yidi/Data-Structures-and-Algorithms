@@ -29,7 +29,7 @@
 4.the stack ADT can be implemented by the use of Python list and a linked list
 
 ### Queue
-- Queue ADT
+- **Queue ADT**<br>
 1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
 3.basic operations:<br>
