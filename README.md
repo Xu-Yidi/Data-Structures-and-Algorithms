@@ -21,7 +21,7 @@
 
 ## Week3
 ### Stack
-[handout-stack的list與linked list實現](/week3/handout-stack.py)<br>
+[handout-stack的array與linked list實現](/week3/handout-stack.py)<br>
 - **The Stack ADT**<br>
 1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
 2.***top*** of the stack/ ***base*** of the stack<br>
@@ -37,7 +37,7 @@
 [#155 min stack](/week3/%23155%20min%20stack.py)<br>
 
 ### Queue
-[講義-Queue](/week3/handout-queue.py)<br>
+[handour-circular queue的array與linked list實現、priority queue的list實現](/week3/handout-queue.py)<br>
 - **The Queue ADT**<br>
 1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
