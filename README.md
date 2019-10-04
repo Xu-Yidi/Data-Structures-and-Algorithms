@@ -18,8 +18,8 @@
 
 ## week3
 ### Stack
-1.inserted and removed sccording to the last-in, first-out(LIFO) principle<br>
-2.top of the stack/ base of the stack<br>
+1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
+2.***top*** of the stack/ ***base*** of the stack<br>
 3.basic operations:<br>
 (1)**`isEmpty()`**: returna boolean value indicating if the stack is empty<br>
 (2)**`getSize()`**: returns the number of items in the stack<br>
@@ -29,8 +29,8 @@
 4.the stack ADT can be implemented by the use of Python list and a linked list
 
 ### Queue
-1.items can only be added to one end and removed from the other, known as the first-in, first-out(FIFO)principle<br>
-2.new items are inserted into a queue at the rear while existing items are removed from the front<br>
+1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
+2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
 3.basic operations:<br>
 (1)**`isEmpty()`**: return a boolean value indicating whether the queue is empty<br>
 (2)**`getSize()`**: returns the number of items currently in the queue<br>
