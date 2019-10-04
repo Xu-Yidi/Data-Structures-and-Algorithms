@@ -35,7 +35,7 @@
 1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
 3.basic operations:<br>
-(1)**`isEmpty()`**: return a boolean value indicating whether the queue is empty<br>
+>>(1)**`isEmpty()`**: return a boolean value indicating whether the queue is empty<br>
 (2)**`getSize()`**: returns the number of items currently in the queue<br>
 (3)**`enqueue(item)`**: adds the given item to the back of the queue<br>
 (4)**`dequeue()`**: removes and returns the front item from the queue, an item can not be dequeued from an empty queue<br>
