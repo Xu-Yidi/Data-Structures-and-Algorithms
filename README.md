@@ -53,17 +53,17 @@ a.***count field***: to keep track of how many items are currently in the queue<
 b.***front and rear***: to indicate the array elements containing the first and last items in the queue<br>
 - **Priority Queue**<br>
 1.a priority queue is a queue with each item is assigned a priority and items with a high priority are removed before those with lower priority<br>
-(1)the bounded priority queue assumes a small limited range of p priorities over the interval of integers[0,p)
-(2)the unbounded priority queue places no limit on the range of integer values that can be used as priorities
-c.integer values are used for the priorities with a smaller integer value having a higher pripority
-(2)basic operations
-a.PriorityQueue(): creates a new empty unbounded priority queue
-a1.BPriorityQueue(numLevels): creates a new empty bounded priority queue with priority levels in the range from 0 to numLevels-1
-b.isEmpty()
-c.getSize()
-d.enqueue(item, priority): adds the given item to the queue by inserting it in the proper position based on the given pripority
-e.deququq(): removes and returns the front item from the queue, which is the item with the highest priority
-             if two items have the same priority, then items are removed with FIFO order
+(1)the bounded priority queue assumes a small limited range of p priorities over the interval of integers[0,p)<br>
+(2)the unbounded priority queue places no limit on the range of integer values that can be used as priorities<br>
+(3)integer values are used for the priorities with a smaller integer value having a higher pripority<br>
+2.basic operations:<br>
+(1)**`PriorityQueue()`**: creates a new empty unbounded priority queue<br>
+(or 1)**`BPriorityQueue(numLevels)`**: creates a new empty bounded priority queue with priority levels in the range from 0 to numLevels-1<br>
+(2)**`isEmpty()`**<br>
+(3)**`getSize()`**<br>
+(4)**`enqueue(item, priority)`**: adds the given item to the queue by inserting it in the proper position based on the given pripority<br>
+(5)**`deququq()`**: removes and returns the front item from the queue, which is the item with the highest priority<br>
+                if two items have the same priority, then items are removed with FIFO order<br>
 
 
 
