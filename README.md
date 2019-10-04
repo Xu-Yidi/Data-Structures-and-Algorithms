@@ -53,8 +53,8 @@
 >>b.***front and rear***: to indicate the array elements containing the first and last items in the queue<br>
 - **The Priority Queue**<br>
 1.a priority queue is a queue with each item is assigned a priority and items with a high priority are removed before those with lower priority<br>
-(1)the bounded priority queue assumes a small limited range of p priorities over the interval of integers[0,p)<br>
-(2)the unbounded priority queue places no limit on the range of integer values that can be used as priorities<br>
+(1)***the bounded priority queue*** assumes a small limited range of p priorities over the interval of integers[0,p)<br>
+(2)***the unbounded priority queue*** places no limit on the range of integer values that can be used as priorities<br>
 (3)integer values are used for the priorities with a smaller integer value having a higher pripority<br>
 2.basic operations:<br>
 >>(1)**`PriorityQueue()`**: creates a new empty unbounded priority queue<br>
