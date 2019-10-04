@@ -36,7 +36,7 @@
 (2)**`getSize()`**: returns the number of items currently in the queue<br>
 (3)**`enqueue(item)`**: adds the given item to the back of the queue<br>
 (4)**`dequeue()`**: removes and returns the front item from the queue, an item can not be dequeued from an empty queue<br>
-(5)*8`getFront()`**: return a reference to the element at the front of queue without removing it, and an error occurs if the queue is empty<br>
+(5)**`getFront()`**: return a reference to the element at the front of queue without removing it, and an error occurs if the queue is empty<br>
 (6)**`getRear()`**: return a reference to the element at the back of queue without removing it<br>
 
 <img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
