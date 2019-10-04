@@ -19,10 +19,9 @@
 [#707 design linked list](/week2/%23707%20design%20linked%20list.py)<br>
 [#206 reverse linked list](/week2/%23206%20reverse%20linked%20list.py)<br>
 
-
-
 ## Week3
 ### Stack
+[講義-stack](/week3/handout-stack.py)<br>
 - **The Stack ADT**<br>
 1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
 2.***top*** of the stack/ ***base*** of the stack<br>
@@ -34,8 +33,11 @@
 >>(5)**`peek()`**: returns a reference to the item on top of a non-empty stack without removing it<br>
 - **Implementing the Stack**<br> 
 1.the stack ADT can be implemented by the use of Python list and a linked list<br>
+- **LeetCode**<br>
+[#155 min stack](/week3/%23155%20min%20stack.py)<br>
 
 ### Queue
+[講義-Queue](/week3/handout-queue.py)<br>
 - **The Queue ADT**<br>
 1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
