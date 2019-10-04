@@ -37,7 +37,7 @@
 [#155 min stack](/week3/%23155%20min%20stack.py)<br>
 
 ### Queue
-[handour-circular queue的array與linked list實現&priority queue的list實現](/week3/handout-queue.py)<br>
+[handour-circular queue的array與linked list實現&priority queue的array實現](/week3/handout-queue.py)<br>
 - **The Queue ADT**<br>
 1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
