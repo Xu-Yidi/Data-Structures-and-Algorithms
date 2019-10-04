@@ -18,7 +18,7 @@
 - **LeetCode**<br>
 [#707 design linked list](/week2/%23707%20design%20linked%20list.py)<br>
 [#206 reverse linked list](/week2/%23206%20reverse%20linked%20list.py)<br>
-<br>
+
 [back to content](#content)<br>
 
 ## Week3
@@ -75,6 +75,6 @@
 - **LeetCode**<br>
 [#232 implement queue using stacks](/week3/%23232%20implement%20queue%20using%20stacks.py)<br>
 [#622 design circular queue](/week3/%23622%20design%20circular%20queue.py)<br>
-<br>
+
 [back to content](#content)<br>
 
