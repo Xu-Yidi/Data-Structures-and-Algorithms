@@ -1,7 +1,7 @@
 # **Data Structure and Algorithm in Python**
 此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
 ## Content
- [Week2](## Week2)<br>
+ [Week2](##week2)<br>
  Week3<br>
 
 ## Week2
