@@ -6,7 +6,7 @@
 
 ## Week2
 ### **Singly Linked List**
-[handout-linked list的基本操作](/week2/handout-singly%20linked%20list.py)<br>
+[code-linked list的基本操作](/week2/handout-singly%20linked%20list.py)<br>
 - **Linked List**<br>
 1.A linked structure contains a collection of objects called nodes, each of which contains data and at least one reference or link to another node<br>
 2.A linked list is a structure in which the nodes are connected in sequence to form a linear list<br>
@@ -21,7 +21,7 @@
 
 ## Week3
 ### Stack
-[handout-stack的array與linked list實現](/week3/handout-stack.py)<br>
+[code-stack的array與linked list實現](/week3/handout-stack.py)<br>
 - **The Stack ADT**<br>
 1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
 2.***top*** of the stack/ ***base*** of the stack<br>
@@ -37,7 +37,7 @@
 [#155 min stack](/week3/%23155%20min%20stack.py)<br>
 
 ### Queue
-[handour-circular queue的array與linked list實現&priority queue的array實現](/week3/handout-queue.py)<br>
+[code-circular queue的array與linked list實現&priority queue的array實現](/week3/handout-queue.py)<br>
 - **The Queue ADT**<br>
 1.items can only be added to one end and removed from the other, known as the ***first-in, first-out(FIFO)principle***<br>
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
