@@ -5,7 +5,7 @@
  Week3<br>
 
 ## Week2
-### **Singly Linked List**<br>([Hand-singly linked list](/week2/handout-singly%20linked%20list.py)
+### **Singly Linked List**([Handout-singly linked list](/week2/handout-singly%20linked%20list.py)<br>
 - **Linked List**<br>
 1.A linked structure contains a collection of objects called nodes, each of which contains data and at least one reference or link to another node<br>
 2.A linked list is a structure in which the nodes are connected in sequence to form a linear list<br>
@@ -14,6 +14,7 @@
 >>(3)A linked list can be empty, which can be indicated when the head reference is null<br>
 - **The Singly Linked List**<br>
 1.a singly linked list is a linked list in which each node contains a single link field and allows for a complete traversal from a distinctive first node to the last<br>
+
 
 
 ## Week3
