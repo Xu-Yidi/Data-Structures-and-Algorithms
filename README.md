@@ -57,8 +57,8 @@ b.***front and rear***: to indicate the array elements containing the first and 
 (2)the unbounded priority queue places no limit on the range of integer values that can be used as priorities<br>
 (3)integer values are used for the priorities with a smaller integer value having a higher pripority<br>
 2.basic operations:<br>
-(1)**`PriorityQueue()`**: creates a new empty unbounded priority queue<br>
-(or 1)**`BPriorityQueue(numLevels)`**: creates a new empty bounded priority queue with priority levels in the range from 0 to numLevels-1<br>
+  (1)**`PriorityQueue()`**: creates a new empty unbounded priority queue<br>
+  (or 1)**`BPriorityQueue(numLevels)`**: creates a new empty bounded priority queue with priority levels in the range from 0 to numLevels-1<br>
 (2)**`isEmpty()`**<br>
 (3)**`getSize()`**<br>
 (4)**`enqueue(item, priority)`**: adds the given item to the queue by inserting it in the proper position based on the given pripority<br>
