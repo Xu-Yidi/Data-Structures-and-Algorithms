@@ -22,11 +22,11 @@
 1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
 2.***top*** of the stack/ ***base*** of the stack<br>
 3.basic operations:<br>
-(1)**`isEmpty()`**: returna boolean value indicating if the stack is empty<br>
-(2)**`getSize()`**: returns the number of items in the stack<br>
-(3)**`pop()`**: remove and returns the top item of the stack, if the stack is not empty, and the next item on the stack becomes the new top item<br>
-(4)**`push(item)`**: adds the given item to the top of the stack<br>
-(5)**`peek()`**: returns a reference to the item on top of a non-empty stack without removing it<br>
+>>(1)**`isEmpty()`**: returna boolean value indicating if the stack is empty<br>
+>>(2)**`getSize()`**: returns the number of items in the stack<br>
+>>(3)**`pop()`**: remove and returns the top item of the stack, if the stack is not empty, and the next item on the stack becomes the new top item<br>
+>>(4)**`push(item)`**: adds the given item to the top of the stack<br>
+>>(5)**`peek()`**: returns a reference to the item on top of a non-empty stack without removing it<br>
 - **Implementing the Stack**<br> 
 1.the stack ADT can be implemented by the use of Python list and a linked list<br>
 
@@ -36,11 +36,11 @@
 2.new items are inserted into a queue at the ***rear*** while existing items are removed from the ***front***<br>
 3.basic operations:<br>
 >>(1)**`isEmpty()`**: return a boolean value indicating whether the queue is empty<br>
-(2)**`getSize()`**: returns the number of items currently in the queue<br>
-(3)**`enqueue(item)`**: adds the given item to the back of the queue<br>
-(4)**`dequeue()`**: removes and returns the front item from the queue, an item can not be dequeued from an empty queue<br>
-(5)**`getFront()`**: return a reference to the element at the front of queue without removing it, and an error occurs if the queue is empty<br>
-(6)**`getRear()`**: return a reference to the element at the back of queue without removing it<br>
+>>(2)**`getSize()`**: returns the number of items currently in the queue<br>
+>>(3)**`enqueue(item)`**: adds the given item to the back of the queue<br>
+>>(4)**`dequeue()`**: removes and returns the front item from the queue, an item can not be dequeued from an empty queue<br>
+>>(5)**`getFront()`**: return a reference to the element at the front of queue without removing it, and an error occurs if the queue is empty<br>
+>>(6)**`getRear()`**: return a reference to the element at the back of queue without removing it<br>
 - **Implementing the Queue**<br>
 1.implementation of the Queue ADT using a Python list<br>
 2.**using a circular array**<br>
