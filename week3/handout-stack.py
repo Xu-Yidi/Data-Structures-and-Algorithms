@@ -22,57 +22,56 @@ e. peek(): returns a reference to the item on top of a non-empty stack without r
 class Stack:
     #creates an empty stack()
     def __init__(self):
-        self.items = list()
+        self._items = list()
     #return True if the stack is empty
     def isEmpty(self):
-        return len(self.items) == 0
+        return len(self._items) == 0
     #return the number of items in the stack
     def getSize(self):
-        return len(self.items)
+        return len(self._items)
     #return the top item on the stack without removing it
     def peek(self):
         assert not self.isEmpty(), "Cannot peek at an empty stack"
-        return self.items[-1]
+        return self._items[-1]
     #remove and returns the top item on the stack
     def pop(self):
         assert not self.isEmpty(), "Cannot pop from an empty stack"
-        return self.items.pop()
+        return self._items.pop()
     #push an item onto the top of thr stack
     def push(self, item):
-        self.items.append(item)
+        self._items.append(item)
         
 #implementaion of the stack ADT using a singly linked list
 class StackNode:
-    def __init__(self, item, link):
+    def __init__(self, item):
         self.item = item
-        self.next = link
+        self.next = None
 
 class Stack:
-          
+    #create an empty stack
     def __init__(self):
-        self.top = None
-        self.size = 0
-    
+        self._top = None
+        self._size = 0
+    #return True if the stack is empty 
     def isEmpty(self):
-        return self.top is None
-    
+        return self._top is None
+    #return the number of items in the stack
     def getSize(self):
-        return self.size
-    
+        return self._size
+    #return the top item on the stack without removing it
     def peek(self):
         assert not self.isEmpty(), "Cannot peek at an empty stack"
-        return self.top.item
-    
+        return self._top.item
+    #remove and returns the top item on the stack
     def pop(self):
         assert not self.isEmpty(), "Cannot pop at an empty stack"
-        node = self.top
-        self.top = self.top.next
-        self.size -= 1
+        node = self._top
+        print(self._top.next.item)
+        self._top = self._top.next
+        self._size -= 1
         return node.item
-    
+    #pushes an item onto the top of the stack
     def push(self, item):
-        self.top = StackNode(item, self.top)
-        self.size += 1
-        
-
-
+        self._top = StackNode(item)
+        self._size += 1
+      
