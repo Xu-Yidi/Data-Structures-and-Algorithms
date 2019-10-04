@@ -10,7 +10,7 @@
 >>(1)The first node in the list(***head node***), must be named or referenced by external variable<br>
 >>(2)The last node in the list(***tail node***), is indicated by a null link reference<br>
 >>(3)A linked list can be empty, which can be indicated when the head reference is null<br>
--**The Singly Linked List**<br>
+- **The Singly Linked List**<br>
 1.a singly linked list is a linked list in which each node contains a single link field and allows for a complete traversal from a distinctive first node to the last<br>
 
 
@@ -61,26 +61,6 @@
 >>(3)**`getSize()`**<br>
 >>(4)**`enqueue(item, priority)`**: adds the given item to the queue by inserting it in the proper position based on the given pripority<br>
 >>(5)**`deququq()`**: removes and returns the front item from the queue, which is the item with the highest priority,if two items have the same priority, then items are removed with FIFO order<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
