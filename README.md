@@ -6,7 +6,7 @@
 
 ## Week2
 ### **Singly Linked List**
-[Handout-singly linked list](/week2/handout-singly%20linked%20list.py)<br>
+[講義-singly linked list](/week2/handout-singly%20linked%20list.py)<br>
 - **Linked List**<br>
 1.A linked structure contains a collection of objects called nodes, each of which contains data and at least one reference or link to another node<br>
 2.A linked list is a structure in which the nodes are connected in sequence to form a linear list<br>
