@@ -70,7 +70,7 @@
 >>(3)**`getSize()`**<br>
 >>(4)**`enqueue(item, priority)`**: adds the given item to the queue by inserting it in the proper position based on the given pripority<br>
 >>(5)**`deququq()`**: removes and returns the front item from the queue, which is the item with the highest priority,if two items have the same priority, then items are removed with FIFO order<br>
-- **LeetCode**
+- **LeetCode**<br>
 [#232 implement queue using stacks](/week3/%23232%20implement%20queue%20using%20stacks.py)<br>
 [#622 design circular queue](/week3/%23622%20design%20circular%20queue.py)<br>
 
