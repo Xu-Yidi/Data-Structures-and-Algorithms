@@ -21,7 +21,7 @@ f.getRear(): return a reference to the element at the back of queue without remo
 '''
 #%%
 #Implementation of the Queue ADT using a Python list
-class queue:
+class Queue:
     #create an empty queue
     def __init__(self):
         self._qList = list()
@@ -29,7 +29,7 @@ class queue:
     def isEmpty(self):
         return len(self) == 0
     #returns the number of items in the queue
-    def __len__(self):
+    def getSize(self):
         return len(self._qList)
     #adds the given item to the queue
     def enqueue(self, item):
@@ -60,41 +60,46 @@ b.front and rear: to indicate the array elements containing the first and last i
 class Queue:
     
     def __init__(self, maxSize):
-        self.count = 0
-        self.front = 0
-        self.rear = maxSize - 1
-        self.qArray = [None] * maxSize
+        self._count = 0
+        self._front = 0
+        self._rear = maxSize - 1
+        self._qArray = [None] * maxSize
         
     def isEmpty(self):
-        return self.count == 0
+        return self._count == 0
     
     def isFull(self):
-        return self.count == len(self.qArray)
+        return self._count == len(self._qArray)
     
     def getSize(self):
-        return self.count
+        return self._count
     
     def enqueue(self, item):
         assert not self.isFull(), "Cannot enqueue to a full queue"
-        self.rear = (self.rear + 1) % len(self.qArray)
-        self.qArray[self.rear] = item
-        self.count += 1
+        self._rear = (self._rear + 1) % len(self._qArray)
+        self._qArray[self._rear] = item
+        self._count += 1
     
     def dequeue(self):
         assert not self.isEmpty(), "Cannot dequeue from an empty queue"
-        item = self.qArray[self.front]
-        self.qArray[self.front] = None
-        self.front = (self.front + 1) % len(self.qArray)
-        self.count -= 1
+        item = self._qArray[self._front]
+        self._qArray[self._front] = None
+        self._front = (self._front + 1) % len(self._qArray)
+        self._count -= 1
         return item
 
     def getFront(self):
        assert not self.isEmpty(), "Cannot get the first element from an empty queue" 
-       return self.qArray[self.front]
+       return self._qArray[self._front]
     
     def getRear(self):
         assert not self.isEmpty(), "Cannot get the last element from an empty queue"
-        return self.qArray[self.rear]
+        return self._qArray[self._rear]
+#%%
+'''
+The circular array implementation improves the efficiency of these operations, but at the cost of limiting the size of the queue
+A better solution is to use a linked list consisting of both front and rear reference
+'''
 #%%    
 #Impementation of the Queue ADT using a linked list
 class QueueNode:
@@ -104,41 +109,85 @@ class QueueNode:
 
 class Queue:
     def __init__(self):
-        self.front = None
-        self.rear = None
-        self.count = 0
+        self._front = None
+        self._rear = None
+        self._count = 0
     
     def isEmpty(self):
-        return self.count == 0
+        return self._count == 0
     
     def getSize(self):
-        return self.count
+        return self._count
     
     def enqueue(self, item):
         node = QueueNode(item)
         if self.isEmpty():
-            self.front = node
+            self._front = node
         else:
-            self.rear.next = node
-        self.rear = node
-        self.count += 1
+            self._rear.next = node
+        self._rear = node
+        self._count += 1
         
     def dequeue(self):
         assert not self.isEmpty(), "Cannot dequeue from an empty queue"
-        node = self.front
-        if self.front is self.rear:
-            self.rear = None
-        self.front = self.front.next
-        self.count -= 1
+        node = self._front
+        if self._front is self._rear:
+            self._rear = None
+        self._front = self._front.next
+        self._count -= 1
         return node.item
     
     def getFront(self):
         assert not self.isEmpty(), "Cannot get the first element from an empty queue" 
-        return self.front.item
+        return self._front.item
     
     def getRear(self):
         assert not self.isEmpty(), "Cannot get the last element from an empty queue"
-        return self.rear.item  
-    
-        
+        return self._rear.item  
+#%%
+ '''
+Priority Queue
+(1)a priority queue is a queue with each item is assigned a priority and items with a high priority are removed before those with lower priority
+a.the bounded priority queue assumes a small limited range of p priorities over the interval of integers[0,p)
+b.the unbounded priority queue places no limit on the range of integer values that can be used as priorities
+c.integer values are used for the priorities with a smaller integer value having a higher pripority
+(2)basic operations
+a.PriorityQueue(): creates a new empty unbounded priority queue
+a1.BPriorityQueue(numLevels): creates a new empty bounded priority queue with priority levels in the range from 0 to numLevels-1
+b.isEmpty()
+c.getSize()
+d.enqueue(item, priority): adds the given item to the queue by inserting it in the proper position based on the given pripority
+e.deququq(): removes and returns the front item from the queue, which is the item with the highest priority
+             if two items have the same priority, then items are removed with FIFO order
+'''
+#%%             
+#Implementation of the unbounded Priority Queue ADT using a Python list
+class PriorityQEntry(object):
+    def __init__(self, item, priority):
+        self.item = item
+        self.priority = priority
 
+class PriorityQueue:
+    def __init__(self):
+        self._qList = list()
+    
+    def isEmpty(self):
+        return len(self._qList) == 0
+    
+    def getSize(self):
+        return len(self._qList)
+    
+    def enqueue(self, item, priority):
+        entry = PriorityQEntry(item, priority)
+        self._qList.append(entry)
+        
+    def dequeue(self):
+        assert not self.isEmpty(), "Cannot dequeue from an empty queue"
+        #find the entry with the highest priority
+        highest = self._qList[0].priority
+        for i in range(self.getSize()):
+            #see if the ith entry contains a higher priority(smaller integer)
+            if self._qList[i].priority < highest:
+                highest = self._qList[i].priority
+        entry = self._qList.pop(highest)
+        return entry.item
