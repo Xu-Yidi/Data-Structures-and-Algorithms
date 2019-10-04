@@ -16,8 +16,8 @@
 1.A singly linked list is a linked list in which each node contains a single link field and allows for a complete traversal from a distinctive first node to the last<br>
 
 
-week3
-----
+## week3
+
 * Handout  
 #Singly Linked List  
 #Stack(list & singly linked list)  
