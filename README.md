@@ -1,4 +1,4 @@
-# **Data Structure and Algorithm in Python**<img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
+# **Data Structure and Algorithm in Python**
 此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
 ## Content
  [Week2](#week2)<br>
@@ -74,5 +74,3 @@
 [#232 implement queue using stacks](/week3/%23232%20implement%20queue%20using%20stacks.py)<br>
 [#622 design circular queue](/week3/%23622%20design%20circular%20queue.py)<br>
 
-
-<img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
