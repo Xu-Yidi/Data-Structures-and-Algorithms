@@ -18,6 +18,7 @@
 
 ## week3
 ### Stack
+- **The Stack ADT**<br>
 1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
 2.***top*** of the stack/ ***base*** of the stack<br>
 3.basic operations:<br>
@@ -26,7 +27,8 @@
 (3)**`pop()`**: remove and returns the top item of the stack, if the stack is not empty, and the next item on the stack becomes the new top item<br>
 (4)**`push(item)`**: adds the given item to the top of the stack<br>
 (5)**`peek()`**: returns a reference to the item on top of a non-empty stack without removing it<br>
-4.the stack ADT can be implemented by the use of Python list and a linked list
+- **Implementing the Stack**<br> 
+1.the stack ADT can be implemented by the use of Python list and a linked list<br>
 
 ### Queue
 - **The Queue ADT**<br>
