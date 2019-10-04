@@ -42,12 +42,12 @@
 - **Implementing the Queue**<br>
 1.implementation of the Queue ADT using a Python list<br>
 2.**using a circular array**<br>
-(1)a circular array is simply an array viewed as a circle instead of a line
-(2)allows to add new items to a queue and remove existing ones without having to shift items in the process
-(3)introduces the concept of a maximum-capacity queue that can become full
-(4)uesd with application that require small-capacity and allows for the specification of a maximum size
-(5)must maintain a count field and two markers:
-a.count field: to keep track of how many items are currently in the queue
-b.front and rear: to indicate the array elements containing the first and last items in the queue
+(1)a circular array is simply an array viewed as a circle instead of a line<br>
+(2)allows to add new items to a queue and remove existing ones without having to shift items in the process<br>
+(3)introduces the concept of a ***maximum-capacity queue*** that can become full<br>
+(4)uesd with application that require small-capacity and allows for the specification of a maximum size<br>
+(5)must maintain a count field and two markers:<br>
+a.***count field***: to keep track of how many items are currently in the queue<br>
+b.***front and rear***: to indicate the array elements containing the first and last items in the queue<br>
 
 <img width="175" height="175" src="http://img.wxcha.com/file/201712/06/9a3fc5676a.jpg"/>
