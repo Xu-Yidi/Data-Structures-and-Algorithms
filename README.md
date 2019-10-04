@@ -1,8 +1,8 @@
-# **Data Structure and Algorithm in Python資料結構與演算法**
+# **Data Structure and Algorithm in Python**
+此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
+## Content
 
-此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式
-
-## week2
+## Week2
 ### **Singly Linked List**<br>
 - **Linked List**<br>
 1.A linked structure contains a collection of objects called nodes, each of which contains data and at least one reference or link to another node<br>
@@ -14,7 +14,7 @@
 1.a singly linked list is a linked list in which each node contains a single link field and allows for a complete traversal from a distinctive first node to the last<br>
 
 
-## week3
+## Week3
 ### Stack
 - **The Stack ADT**<br>
 1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
