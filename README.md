@@ -41,7 +41,7 @@
 (6)**`getRear()`**: return a reference to the element at the back of queue without removing it<br>
 - **Implementing the Queue**<br>
 1.implementation of the Queue ADT using a Python list<br>
-2.**Using a Circular Array**<br>
+2.**using a circular array**<br>
 (1)a circular array is simply an array viewed as a circle instead of a line
 (2)allows to add new items to a queue and remove existing ones without having to shift items in the process
 (3)introduces the concept of a maximum-capacity queue that can become full
