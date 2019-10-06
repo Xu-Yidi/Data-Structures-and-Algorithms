@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # **Data Structure and Algorithm in Python**
 此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
 ## Content
@@ -104,13 +103,11 @@
 1.choose the largest/smallest item in the array and place the item in its correct place<br>
 2.choose the next largest/next smallest item in the array and place the item in its correct place<br>
 3.repeat the process until all items are sorted<br>
-### Time Complexity
 
+### Time Complexity
 - **Asymptotic Notation(漸進符號)**<br>
 1.Big-Θ-Notation<br>
-
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-
+2.Big-O-Notation<br>
 
 
 
