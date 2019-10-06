@@ -114,13 +114,13 @@
 
 | Name | Time Complexity |
 | :-: | :-: |
-| constant time | O(1) |
-| logarithmic time | O(logn) |
-| linear time | O(n) |
-| quasilinear time| O(nlogn)|
-| quadratic time| O(n^2) |
-| exponential time| O(2^n) |
-| factorial time| O(n!) |
+| Constant Time | O(1) |
+| Logarithmic Time | O(logn) |
+| Linear Time | O(n) |
+| Quasilinear Time| O(nlogn)|
+| Quadratic Time| O(n^2) |
+| Exponential Time| O(2^n) |
+| Factorial Time| O(n!) |
 
 
 
