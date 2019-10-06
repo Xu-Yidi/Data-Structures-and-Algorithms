@@ -80,6 +80,7 @@
 [back to content](#content)<br>
 
 ## Week4
+[code-insertion sort & bubble sort & selection sort的實現](/week4/handout-sorting.py)
 ### Insertion Sort
 - **Logic**<br>
 1.partition the array into two regions: sorted and unsorted<br>
@@ -133,9 +134,17 @@
 
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity3.JPG"><br>
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity4.JPG"><br>
+ 
+ 1.Big-O-Notation Rules<br>
+ >>(1)**`Transitivity rule`**<br>
+ >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) ∈ O(*h*(n))<br>
+ >>(2)**`Addition rule`**<br>
+ >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) + *g*(n) ∈ O(max(*g*(n),*h*(n)))<br>
+ >>(3)**`Multiplication Rule`**<br>
+ >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) * *g*(n) ∈ O(*g*(n) * *h*(n))<br?
+[proof](https://www.cs.hmc.edu/~keller/cs60book/11%20Complexity.pdf)<br>
 
-
-
+[back to content](#content)<br> 
 
 
 
