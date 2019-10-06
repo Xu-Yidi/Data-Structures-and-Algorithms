@@ -126,7 +126,7 @@
 
 | Algorithm | Best Case | Average Case| Worst Case |
 | :-: | :-: | :-:| :-: |
-| Bubble Sort | O(n^2) | O(n^2) | O(n^2) |
+| Bubble Sort | O(n^2)/O(n) | O(n^2) | O(n^2) |
 | Selection Sort | O(n^2) | O(n^2) | O(n^2) |
 | Insertion Sort | O(n) | O(n^2) | O(n^2) |
 | Quick Sort| O(nlogn)| O(nlogn) | O(n^2) |
