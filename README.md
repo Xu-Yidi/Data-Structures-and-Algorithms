@@ -141,7 +141,7 @@
  >>(2)**`Addition rule`**<br>
  >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) + *g*(n) ∈ O(max(*g*(n),*h*(n)))<br>
  >>(3)**`Multiplication Rule`**<br>
- >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) * *g*(n) ∈ O(*g*(n) * *h*(n))<br?
+ >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) * *g*(n) ∈ O(*g*(n) * *h*(n))<br>
 [proof](https://www.cs.hmc.edu/~keller/cs60book/11%20Complexity.pdf)<br>
 
 [back to content](#content)<br> 
