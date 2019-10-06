@@ -107,20 +107,20 @@
 ### Time Complexity
 - **Asymptotic Notation(漸進符號)**<br>
 <div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity1.JPG"><br>
-<br>
 
+<br>
 - **The Most Common Time Complexities**<br>
 <div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity2.jpeg"><br>
 
-| Name | Time Complexity |
-| :-: | :-: |
-| Constant Time | O(1) |
-| Logarithmic Time | O(logn) |
-| Linear Time | O(n) |
-| Quasilinear Time| O(nlogn)|
-| Quadratic Time| O(n^2) |
-| Exponential Time| O(2^n) |
-| Factorial Time| O(n!) |
+| Name | Time Complexity | Class|
+| :-: | :-: | :-:|
+| Constant time | O(1) | Polynomial time |
+| Logarithmic time | O(logn) | Polynomial time |
+| Linear time | O(n) | Polynomial time |
+| Quasilinear time| O(nlogn)| Polynomial time |
+| Quadratic time| O(n^2) | Polynomial time |
+| Exponential time| O(2^n) | Non-deterministic polynomial time |
+| Factorial time| O(n!) | Non-deterministic polynomial time |
 
 
 
