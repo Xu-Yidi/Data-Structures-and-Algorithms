@@ -106,9 +106,7 @@
 
 ### Time Complexity
 - **Asymptotic Notation(漸進符號)**<br>
-1.Big-Θ-Notation<br>
-2.Big-O-Notation<br>
-
+![image](https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/_20191006_140342.JPG)
 
 
 
