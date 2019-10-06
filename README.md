@@ -80,17 +80,17 @@
 
 ## Week4
 ### Insertion Sort
-- **logic**<br>
+- **Logic**<br>
 1.partition the array into two regions: sorted and unsorted<br>
 2.take each item from the unsorted region and insert it into its correct order in the sorted region<br>
-- **advantages and disadvantages**<br>
+- **Advantages and Disadvantages**<br>
 1.adaptive, i.e. efficient for nearly-sorted datasets:smiley:<br>
 2.in-place, i.e. requires a constant O(1) of additional memory space:smiley:<br>
 3.slow for unsorted or reverse-sorted data:cry:<br>
 4.needs a large number of element shifts:cry:<br>
 
 ### Bubble Sort
-- **logic**<br>
+- **Logic**<br>
 1.go through multiple passes over the array<br>
 2.in every pass:<br>
 >>(1)compare adjacent elements in the list<br>
@@ -99,7 +99,7 @@
 3.repeating this process in several passes eventually sorts the array into ascending(or descending) order<br>
 
 ### Selection Sort
-- **logic**<br>
+- **Logic**<br>
 1.choose the largest/smallest item in the array and place the item in its correct place<br>
 2.choose the next largest/next smallest item in the array and place the item in its correct place<br>
 3.repeat the process until all items are sorted<br>
