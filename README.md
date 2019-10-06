@@ -122,8 +122,8 @@
 | Factorial time| O(n!) | Non-deterministic polynomial time |
 
 - **How to Calculate Time Complexity**<br>
-
-
+<img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity3.JPG"><br>
+<img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity4.JPG"><br>
 
 
 
