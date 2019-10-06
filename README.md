@@ -144,6 +144,10 @@
  >>If *f*(n) ∈ O(*g*(n)) and *g*(n) ∈ O(*h*(n)), then *f*(n) * *g*(n) ∈ O(*g*(n) * *h*(n))<br>
 [proof](https://www.cs.hmc.edu/~keller/cs60book/11%20Complexity.pdf)<br>
 
+- **reference**
+[知乎：如何清晰的理解算法中的时间复杂度？](https://www.zhihu.com/question/20196775)<br>
+[CSDN：算法的时间复杂度和空间复杂度-总结](https://blog.csdn.net/zolalad/article/details/11848739)<br>
+
 [back to content](#content)<br> 
 
 
