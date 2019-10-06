@@ -108,7 +108,8 @@
 - **Asymptotic Notation(漸進符號)**<br>
 ![image](https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/_20191006_140342.JPG)
 - **The Most Common Time Complexities**<br>
-![image](https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/1_5ZLci3SuR0zM_QlZOADv8Q.jpeg height = "200" width = "250")
+![image]<img height="200" width="250" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/1_5ZLci3SuR0zM_QlZOADv8Q.jpeg" >
+
 
 
 
