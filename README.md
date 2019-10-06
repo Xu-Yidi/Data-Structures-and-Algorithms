@@ -106,9 +106,9 @@
 
 ### Time Complexity
 - **Asymptotic Notation(漸進符號)**<br>
-<div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/_20191006_140342.JPG">
+<div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time complexity1.JPG">
 - **The Most Common Time Complexities**<br>
-<div align=center><img height="75%" width="75%" src="https://github.com/XuYidi/fluteanzi/blob/master/week4/1_5ZLci3SuR0zM_QlZOADv8Q.jpeg" >
+<div align=center><img height="75%" width="75%" src ="https://github.com/XuYidi/fluteanzi/ blob/master/week4/time_complexity2. jpeg" >
 
 
 
