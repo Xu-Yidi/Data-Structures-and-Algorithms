@@ -3,6 +3,7 @@
 ## Content
  [Week2](#week2)<br>
  [Week3](#week3)<br>
+ [Week4](#week4)<br>
 
 ## Week2
 ### **Singly Linked List**
@@ -122,9 +123,15 @@
 | Factorial time| O(n!) | Non-deterministic polynomial time |
 
 - **How to Calculate Time Complexity**<br>
+| Algorithm | Best Case | Average Case| Worst Case |
+| :-: | :-: | :-:| :-: |
+| Bubble Sort | O(n^2) | O(n^2) | O(n^2) |
+| Selection Sort | O(n^2) | O(n^2) | O(n^2) |
+| Insertion Sort | O(n) | O(n^2) | O(n^2) |
+| Quick Sort| O(nlogn)| O(nlogn) | O(n^2) |
+
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity3.JPG"><br>
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity4.JPG"><br>
-
 
 
 
