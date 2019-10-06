@@ -123,6 +123,7 @@
 | Factorial time| O(n!) | Non-deterministic polynomial time |
 
 - **How to Calculate Time Complexity**<br>
+
 | Algorithm | Best Case | Average Case| Worst Case |
 | :-: | :-: | :-:| :-: |
 | Bubble Sort | O(n^2) | O(n^2) | O(n^2) |
