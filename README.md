@@ -78,3 +78,13 @@
 
 [back to content](#content)<br>
 
+## Week4
+###Insertion Sort
+1.logic:<br>
+>>(1)partition the array into two regions: sorted and unsorted<br>
+>>(2)take each item from the unsorted region and insert it into its correct order in the sorted region<br>
+2.advantages and disadvantages<br>
+>>(1)adaptive, i.e. efficient for nearly-sorted datasets<br>
+>>(2)in-place, i.e. requires a constant O(1) of additional memory space<br>
+>>(3)slow for unsorted or reverse-sorted data<br>
+>>(4)needs a large number of element shifts<br>
