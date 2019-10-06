@@ -109,7 +109,7 @@
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity1.JPG"><br>
 
 - **The Most Common Time Complexities**<br>
-<div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity2.jpeg"><br>
+<img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity2.jpeg"><br>
 
 | Name | Time Complexity | Class|
 | :-: | :-: | :-:|
@@ -120,6 +120,9 @@
 | Quadratic time| O(n^2) | Polynomial time |
 | Exponential time| O(2^n) | Non-deterministic polynomial time |
 | Factorial time| O(n!) | Non-deterministic polynomial time |
+
+- **How to Calculate Time Complexity**<br>
+
 
 
 
