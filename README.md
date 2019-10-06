@@ -107,7 +107,7 @@
 ### Time Complexity
 - **Asymptotic Notation(漸進符號)**<br>
 <div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity1.JPG"><br>
-
+<p align="left">
 
 - **The Most Common Time Complexities**<br>
 <div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity2.jpeg"><br>
