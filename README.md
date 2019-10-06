@@ -107,9 +107,17 @@
 ### Time Complexity
 - **Asymptotic Notation(漸進符號)**<br>
 <div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity1.JPG"><br>
-
+<br>
 - **The Most Common Time Complexities**<br>
 <div align=center><img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week4/time_complexity2.jpeg"><br>
+
+
+
+| Name | Academy | score |
+| - | :-: | -: |
+| Harry Potter | Gryffindor| 90 |
+| Hermione Granger | Gryffindor | 100 |
+| Draco Malfoy | Slytherin | 90 |
 
 
 
