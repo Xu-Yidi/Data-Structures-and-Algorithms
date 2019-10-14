@@ -90,6 +90,8 @@
 2.in-place, i.e. requires a constant O(1) of additional memory space:smiley:<br>
 3.slow for unsorted or reverse-sorted data:cry:<br>
 4.needs a large number of element shifts:cry:<br>
+- **Leetcode**<br>
+[#147 insertion sort list](/week4/%23147%20insertion%20sort%20list.py)<br>
 
 ### Bubble Sort
 - **Logic**<br>
