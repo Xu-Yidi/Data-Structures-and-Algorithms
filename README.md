@@ -4,9 +4,9 @@
  [Week2](#week2)<br>
  [Week3](#week3)<br>
  [Week4](#week4)<br>
-
+ [Week5](#week5)<br>
 ## Week2
-### **Singly Linked List**
+### Singly Linked List
 [code-linked list的基本操作](/week2/handout-singly%20linked%20list.py)<br>
 - **Linked List**<br>
 1.A linked structure contains a collection of objects called nodes, each of which contains data and at least one reference or link to another node<br>
@@ -151,5 +151,16 @@
 
 [back to content](#content)<br> 
 
+## Week5
+### Quick Sort
+The quick-sort algorithm sorts a sequence S using a simple **recursiv** approach. The main idea is to apply the **divide-and-conquer** technique, whereby we divide S into subsequences, recur to sort each subsequence, and then combine the sorted subsequences by a simple concatenation<br>
+- **Logic**<br>
+1.**Divide**: If Seqence S has at least two elements, select a specific element x from s, called the pivot(usually the last element in S). Partition the sequence S into three subsequences:<br>
+(1)***Less(Left)***: store the elements in S less than pivot x<br>
+(2)***Equal***: store the elements in S equal to pivot x<br>
+(3)***Greater(Right)***: store the elements in S greater than pivot x<br>
+2.**Conquer**: Recurxively sort subsequences Less and Greater.<br>
+3.**Combine**: Combine the sorted subsequenes by a simple concatenation<br>
+- **Time Complexities**<br>
 
 
