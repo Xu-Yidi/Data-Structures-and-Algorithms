@@ -162,5 +162,6 @@ The quick-sort algorithm sorts a sequence S using a simple **recursiv** approach
 2.**Conquer**: Recurxively sort subsequences Less and Greater.<br>
 3.**Combine**: Combine the sorted subsequenes by a simple concatenation<br>
 - **Time Complexities**<br>
-
-
+<img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week5/quick_sort.JPG"><br>
+<img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week5/quick_sort2.JPG"><br>
+[back to content](#content)<br> 
