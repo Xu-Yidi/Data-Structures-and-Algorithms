@@ -154,6 +154,7 @@
 [back to content](#content)<br> 
 
 ## Week5
+[code-quick sort使用額外空間與原地置換的實現](/week5/handout-quick_sort.py)
 ### Quick Sort
 The quick-sort algorithm sorts a sequence S using a simple **recursiv** approach. The main idea is to apply the **divide-and-conquer** technique, whereby we divide S into subsequences, recur to sort each subsequence, and then combine the sorted subsequences by a simple concatenation<br>
 - **Logic**<br>
