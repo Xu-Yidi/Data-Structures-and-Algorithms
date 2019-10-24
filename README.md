@@ -5,6 +5,8 @@
  [Week3](#week3)<br>
  [Week4](#week4)<br>
  [Week5](#week5)<br>
+ [Week6](#week6)<br>
+ 
 ## Week2
 ### Singly Linked List
 [code-linked list的基本操作](/week2/handout-singly%20linked%20list.py)<br>
@@ -168,3 +170,9 @@ The quick-sort algorithm sorts a sequence S using a simple **recursiv** approach
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week5/quick_sort.JPG"><br>
 <img height="75%" width="75%" src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week5/quick_sort2.JPG"><br>
 [back to content](#content)<br> 
+
+## Week6
+### The Heap Data Struture
+1.The (Binary) heap *T* is an **array** object that can be viewed as a nearly **complete binary tree** and satisfies two additional properties: a relation property defined in terms of the ways are stored in *T* and a structural property defined in terms of the shape of *T* itself.<br>
+(1)**Heap-Order Property(relational property)**: In a heap *T*, for every position *p* other than the root, the key sorted at *p* is geater than or equal to the key stored at *p*'s parent.<br>
+(2)**Complete Binary Tree Property(strutural property)**: A heap *T* with height *h* is a complete binary tree if levels 0,1,...,*h*-1 of *T* have the maximum numbers of nodes possible(i.e. level *i* has 2^*i* nodes, for 0 ≤ *i* ≤ *h*-1) and the remaining nodes at level *h* reside in the leftmost possible at that level
