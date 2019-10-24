@@ -195,6 +195,9 @@ the height of the node 1 is 2<br>
 >(2)**Min-heap**:the smallest element in a min-heap is at the root and subtree rooted at a node contains values no smaller than that contained at the node itself, i.e. A[parent(i)] <= A[i]<br>
 
 ### Basic Operations
+1.**shift-up**(insertion): to restore the heap order property, the new value has to move up along the path in reverse order from the root to the insertion point until a node is found where it can be positioned properly.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/shift-up.jpg">
+
 
 
 
