@@ -184,18 +184,13 @@ the height of the heap is 3(a heap with height *h* has *h+1* levels)<br>
 the height of the node 1 is 2<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/min_heap.png">
 
-3.Heap properties:<br>
->(1)**Max-heap**:the largest element in a max-heap is at the root and the subtree rooted at a node contains values no larger than that contained at the node itself.<br>
->(2)**Min-heap**:the smallest element in a min-heap is at the root and subtree rooted at a node contains values no smaller than that contained at the node itself.<br>
-
-4.If a complete binary tree with n nodes is represented sequentially, then for any node with index *i*, 0 ≤ *i* ≤ *n*-1, we have:
+3.If a complete binary tree with n nodes is represented sequentially, then for any node with index *i*, 0 ≤ *i* ≤ *n*-1, we have:
 >(1)A[0] is the root of the tree<br>
 >(2)the parent of node i: **parent(i) = floor((i-1)/2)**<br>
 >(3)the left child of node i: **left(i) = 2i + 1**<br>
 >(4)the right child of node i: **right(i) = 2i + 2**<br>
 
-
-
-
-
+4.Heap properties:<br>
+>(1)**Max-heap**:the largest element in a max-heap is at the root and the subtree rooted at a node contains values no larger than that contained at the node itself, i.e. A[parent(i)] >= A[i].<br>
+>(2)**Min-heap**:the smallest element in a min-heap is at the root and subtree rooted at a node contains values no smaller than that contained at the node itself, i.e. A[parent(i)] <= A[i]<br>
 
