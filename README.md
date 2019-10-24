@@ -1,11 +1,11 @@
 # **Data Structure and Algorithm in Python**
 此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
 ## Content
- [Week2](#week2)<br>
- [Week3](#week3)<br>
- [Week4](#week4)<br>
- [Week5](#week5)<br>
- [Week6](#week6)<br>
+ [Week2(singly linked list)](#week2)<br>
+ [Week3(stack & queue)](#week3)<br>
+ [Week4(insertion sort & bubble sort & selection sort & time complexities)](#week4)<br>
+ [Week5(quick sort)](#week5)<br>
+ [Week6(heap sort)](#week6)<br>
  
 ## Week2
 ### Singly Linked List
@@ -173,7 +173,7 @@ The quick-sort algorithm sorts a sequence S using a simple **recursiv** approach
 
 ## Week6
 ### The Heap Data Struture
-1.The (Binary) heap *T* is an **array** object that can be viewed as a nearly **complete binary tree** and satisfies two additional properties: a relation property defined in terms of the ways are stored in *T* and a structural property defined in terms of the shape of *T* itself.<br>
+1.The (Binary) heap *T* is an **array** object that can be viewed as a nearly **complete binary tree(完全二元樹)** and satisfies two additional properties: a relation property defined in terms of the ways are stored in *T* and a structural property defined in terms of the shape of *T* itself.<br>
 >(1)**Heap-Order Property(relational property)**: In a heap *T*, for every position *p* other than the root, the key sorted at *p* is geater than or equal to the key stored at *p*'s parent.<br>
 >(2)**Complete Binary Tree Property(strutural property)**: A heap *T* with height *h* is a complete binary tree if levels 0,1,...,*h*-1 of *T* have the maximum numbers of nodes possible(i.e. level *i* has 2^*i* nodes, for 0 ≤ *i* ≤ *h*-1) and the remaining nodes at level *h* reside in the leftmost possible at that level.<br>
 
