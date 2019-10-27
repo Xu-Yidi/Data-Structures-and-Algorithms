@@ -11,7 +11,7 @@ class Node:
     def __init__(self, item): 
         self.item = item
         self.next = None
-#定義包含quick sort操作的linked queue
+#定義包含quick sort操作的queue
 class QuickSortQueue:
     def __init__(self):  #初始化queue的頭節點，尾節點以及元素個數
         self._front = None 
