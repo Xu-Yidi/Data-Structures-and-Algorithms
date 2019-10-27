@@ -94,11 +94,4 @@ for i in [54,85,85,26,24,93,63,17,45]:
     solution.enqueue(i)
 solution.QuickSort()                
 solution.printitem()   
-    
-
-
-
-
-
-
- 
+   
