@@ -212,11 +212,12 @@ detailed process<br>
 
 ### Heap Sort
 - **Logic**<br>
-1.Build a max-heap from the unorderes array<br>
-2.Starting with the root(the maximum element), the algorithm places the maximum element into the correct place in the array by swapping it with the element in the last position in the array<br>
-3."Discard" this last node(knowing that it's in its correct place) by decreasing the heap size, and calling max-heapify on the new(possibly incorrectly-placed) root<br>
+1.Build a **max-heap** from the unorderes array<br>
+2.Starting with the root(the maximum element), the algorithm places the maximum element into the correct place in the array by **swapping it with the element in the last position** in the array<br>
+3.**"Discard" this last node**(knowing that it's in its correct place) by decreasing the heap size, and calling max-heapify on the new(possibly incorrectly-placed) root<br>
 4.Repeating this "discarding" process until only one node(the smallest element) remains, and therefore is in the correct place in the array<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort1.jpg">
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg">
+
 - **Time Complexities**<br>
 [back to content](#content)<br>
