@@ -5,7 +5,7 @@
  [Week3(stack & queue)](#week3)<br>
  [Week4(insertion sort & bubble sort & selection sort & time complexities)](#week4)<br>
  [Week5(quick sort)](#week5)<br>
- [Week6(heap sort)](#week6)<br>
+ [Week6(heap data structure & heap sort)](#week6)<br>
  
 ## Week2
 ### Singly Linked List
@@ -194,7 +194,7 @@ the height of the node 1 is 2<br>
 >(1)**Max-heap**:the largest element in a max-heap is at the root and the subtree rooted at a node contains values no larger than that contained at the node itself, i.e. A[parent(i)] >= A[i].<br>
 >(2)**Min-heap**:the smallest element in a min-heap is at the root and subtree rooted at a node contains values no smaller than that contained at the node itself, i.e. A[parent(i)] <= A[i]<br>
 
-### Basic procedures
+### Basic Procedures
 - **shift-up**(insertion): To restore the heap order property, the new value has to move up along the path in reverse order from the root to the insertion point until a node is found where it can be positioned properly.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/shift-up.jpg">
 
@@ -206,18 +206,17 @@ the height of the node 1 is 2<br>
 
 - **build-max-heap**: We can use the max-heapify procedure to convert an array A[0,1,...,n-1] into a max-heap in a **bottom-up** manner. The elements in the subarray A[floor(n/2),...,n-1] are **leaves** of the tree, and so each is a 1-element heap. The procedure build-max-heap goes through the remaining nodes of the tree and runs max-heapify on each one.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/build-max-heap1.jpg">
+detailed process<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/build-max-heap2.jpg">
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/build-max-heap3.jpg">
 
-
-
-
-
-
-
-
-
-
-
-
+### Heap Sort
+- **Logic**<br>
+1.Build a max-heap from the unorderes array<br>
+2.Starting with the root(the maximum element), the algorithm places the maximum element into the correct place in the array by swapping it with the element in the last position in the array<br>
+3."Discard" this last node(knowing that it's in its correct place) by decreasing the heap size, and calling max-heapify on the new(possibly incorrectly-placed) root<br>
+4.Repeating this "discarding" process until only one node(the smallest element) remains, and therefore is in the correct place in the array<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort1.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg">
+- **Time Complexities**<br>
 [back to content](#content)<br>
