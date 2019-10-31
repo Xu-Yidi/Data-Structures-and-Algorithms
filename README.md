@@ -182,7 +182,7 @@ The quick-sort algorithm sorts a sequence S using a simple **recursiv** approach
 >(2)For example:<br>
 the height of the heap is 3(a heap with height *h* has *h+1* levels)<br>
 the height of the node 1 is 2<br>
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/min_heap.png">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap.jpg">
 
 - If a complete binary tree with n nodes is represented sequentially, then for any node with index *i*, 0 ≤ *i* ≤ *n*-1, we have:
 >(1)A[0] is the root of the tree<br>
@@ -194,12 +194,28 @@ the height of the node 1 is 2<br>
 >(1)**Max-heap**:the largest element in a max-heap is at the root and the subtree rooted at a node contains values no larger than that contained at the node itself, i.e. A[parent(i)] >= A[i].<br>
 >(2)**Min-heap**:the smallest element in a min-heap is at the root and subtree rooted at a node contains values no smaller than that contained at the node itself, i.e. A[parent(i)] <= A[i]<br>
 
-### Basic Operations
+### Basic procedures
 - **shift-up**(insertion): To restore the heap order property, the new value has to move up along the path in reverse order from the root to the insertion point until a node is found where it can be positioned properly.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/shift-up.jpg">
 
 - **shift-down**(remove): After the value in the root has been removed, the value from the rightmost node on the lowest level is copied to the root and that leaf is removed. Then starting at the root node, the node's value is compared to its children and swapped with the larger of the two, and this process continues until the smaller value is copied into a leaf node or a node whose children are even smaller.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/shift-down.jpg">
+
+- **max-heapify**: Given an array A and an index i, assume the binary trees rooted at **left(i)** and **right(i)** are max heaps, but A[i] may be smaller than its children. Then the value at A[i] float down in the max-heap until the subtree rooted at index i becomes a max heap.<br>
+<img src = "https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/max-heapify.jpg">
+
+- **build-max-heap**: We can use the max-heapify procedure to convert an array A[0,1,...,n-1] into a max-heap in a **bottom-up** manner. The elements in the subarray A[floor(n/2),...,n-1] are **leaves** of the tree, and so each is a 1-element heap. The procedure build-max-heap goes through the remaining nodes of the tree and runs max-heapify on each one.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/build-max-heap1.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/build-max-heap2.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/build-max-heap3.jpg">
+
+
+
+
+
+
+
+
 
 
 
