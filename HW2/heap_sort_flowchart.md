@@ -16,9 +16,11 @@
 3.heap sort: O(nlogn)<br>
 
 - **學習歷程**<br>
-1.heap sort之程式是在理解概念與完成流程圖後，未參考任何資料的情況下自主寫出，代碼主要思路如下<br>
+heap sort之程式是在理解概念與完成流程圖後，未參考任何資料的情況下自主寫出，較為困難的是推導heap sort的時間複雜度以及過程中所用到的相關定理，代碼主要思路如下<br>
+
 ``` Python
-def heap_sort(self, nums):
+class Solution():
+    def heap_sort(self, nums):
         max_heap = self.build_max_heap(nums)  #將未排序的nums建構成max-heap
         sorted_seq = []                      #建立sorted_seq記錄已排序的元素
         while len(max_heap) > 0:
@@ -27,8 +29,4 @@ def heap_sort(self, nums):
             self.max_heapify(max_heap, 0)   #對新的根節點進行max-heapify
         return sorted_seq    
 ```
-
-
-
-2.較為困難的是推導heap sort的時間複雜度以及過程中所用到的相關定理，如Master Theorem(主定理)<br>
 
