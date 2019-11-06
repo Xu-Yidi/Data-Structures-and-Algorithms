@@ -17,6 +17,7 @@
 3. heap sort: O(nlogn)<br>
 
 - **學習歷程**<br>
+
 1.heap sort之程式是在理解概念與完成流程圖後，未參考任何資料的情況下自主寫出<br>
 2.較為困難的是推導heap sort的時間複雜度以及過程中所用到的相關定理，如Master Theorem(主定理)<br>
 
