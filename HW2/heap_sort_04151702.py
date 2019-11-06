@@ -42,4 +42,6 @@ class Solution():
 output = Solution().heap_sort([-1,54,85,26,24,93,63,63,17,45])
 output
 
-
+#Reference:
+#http://ind.ntou.edu.tw/~litsnow/al98/pdf/Algorithm-Ch6-Heapsort.pdf
+#上述為深入理解heap sort概念所使用的之參考資料，參考資料中並未包含任何可執行之程式，程式撰寫過程中也並未參考任何資料
