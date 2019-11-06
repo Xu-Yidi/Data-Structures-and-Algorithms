@@ -29,4 +29,38 @@ class Solution():
             self.max_heapify(max_heap, 0)   #對新的根節點進行max-heapify
         return sorted_seq    
 ```
+上述片段是實現heap sort的主要代碼，在呼叫build_max_heap函數構造最大堆後，將根節點與最後一個葉節點交換並刪除最後的葉節點,再對新的根節點運行max_heapify函數，直至排序完成
+```Python
+    def max_heapify(self, subseq, i):   #節點的index從0開始
+        if 2*i + 1 >= len(subseq):      #如果節點左子節點的index已經大於等於subseq的長度，則節點為葉節點，無需進行max-heapify
+            return
+        big_child_index = 2*i + 1       #預設節點的左子節點是其兩個子節點中較大的
+        big_child_val = subseq[2*i + 1]
+        if 2*i + 2 < len(subseq):       #如果節點的右子節點存在（節點可能只存在左子節點），即右子節點的index小於subseq的長度
+            if subseq[2*i + 2] > big_child_val:  #如果右子節點的值大於左子節點的值，則右子節點為兩個子節點中較大的
+                big_child_index = 2*i + 2
+                big_child_val = subseq[2*i + 2]
+        if subseq[i] < big_child_val:   #如果節點小於其子節點中較大的節點，則將二者進行交換
+            subseq[big_child_index] = subseq[i]
+            subseq[i] = big_child_val
+        self.max_heapify(subseq, big_child_index)  #交換後原節點的index變為較大子節點的index，不斷進行max-heapify的過程直至節點交換到正確位置
 
+```
+上述片段定義了實現max-heapify的函數，其主要做法是先通過比較該節點的左右節點，找出較大的子節點，然後比較該節點與較大子節點的大小，若該節點比較大子節點小，則交換二者位置，且函數使用recursive的寫法使該節點不斷與其子節點比較並shift down至正確位置
+```Python
+   def build_max_heap(self, seq):
+        nf_index = int(len(seq)/2) - 1  #葉節點(non-leaf node)的index為floor(n/2))至n-1，無需進行max-heapify
+        while nf_index >= 0:            #從底層的非葉節點開始，對每一個非葉節點進行max-heapify直至根節點為止    
+            self.max_heapify(seq, nf_index)
+            nf_index -= 1
+        return seq                     #返回最終的max-heap
+```
+上述片段則是定義了實現build-max-heap的函數，其主要是通過對非葉節點進行max-heapify實現的
+```Python
+output = Solution().heap_sort([-1,54,85,26,24,93,63,63,17,45])
+output
+Out[275]: [-1, 17, 24, 26, 45, 54, 63, 63, 85, 93]
+```
+測試成功<br>
+- **思考**<br>
+heap sort中額外使用sorted_seq來儲存已經排序之元素，且在leetcode上經過測試後其耗時較久，可思考如何修改程式使其不需額外空間並節省時間
