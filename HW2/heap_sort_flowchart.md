@@ -11,9 +11,9 @@
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort.png">
 
 - **Time Complexities**<br>
-1. max-heapify: O(logn)<br>
-2. build-max-heap: O(n)<br>
-3. heap sort: O(nlogn)<br>
+1.max-heapify: O(logn)<br>
+2.build-max-heap: O(n)<br>
+3.heap sort: O(nlogn)<br>
 
 - **學習歷程**<br>
 1.heap sort之程式是在理解概念與完成流程圖後，未參考任何資料的情況下自主寫出<br>
