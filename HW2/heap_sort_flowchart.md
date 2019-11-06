@@ -11,4 +11,7 @@
 - **Flowchart**<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort.png">
 
-- **Time Complexities**
+- **Time Complexities**<br>
+1. max-heapify:O(logn)<br>
+2. build-max-heap: O(n)<br>
+3. heap sort:O(nlogn)<br>
