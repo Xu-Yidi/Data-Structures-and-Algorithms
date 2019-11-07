@@ -64,3 +64,5 @@ Out[275]: [-1, 17, 24, 26, 45, 54, 63, 63, 85, 93]
 測試成功<br>
 - **思考**<br>
 heap sort中額外使用sorted_seq來儲存已經排序之元素，且在leetcode上經過測試後其耗時較久，可思考如何修改程式使其不需額外空間並節省時間
+- **Reference**<br>
+國立海洋大學資訊工程學系林清池教授講義 http://ind.ntou.edu.tw/~litsnow/al98/pdf/Algorithm-Ch6-Heapsort.pdf <br>
