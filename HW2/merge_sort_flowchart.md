@@ -6,3 +6,12 @@ Merge sort和Quick sort同屬Divide-and-conquer(分治法)的應用<br>
 3.***Combine***:將排序好的*S1*和*S2*進行合併(Merge sort的重點即在於合併)<br>
 - **Flowchart**<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week7/merge_sort_flowchart.jpg">
+
+- **Time complexities**<br>
+The running time of mergesort on an input list of size n is **O(nlogn)** in the best, worst, and average case<br>
+- **學習歷程**<br>
+在理解merge sort的概念後嘗試自主寫出程式，但過程相較heap sort可謂艱難許多，最主要的原因是因為對遞迴寫法的掌握度
+
+
+
+
