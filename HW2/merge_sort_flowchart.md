@@ -11,6 +11,7 @@ Merge sort和Quick sort同屬Divide-and-conquer(分治法)的應用<br>
 The running time of mergesort on an input list of size n is **O(nlogn)** in the best, worst, and average case<br>
 - **學習歷程**<br>
 在理解merge sort的概念後嘗試自主寫出程式，但過程相較heap sort可謂艱難許多，最主要的原因是對遞迴寫法的掌握度不足，最後的做法是只在分割的程式使用了遞迴，其餘使用for迴圈完成，故程式較為冗長，下面首先簡述自己的寫法，然後介紹課本的簡潔寫法<br>
+1.自己的寫法<br>
 ```Python
 class Solution(object):
     def merge_sort(self, seq):
@@ -58,6 +59,83 @@ class Solution(object):
     
         return result[-1] #result中的最後一個subseq即為最終結果
 ```
+上述片段的作用是將存在result中的分割過程使用定義的merge_seq函數逐步合併並得到結果，result所儲存的分割結果如下所示<br>
+```Python
+result = partition([54,85,26,24,93,63,17,45])    
+
+result
+Out[554]: 
+[[[54], [85]],
+ [[26], [24]],
+ [[54, 85], [26, 24]],
+ [[93], [63]],
+ [[17], [45]],
+ [[93, 63], [17, 45]],
+ [[54, 85, 26, 24], [93, 63, 17, 45]]]
+ ```
+所以做法是先將上一層次的結果合併，並將合併結果取代下一層次合併的元素，例如先將[[54],[85]]和[[26],[24]]分別合併為[[54,85]]和[[24,26]]，再用[54,85]和[26,24]取代下一層次需要合併的[[54,85],[26,24]]，取代完成應變為[[54,85],[24,26]]，以此類推，[[54,85],[24,26]]合併完成後為[[24,26,54,85]]，其將取代[[54, 85, 26, 24], [93, 63, 17, 45]]中的[54,85,26,24]，按照此種方法，不斷合併與取代，最後一行合併完成即為最終結果<br>
+```Python
+    def merge_seq(self,subseq1, subseq2):   
+        merged_seq = [0 for i in range(len(subseq1) + len(subseq2))]  #新建一長度為subseq1和subseq2長度之和的list儲存merge完的元素
+        p1 = 0; p2 = 0; q = 0  #p1為subseq1的索引，p2為subseq2的索引，q為merge_seq的索引，並初始化索引為0
+    
+        #在p1及p2都未超過各自索引的subseq的長度的情況下，比較subseq1[p1]和subseq2[p2],
+        #將其中較小的賦值給merge_seq[q]，並將自己的索引及索引q加1
+        while p1 < len(subseq1) and p2 < len(subseq2):  
+            if subseq1[p1] <= subseq2[p2]:  
+                merged_seq[q] = subseq1[p1]
+                p1 += 1
+            else:
+                merged_seq[q] = subseq2[p2]
+                p2 += 1
+            q += 1
+        #如果索引p1大於subseq1的長度而索引p2小於subseq2的長度，說明subseq1中的元素已經比較完成
+        #故可直接將subseq2中剩下的元素放入merge_seq
+        if p1 >= len(subseq1) and p2 < len(subseq2):
+            merged_seq[q:] = subseq2[p2:]
+        #同理，若subseq2中的元素已經比較完成，則將subseq1中剩下的元素放入merge_seq
+        if p1 < len(subseq1) and p2 >= len(subseq2):
+            merged_seq[q:] = subseq1[p1:]
+        
+        return merged_seq
+```
+上述片段的作用主要在於合併兩個子序列，其邏輯在流程圖中已經有了詳細說明，此處不做贅述<br>
+```Python
+    def __init__(self):    #初始化cutseq，否則重複呼叫下面的partition函數會在上一次的cutseq的基礎上進行操作
+        self.cutseq = list()
+    
+    def partition(self, seq):
+        if len(seq) > 1: #如果seq的長度大於1，則以中間數進行切割，否則無需切割
+            leftseq = seq[:int(len(seq)/2)]
+            rightseq = seq[int(len(seq)/2):]
+        else:
+            return 
+        #遞迴地對左右部分進行切割，並將所有切割過程記錄在cuteq中
+        self.partition(leftseq)  
+        self.partition(rightseq)
+        self.cutseq.append([leftseq,rightseq]) 
+    
+        return self.cutseq
+```
+上述片段的作用是遞迴地將序列對半切分直至其長度為1，撰寫過程中需要注意的是要對cutseq進行初始化，否則重複呼叫patition函數時cutseq中仍留有前面執行時的內容<br>
+```Python
+output = Solution().merge_sort([-1,54,85,26,24,93,63,63,17,45])
+output
+Out[555]: [-1, 17, 24, 26, 45, 54, 63, 63, 85, 93]
+```
+測試成功<br>
+
+2.參考課本的簡潔寫法
 
 
+
+
+
+
+
+
+
+
+
+   
 
