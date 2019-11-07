@@ -218,7 +218,7 @@ detailed process<br>
 3.**"Discard" this last node**(knowing that it's in its correct place) by decreasing the heap size, and calling max-heapify on the new(possibly incorrectly-placed) root<br>
 4.Repeating this "discarding" process until only one node(the smallest element) remains, and therefore is in the correct place in the array<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort1.jpg">
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg"
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg">
 
 - **Time Complexities**<br>
 [back to content](#content)<br>
@@ -235,5 +235,6 @@ To sort a sequence S with n elements using the three divide-and-coquer steps, th
 1.***Divide***: If S has zero or one element, return S immediately; it is already sorted. Otherwise(S has at least two elements), remove all the elements from S and put them into two sequences, S1 and S2, each containing about half of the elements of; that is, S1 contaings the first *floor(n/2)* elements of S, and S2 contains the remaining *ceil(n/2)* elements<br>
 2.***Conquer***: Recursively sort sequences S1 and S2<br>
 3.***Combine***: Put back the elements into S by merging the sorted sequence S1 and S2 into a sorted sequence<br>
-
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week7/merge_sort1.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week7/merge_sort2.jpg">
  
