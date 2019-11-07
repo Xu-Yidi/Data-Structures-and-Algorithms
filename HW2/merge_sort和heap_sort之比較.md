@@ -18,10 +18,14 @@
 - **Space Complexity**<br>
 
 space complexity為空間複雜度，是衡量算法執行時所需要的記憶體空間，而時間複雜度和空間複雜度有時並不可兼得<br>
-1.merge sort的空間複雜度為為O(n)，即merge sort不是原地排序算法，因為合併過程需要與原始序列相同數量級的儲存空間存放合併結果，需要注意的是雖然merge sort的遞迴次數是logn，但遞迴完成後會釋放占用的記憶體空間，故所需空間不會累加
+1.merge sort的空間複雜度為為O(n)，即merge sort不是原地排序算法，因為合併過程需要與原始序列相同數量級的儲存空間存放合併結果，需要注意的是雖然merge sort的遞迴次數是logn，但遞迴完成後會釋放占用的記憶體空間，故所需空間不會累加<br>
 2.heap sort的空間複雜度為O(1),即heap sort是原地排序<br>
 
 - **Stability**<br>
+
+Stability為穩定性，其意義為待排序的序列中有多個相等的元素，經過排序後其先後順序保持不變<br>
+1.merge sort為穩定算法<br>
+2.heap sort為不穩定算法<br>
 
 
 
