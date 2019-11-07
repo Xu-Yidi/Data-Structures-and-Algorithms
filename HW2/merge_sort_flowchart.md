@@ -125,17 +125,39 @@ Out[555]: [-1, 17, 24, 26, 45, 54, 63, 63, 85, 93]
 ```
 測試成功<br>
 
-2.參考課本的簡潔寫法
+2.參考課本的簡潔寫法<br>
+```Python
+def merge(seq1,seq2,seq):
+    i = j = 0
+    while i+j < len(seq):
+        if j == len(seq2) or(i < len(seq1) and seq1[i] < seq2[j]):
+            seq[i+j] = seq1[i]
+            i += 1
+        else:
+            seq[i+j] = seq2[j]
+            j += 1
+def merge_sort(seq):
+    n = len(seq)
+    if n < 2:
+        return
+    mid = n//2               #divide
+    seq1 = seq[0:mid]
+    seq2 = seq[mid:n]
+    merge_sort(seq1)         #conquer(with recursion)
+    merge_sort(seq2)
+    #merge results
+    merge(seq1, seq2, seq)
+    return seq
+```
+測試結果<br>
+```Python
+output = merge_sort([-1,54,85,26,24,93,63,63,17,45])
 
+output   
+Out[563]: [-1, 17, 24, 26, 45, 54, 63, 63, 85, 93]
+```
+課本的寫法則簡潔許多，目前尚在體會遞迴的寫法<br>
 
-
-
-
-
-
-
-
-
-
-   
+- **Reference**<br>
+課本程式摘自Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. Data Structures and Algorithms in Python. Wiley(Chapter12 Sorting and Selection/Section12.2 Merge Sort/Page543-544)
 
