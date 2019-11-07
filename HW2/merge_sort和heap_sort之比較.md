@@ -18,7 +18,12 @@
 - **Space Complexity**<br>
 
 space complexity為空間複雜度，是衡量算法執行時所需要的記憶體空間，而時間複雜度和空間複雜度有時並不可兼得<br>
-1.merge sort的空間複雜度為為O(n)，即merge sort不是原地排序算法，因為在合併序列時需要額外的輔助數組，其長度即為需要注意的是雖然遞迴的次數是logn，但每次遞迴完成後會釋放占用的記憶體空間，故占用的空間不會累加
+1.merge sort的空間複雜度為為O(n)，即merge sort不是原地排序算法，因為合併過程需要與原始序列相同數量級的儲存空間存放合併結果，需要注意的是雖然merge sort的遞迴次數是logn，但遞迴完成後會釋放占用的記憶體空間，故所需空間不會累加
+2.heap sort的空間複雜度為O(1),即heap sort是原地排序<br>
+
+- **Stability**<br>
+
+
 
 
 
@@ -28,8 +33,7 @@ space complexity為空間複雜度，是衡量算法執行時所需要的記憶�
 - **Reference**<br>
 詳談歸併排序時間複雜度分析https://blog.csdn.net/liangjiabao5555/article/details/89670082<br>
 排序算法之 堆排序 及其時間複雜度和空間複雜度https://blog.csdn.net/YuZhiHui_No1/article/details/44258297<br>
-
-
+排序算法時間複雜度、空間複雜度、穩定性比較https://blog.csdn.net/yushiyi6453/article/details/76407640<br>
 
 - **可參考之文檔**<br>
 https://www.cs.auckland.ac.nz/compsci220s1c/lectures/2016S1C/CS220-Lecture09.pdf (主要內容為merge sort時間複雜度的計算過程)<br>
