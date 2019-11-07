@@ -159,5 +159,7 @@ Out[563]: [-1, 17, 24, 26, 45, 54, 63, 63, 85, 93]
 課本的寫法則簡潔許多，目前尚在體會遞迴的寫法<br>
 
 - **Reference**<br>
-課本程式摘自Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. Data Structures and Algorithms in Python. Wiley(Chapter12 Sorting and Selection/Section12.2 Merge Sort/Page543-544)
+課本程式摘自 Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. Data Structures and Algorithms in Python. Wiley(Chapter12 Sorting and Selection/Section12.2 Merge Sort/Page543-544)<br>
+時間複雜度計算 https://www.cs.auckland.ac.nz/compsci220s1c/lectures/2016S1C/CS220-Lecture09.pdf<br>
+
 
