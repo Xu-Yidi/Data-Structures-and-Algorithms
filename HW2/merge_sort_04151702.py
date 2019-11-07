@@ -4,7 +4,11 @@ Created on Fri Nov  1 16:43:01 2019
 
 @author: Yidi
 """
-
+"""
+說明：以下程式為自行撰寫，但因對遞迴之寫法未達精通之程度，故只在函數partition使用遞迴，而merge_sort的主程式使用了for迴圈的寫法，
+雖然程式冗長繁複而較不易理解，但確實符合merge sort的概念以及時間複雜度。merge_sort的程式主要由一個雙層迴圈構成，最外層的迴圈次數為log(n,2)，
+內層第一個迴圈為n次，內層的第二個迴圈雖然有兩層，但兩層的執行次數皆十分有限，且會隨著外層次數增加逐漸降低為0，故總時間複雜度仍然近似nlog(n,2)。
+"""
 
 class Solution(object):
     def merge_sort(self, seq):
@@ -95,16 +99,5 @@ class Solution(object):
     
 output = Solution().merge_sort([-1,54,85,26,24,93,63,63,17,45])
 output      
-    
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
+#Reference:無任何參考資料，為理解merge sort基本概念後自行寫出
