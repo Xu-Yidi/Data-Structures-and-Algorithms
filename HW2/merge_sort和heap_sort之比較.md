@@ -13,7 +13,10 @@
 >(2)假設一有n個元素的序列的排序時間為T(n)，T(n) = 2T(n/2) + an，其中T(n/2)為一個子序列的排序時間，an為合併時間，可由遞迴的形式推導得到T(n)=O(nlogn)<br>
 
 3.heap sort的時間複雜度分析<br>
+>(1)heap sort的時間複雜度主要包含建構max-heap以及每次取走最大值後重新max-heapify的過程，其中建構max-heap的時間複雜度為O(n)，取走最大值並重建堆的時間複雜度為(n-1)logn，故總時間複雜度T(n) = O(n) + (n-1)logn = O(nlogn)
 
+- **Space Complexity**<br>
+space complexity為空間複雜度
 
 
 
@@ -22,6 +25,11 @@
 
 - **Reference**<br>
 詳談歸併排序時間複雜度分析https://blog.csdn.net/liangjiabao5555/article/details/89670082<br>
+排序算法之 堆排序 及其時間複雜度和空間複雜度https://blog.csdn.net/YuZhiHui_No1/article/details/44258297<br>
+
+
 
 - **可參考之文檔**<br>
-https://www.cs.auckland.ac.nz/compsci220s1c/lectures/2016S1C/CS220-Lecture09.pdf
+https://www.cs.auckland.ac.nz/compsci220s1c/lectures/2016S1C/CS220-Lecture09.pdf (主要內容為merge sort時間複雜度的計算過程)<br>
+http://disi.unitn.it/~rseba/DIDATTICA/dsa2011_BZ/dsa04.pdf (主要內容包含heap sort時間複雜度的計算過程)<br>
+https://subetter.com/algorithm/understand-and-compute-algorithmic-complexity.html (主要內容包含求解遞迴函數時間複雜度的定理）<br>
