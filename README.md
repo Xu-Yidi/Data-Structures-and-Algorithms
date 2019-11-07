@@ -6,6 +6,7 @@
  [Week4(insertion sort & bubble sort & selection sort & time complexities)](#week4)<br>
  [Week5(quick sort)](#week5)<br>
  [Week6(heap data structure & heap sort)](#week6)<br>
+ [Week7(merge sort)](#week7)<br>
  
 ## Week2
 ### Singly Linked List
@@ -217,7 +218,22 @@ detailed process<br>
 3.**"Discard" this last node**(knowing that it's in its correct place) by decreasing the heap size, and calling max-heapify on the new(possibly incorrectly-placed) root<br>
 4.Repeating this "discarding" process until only one node(the smallest element) remains, and therefore is in the correct place in the array<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort1.jpg">
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg"
 
 - **Time Complexities**<br>
 [back to content](#content)<br>
+
+## Week7
+### Merge Sort
+As quick sort, merge sort use recursion in an algorithm design called **divide-and-conquer**, so what's divide-and-conquer technique?<br>
+- **Divide-and-conque**<br>
+1.***Divide***: If the input size is smaller than a certain threshold(say, one or two element), solve the problem directly using a straightforward method and return the solution so obtained. Otherwise, divide the input data into two or more disjoint subsets<br>
+2.***Conquer***: Recursively solve the subproblems associated with the subsets<br>
+3.***Combine***: Take the solutions to the subproblems and merge them into a solution to the original problem<br>
+- **Logic**<br>
+To sort a sequence S with n elements using the three divide-and-coquer steps, the merge-sort algorithm proceeds as follows:<br>
+1.***Divide***: If S has zero or one element, return S immediately; it is already sorted. Otherwise(S has at least two elements), remove all the elements from S and put them into two sequences, S1 and S2, each containing about half of the elements of; that is, S1 contaings the first *floor(n/2)* elements of S, and S2 contains the remaining *ceil(n/2)* elements<br>
+2.***Conquer***: Recursively sort sequences S1 and S2<br>
+3.***Combine***: Put back the elements into S by merging the sorted sequence S1 and S2 into a sorted sequence<br>
+
+ 
