@@ -16,7 +16,9 @@
 >(1)heap sort的時間複雜度主要包含建構max-heap以及每次取走最大值後重新max-heapify的過程，其中建構max-heap的時間複雜度為O(n)，取走最大值並重建堆的時間複雜度為(n-1)logn，故總時間複雜度T(n) = O(n) + (n-1)logn = O(nlogn)
 
 - **Space Complexity**<br>
-space complexity為空間複雜度
+
+space complexity為空間複雜度，是衡量算法執行時所需要的記憶體空間，而時間複雜度和空間複雜度有時並不可兼得<br>
+1.merge sort的空間複雜度為為O(n)，即merge sort不是原地排序算法，因為在合併序列時需要額外的輔助數組，其長度即為需要注意的是雖然遞迴的次數是logn，但每次遞迴完成後會釋放占用的記憶體空間，故占用的空間不會累加
 
 
 
