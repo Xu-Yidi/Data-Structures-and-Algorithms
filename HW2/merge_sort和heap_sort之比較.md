@@ -27,19 +27,19 @@ Stability為穩定性，其意義為待排序的序列中有多個相等的元�
 1.merge sort為穩定算法<br>
 2.heap sort為不穩定算法<br>
 
+- **Conclusion**<br>
 
-
-
-
-
+merge sort是具有時間效率但不具空間效率的排序算法，且具有穩定性；heap sort兼具時間效率與空間效率，但不具穩定性<br>
 
 
 - **Reference**<br>
+
 詳談歸併排序時間複雜度分析https://blog.csdn.net/liangjiabao5555/article/details/89670082<br>
 排序算法之 堆排序 及其時間複雜度和空間複雜度https://blog.csdn.net/YuZhiHui_No1/article/details/44258297<br>
 排序算法時間複雜度、空間複雜度、穩定性比較https://blog.csdn.net/yushiyi6453/article/details/76407640<br>
 
 - **可參考之文檔**<br>
+
 https://www.cs.auckland.ac.nz/compsci220s1c/lectures/2016S1C/CS220-Lecture09.pdf (主要內容為merge sort時間複雜度的計算過程)<br>
 http://disi.unitn.it/~rseba/DIDATTICA/dsa2011_BZ/dsa04.pdf (主要內容包含heap sort時間複雜度的計算過程)<br>
 https://subetter.com/algorithm/understand-and-compute-algorithmic-complexity.html (主要內容包含求解遞迴函數時間複雜度的定理）<br>
