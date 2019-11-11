@@ -221,6 +221,9 @@ detailed process<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week6/heap_sort2.jpg">
 
 - **Time Complexities**<br>
+1.max-heapify:O(logn)<br>
+2.build-max-heap:O(n)<br>
+3.heap sort:O(nlogn)(best/worst/average case)<br>
 [back to content](#content)<br>
 
 ## Week7
@@ -237,4 +240,10 @@ To sort a sequence S with n elements using the three divide-and-coquer steps, th
 3.***Combine***: Put back the elements into S by merging the sorted sequence S1 and S2 into a sorted sequence<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week7/merge_sort1.jpg">
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week7/merge_sort2.jpg">
+
+- **Time Complexities**<br>
+1.best case: O(nlogn)<br>
+2.worst case:O(nlogn)<br>
+3.average case:O(nlogn)<br>
+[back to content](#content)<br>
  
