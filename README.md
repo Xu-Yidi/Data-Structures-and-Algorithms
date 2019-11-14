@@ -286,7 +286,7 @@ If T is proper, then T has the following properties:<br>
 2.**Depth**: A ***depth*** of a node is its distance from the root, with distance being the number of levels that separate the two. A node's depth corresponds to the level it occupies.<br>
 >Example: in tree(a), G has a depth of 2, in tree(b) it has a depth of 3, and in (c) its depth is 6.<br>
 
-3.**Height**: The height of a binary tree is the number of levels in the tree.<br>
+3.**Height**: The ***height*** of a binary tree is the number of levels in the tree.<br>
 >Example: tree(a) has a height of 4, tree(b) has a height of 6, and tree(c) has a height of 8.<br>
 
 4**Width**: The ***width*** of a binary tree is the number of nodes on the level containing the most node.<br>
@@ -296,8 +296,10 @@ If T is proper, then T has the following properties:<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree1.jpg">
 
 - **Tree Structures**<br>
+
 1.**Full Binary Tree(完滿二元樹)**: A full binary tree in which each interior node contains two children.
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree2.jpg">
+
 2.**Perfect Binary Tree(完美二元樹)**: A perfect binary tree is a full binary tree in which all leaf node are at the same level
 3.**Complete Binary Tree(完全二元樹)**: A binary tree of height h is a complete binary tree if it is a perfect binary tree down to height h-1 and the nodes on the lowest level fill the available slots from left to right leaving no gaps.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree3.jpg">
