@@ -298,16 +298,23 @@ If T is proper, then T has the following properties:<br>
 
 - **Tree Structures**<br>
 
-1.**Full Binary Tree(完滿二元樹)**: A full binary tree in which each interior node contains two children.
+1.**Full Binary Tree(完滿二元樹)**: A ***full binary tree*** in which each interior node contains two children.
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree2.jpg">
 
-2.**Perfect Binary Tree(完美二元樹)**: A perfect binary tree is a full binary tree in which all leaf node are at the same level
-3.**Complete Binary Tree(完全二元樹)**: A binary tree of height h is a complete binary tree if it is a perfect binary tree down to height h-1 and the nodes on the lowest level fill the available slots from left to right leaving no gaps.<br>
+2.**Perfect Binary Tree(完美二元樹)**: A ***perfect binary tree*** is a full binary tree in which all leaf node are at the same level.
+3.**Complete Binary Tree(完全二元樹)**: A binary tree of height h is a ***complete binary tree*** if it is a perfect binary tree down to height h-1 and the nodes on the lowest level fill the available slots from left to right leaving no gaps.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree3.jpg">
 
 [back to content](#content)<br>
 
 ## Week9
-### Binary Search Tree
+### Binary Search Tree(BST)
+- **What's Binary Search Tree**<br>
+
+A ***binary search tree(BST)*** is a binary tree in which each node contains a search key within its payload and the tree is structured such that for each interior node V:
+>1.All keys less than the key in node V are stored in the left subtree of V.<br>
+>2.All keys greater than the key in node V are stored in the right subtree of V.<br>
+>3.An ***inorder traversal*** of a binary tree visits positions in increasing order of their keys.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST1.jpg">
 
 
