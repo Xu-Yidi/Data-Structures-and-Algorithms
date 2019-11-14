@@ -309,12 +309,15 @@ If T is proper, then T has the following properties:<br>
 
 ## Week9
 ### Binary Search Tree(BST)
-- **What's Binary Search Tree**<br>
-
-A ***binary search tree(BST)*** is a binary tree in which each node contains a search key within its payload and the tree is structured such that for each interior node V:
+- A **binary search tree(BST)** is a binary tree in which each node contains a search key within its payload and the tree is structured such that for each interior node V:<br>
 >1.All keys less than the key in node V are stored in the left subtree of V.<br>
 >2.All keys greater than the key in node V are stored in the right subtree of V.<br>
->3.An ***inorder traversal*** of a binary tree visits positions in increasing order of their keys.<br>
+- An **inorder traversal** of a binary tree visits positions in **increasing order** of their keys.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST1.jpg">
 
 
+
+
+
+
+[back to content](#content)<br>
