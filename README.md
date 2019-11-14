@@ -276,7 +276,34 @@ If T is proper, then T has the following properties:<br>
 - **The Binary Tree ADT**<br>
 >`**T.left(p)**`: Return the position that represents the left child of p, or None if p has no left child<br>
 >`**T.right(p)**`: Return the position that represents the right child of p, or None if p has no left child<br>
->`**T.sibling(p)**`: Return the position that represents the sibling of p, or None if p has no sibling
+>`**T.sibling(p)**`: Return the position that represents the sibling of p, or None if p has no sibling<br>
+
+- **Some Concepts**<br>
+1.**Level**: The nodes in a binary tree are organized into ***levels*** with the root node at level 0, its children at level 1, the children of level one node are at level 2, and so on.<br>
+>Example: tree(a) contains 2 nodes at level 1, 4 nodes at level 2, and 2 nodes at level 3.<br>
+
+2.**Depth**: A ***depth*** of a node is its distance from the root, with distance being the number of levels that separate the two. A node's depth corresponds to the level it occupies.<br>
+>Example: in tree(a), G has a depth of 2, in tree(b) it has a depth of 3, and in (c) its depth is 6.<br>
+
+3.**Height**: The height of a binary tree is the number of levels in the tree.<br>
+>Example: tree(a) has a height of 4, tree(b) has a height of 6, and tree(c) has a height of 8.<br>
+
+4**Width**: The ***width*** of a binary tree is the number of nodes on the level containing the most node.<br>
+>Example: tree(a) has a width of 4, tree(b) has a width of 3, and tree(3) has a width of 1.<br>
+
+5.**Size**: The ***size*** of a binary tree is simply the number of nodes in the tree.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree1.jpg">
+
+
+
+
+
+
+
+
+
+
+
 
 [back to content](#content)<br>
 
