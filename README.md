@@ -279,6 +279,7 @@ If T is proper, then T has the following properties:<br>
 >`**T.sibling(p)**`: Return the position that represents the sibling of p, or None if p has no sibling<br>
 
 - **Some Concepts**<br>
+
 1.**Level**: The nodes in a binary tree are organized into ***levels*** with the root node at level 0, its children at level 1, the children of level one node are at level 2, and so on.<br>
 >Example: tree(a) contains 2 nodes at level 1, 4 nodes at level 2, and 2 nodes at level 3.<br>
 
@@ -293,6 +294,8 @@ If T is proper, then T has the following properties:<br>
 
 5.**Size**: The ***size*** of a binary tree is simply the number of nodes in the tree.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree1.jpg">
+
+
 
 
 
