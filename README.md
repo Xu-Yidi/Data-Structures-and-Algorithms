@@ -323,7 +323,7 @@ If T is proper, then T has the following properties:<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST3.jpg">
 
 - **Insertions**: As the keys are inserted, a new node is created for each key and linked into its proper position within the tree. The new nodes are always inserted as a leaf nodes in its proper position such that the binary search tree property is maintained.<br>
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST3.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST4.jpg">
 
 
 
