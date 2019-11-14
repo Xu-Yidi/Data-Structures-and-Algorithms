@@ -257,7 +257,7 @@ A binary tree is an ordered tree with the following properties:<br>
 >2.Each child node is labeled as being either a ***left child*** or a ***right child***.<br>
 >3.A left child preceds a right child in the order of children of a node.<br>
 
-The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. Thus, in a proper binary tree, every internal node has exactly two children. A binary tree that is not proper is improper.
+The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. Thus, in a proper binary tree, every internal node has exactly two children. A binary tree that is not proper is ***improper***.
 - **Properties of Binary Tree**<br>
 
 Let T be a nonempty binary tree, and let n, n<sub>E</sub>, n<sub>I</sub>, and h denote the number of external nodes, number of internal nodes, and height of T, respectively. Then T has the following properties:
@@ -274,9 +274,9 @@ If T is proper, then T has the following properties:<br>
 >5.n<sub>E</sub> = n<sub>I</sub> + 1<br>
 
 - **The Binary Tree ADT**<br>
->`**T.left(p)**`: Return the position that represents the left child of p, or None if p has no left child<br>
->`**T.right(p)**`: Return the position that represents the right child of p, or None if p has no left child<br>
->`**T.sibling(p)**`: Return the position that represents the sibling of p, or None if p has no sibling<br>
+>**`T.left(p)`**: Return the position that represents the left child of p, or None if p has no left child<br>
+>**`T.right(p)`**: Return the position that represents the right child of p, or None if p has no left child<br>
+>**`T.sibling(p)`**: Return the position that represents the sibling of p, or None if p has no sibling<br>
 
 - **Some Concepts**<br>
 
@@ -295,18 +295,12 @@ If T is proper, then T has the following properties:<br>
 5.**Size**: The ***size*** of a binary tree is simply the number of nodes in the tree.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree1.jpg">
 
-
-
-
-
-
-
-
-
-
-
-
-
+- **Tree Structures**<br>
+1.**Full Binary Tree(完滿二元樹)**: A full binary tree in which each interior node contains two children.
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree2.jpg">
+2.**Perfect Binary Tree(完美二元樹)**: A perfect binary tree is a full binary tree in which all leaf node are at the same level
+3.**Complete Binary Tree(完全二元樹)**: A binary tree of height h is a complete binary tree if it is a perfect binary tree down to height h-1 and the nodes on the lowest level fill the available slots from left to right leaving no gaps.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree3.jpg">
 
 [back to content](#content)<br>
 
