@@ -8,6 +8,7 @@
  [Week6(heap data structure & heap sort)](#week6)<br>
  [Week7(merge sort)](#week7)<br>
  [Week8(binary tree)](#week8)<br>
+ [Week9(binary search tree)](#week9)<br>
  
 ## Week2
 ### Singly Linked List
@@ -306,6 +307,7 @@ If T is proper, then T has the following properties:<br>
 
 [back to content](#content)<br>
 
-
+## Week9
+### Binary Search Tree
 
 
