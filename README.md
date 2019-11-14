@@ -7,6 +7,7 @@
  [Week5(quick sort)](#week5)<br>
  [Week6(heap data structure & heap sort)](#week6)<br>
  [Week7(merge sort)](#week7)<br>
+ [Week8(binary tree)](#week8)<br>
  
 ## Week2
 ### Singly Linked List
@@ -246,4 +247,25 @@ To sort a sequence S with n elements using the three divide-and-coquer steps, th
 2.worst case:O(nlogn)<br>
 3.average case:O(nlogn)<br>
 [back to content](#content)<br>
- 
+
+## Week8
+### Binary Tree
+- **What's Binary Tree**<br>
+A binary tree is an ordered tree with the following properties:<br>
+>1.Every node has at most two children.<br>
+>2.Each child node is labeled as being either a ***left child*** or a ***right child***.<br>
+>3.A left child preceds a right child in the order of children of a node.<br>
+
+The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. Thus, in a proper binary tree, every internal node has exactly two children. A binary tree that is not proper is improper.
+- **Properties of Binary Tree**<br>
+
+
+
+
+
+
+
+
+
+
+
