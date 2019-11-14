@@ -315,7 +315,15 @@ If T is proper, then T has the following properties:<br>
 - An **inorder traversal** of a binary tree visits positions in **increasing order** of their keys.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST1.jpg">
 
+### Basic Procedures
+- **Searching**: If the target value is less than the root's key, we move left and we move right if it's greater. We repeat the comparision on the root node of the subtree and take the approriate path. This process is repeated until target is located or we encounter a null child link.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST2.jpg">
 
+- **Min/Max**: The minimum value can be located by starting at the root and following the left child links until a null link is encountered, and it means the minimum value will be found in a node that is either a leaf or an interior node with no left child. The maximum value can be found in a similar way.
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST3.jpg">
+
+- **Insertions**: As the keys are inserted, a new node is created for each key and linked into its proper position within the tree. The new nodes are always inserted as a leaf nodes in its proper position such that the binary search tree property is maintained.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST3.jpg">
 
 
 
