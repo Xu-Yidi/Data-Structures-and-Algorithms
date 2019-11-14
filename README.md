@@ -325,7 +325,8 @@ If T is proper, then T has the following properties:<br>
 - **Insertions**: As the keys are inserted, a new node is created for each key and linked into its proper position within the tree. The new nodes are always inserted as a leaf nodes in its proper position such that the binary search tree property is maintained.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST4.jpg">
 
-
+- **Deletions**: An deletion involves searching for the node that contains the target key and then unlinking the node to remove it from the tree. When a node is removed, the remaining nodes must preserve the search tree property. Three cases should be consindered once the node has been located.
+>1. The node is a leaf.
 
 
 [back to content](#content)<br>
