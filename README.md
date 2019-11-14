@@ -251,6 +251,7 @@ To sort a sequence S with n elements using the three divide-and-coquer steps, th
 ## Week8
 ### Binary Tree
 - **What's Binary Tree**<br>
+
 A binary tree is an ordered tree with the following properties:<br>
 >1.Every node has at most two children.<br>
 >2.Each child node is labeled as being either a ***left child*** or a ***right child***.<br>
@@ -258,6 +259,9 @@ A binary tree is an ordered tree with the following properties:<br>
 
 The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. Thus, in a proper binary tree, every internal node has exactly two children. A binary tree that is not proper is improper.
 - **Properties of Binary Tree**<br>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+Let T be a nonempty binary tree, and let n, nE
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
 
 
@@ -265,6 +269,11 @@ The subtree rooted at a left or a right child of an internal node v is called a 
 
 
 
+
+
+
+
+[back to content](#content)<br>
 
 
 
