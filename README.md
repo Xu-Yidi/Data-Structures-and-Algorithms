@@ -287,8 +287,8 @@ If T is proper, then T has the following properties:<br>
 2.**Depth**: A ***depth*** of a node is its distance from the root, with distance being the number of levels that separate the two. A node's depth corresponds to the level it occupies.<br>
 >Example: in tree(a), G has a depth of 2, in tree(b) it has a depth of 3, and in (c) its depth is 6.<br>
 
-3.**Height**: The ***height*** of a binary tree is the number of levels in the tree.<br>
->Example: tree(a) has a height of 4, tree(b) has a height of 6, and tree(c) has a height of 8.<br>
+3.**Height**: The ***height*** of a binary tree is the number of edges between the tree's root and its furthest leaf.<br>
+>Example: tree(a) has a height of 3, tree(b) has a height of 5, and tree(c) has a height of 7.<br>
 
 4**Width**: The ***width*** of a binary tree is the number of nodes on the level containing the most node.<br>
 >Example: tree(a) has a width of 4, tree(b) has a width of 3, and tree(3) has a width of 1.<br>
