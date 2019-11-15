@@ -336,14 +336,18 @@ If T is proper, then T has the following properties:<br>
 >(2)Otherwise, the successor is the parent of the farthest node that can be reached from *x* by following only left branches backward.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST8.jpg">
 
-- **Deletions**: An deletion involves searching for the node that contains the target key and then unlinking the node to remove it from the tree. When a node is removed, the remaining nodes must preserve the search tree property. Three cases should be consindered once the node has been located.
->1. The node *n* is a leaf: just replace *n* by null.<br>
+- **Deletions**: An deletion involves searching for the node that contains the target key and then unlinking the node to remove it from the tree. When a node is removed, the remaining nodes must preserve the search tree property. Three cases should be consindered once the node has been located.<br>
+
+1. The node *n* is a leaf: just replace *n* by null.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST5.jpg">
 
->2. The node *n* has a single child: promote the unique child to *n*'s place.<br>
+2. The node *n* has a single child: promote the unique child to *n*'s place.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST6.jpg">
 
->3. The node *n* has two children:(1)find the logical ***successor*** or ****predecessor***, *s*, of the node to be deleted, *n*; (2)copy the key from node *s* to node *n*; (3)remove node *s* from the tree.<br>
+3. The node *n* has two children:<br>
+>(1)find the logical ***successor*** or ****predecessor***, *s*, of the node to be deleted, *n*<br>
+>(2)copy the key from node *s* to node *n*<br>
+>(3)remove node *s* from the tree<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST7.jpg">
 
 [back to content](#content)<br>
