@@ -258,7 +258,8 @@ A binary tree is an ordered tree with the following properties:<br>
 >2.Each child node is labeled as being either a ***left child*** or a ***right child***.<br>
 >3.A left child preceds a right child in the order of children of a node.<br>
 
-The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. Thus, in a proper binary tree, every internal node has exactly two children. A binary tree that is not proper is ***improper***.
+The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. A binary tree that is not proper is ***improper***.<br>
+
 - **Properties of Binary Tree**<br>
 
 Let T be a nonempty binary tree, and let n, n<sub>E</sub>, n<sub>I</sub>, and h denote the number of nodes, number of external nodes, number of internal nodes, and height of T, respectively(a binary tree with height h has h+1 levels). Then T has the following properties:
@@ -298,7 +299,7 @@ If T is proper, then T has the following properties:<br>
 
 - **Tree Structures**<br>
 
-1.**Full Binary Tree(完滿二元樹)**: A ***full binary tree*** in which each interior node contains two children.
+1.**Full(improper) Binary Tree(完滿二元樹)**: A binary tree is a ***full binary tree*** if each node has either zero or two children, which means each interior node contains two children.
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree2.jpg">
 
 2.**Perfect Binary Tree(完美二元樹)**: A ***perfect binary tree*** is a full binary tree in which all leaf node are at the same level.
