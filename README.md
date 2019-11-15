@@ -346,9 +346,11 @@ If T is proper, then T has the following properties:<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST6.jpg">
 
 3. The node *n* has two children:<br>
->(1)find the logical ***successor*** or ****predecessor***, *s*, of the node to be deleted, *n*<br>
+>(1)find the logical ***successor*** or ***predecessor***, *s*, of the node to be deleted, *n*<br>
 >(2)copy the key from node *s* to node *n*<br>
 >(3)remove node *s* from the tree<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST7.jpg">
+
+### Time Complexities
 
 [back to content](#content)<br>
