@@ -325,6 +325,16 @@ If T is proper, then T has the following properties:<br>
 - **Insertions**: As the keys are inserted, a new node is created for each key and linked into its proper position within the tree. The new nodes are always inserted as a leaf nodes in its proper position such that the binary search tree property is maintained.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST4.jpg">
 
+- **Successor/Predecessor**: The successor(predecessor) of a key *k* in a search tree is the smallest(largest) key that belongs to the tree and that is strictly greater than(less than) *k*.<br>
+1.The idea for finding the successor of a given node *k*:<br>
+>(1)If *k* has the right child, then the successor is the minimum in the right subtree of *x*.<br>
+>(2)Otherwise, the successor is the parent of the farthest node that can be reached from *x* by following only right branches backward.<br>
+
+2.The idea for finding the predecessor of a given node *k*:<br>
+>(1)If *k* has the left child, then the successor is the maximum in the left subtree of *x*.<br>
+>(2)Otherwise, the successor is the parent of the farthest node that can be reached from *x* by following only left branches backward.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST8.jpg">
+
 - **Deletions**: An deletion involves searching for the node that contains the target key and then unlinking the node to remove it from the tree. When a node is removed, the remaining nodes must preserve the search tree property. Three cases should be consindered once the node has been located.
 >1. The node *n* is a leaf: just replace *n* by null.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST5.jpg">
@@ -332,7 +342,7 @@ If T is proper, then T has the following properties:<br>
 >2. The node *n* has a single child: promote the unique child to *n*'s place.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST6.jpg">
 
->3. The node *n* has two children:(1)find the logical ***successor***, *s*, of the node to be deleted, *n*; (2)copy the key from node *s* to node *n*; (3)remove node *s* from the tree.<br>
-
+>3. The node *n* has two children:(1)find the logical ***successor*** or ****predecessor***, *s*, of the node to be deleted, *n*; (2)copy the key from node *s* to node *n*; (3)remove node *s* from the tree.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST7.jpg">
 
 [back to content](#content)<br>
