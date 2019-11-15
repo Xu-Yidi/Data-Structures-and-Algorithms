@@ -265,7 +265,7 @@ Let T be a nonempty binary tree, and let n, n<sub>E</sub>, n<sub>I</sub>, and h 
 >1.h + 1 ≤ n ≤ 2^h+1 - 1<br>
 >2.1 ≤ n<sub>E</sub> ≤ 2^h<br>
 >3.h ≤ n<sub>I</sub> ≤ 2^h - 1<br>
->4.log(n+1) - 1 ≤ h ≤ (n-1)/2<br>
+>4.log(n+1) - 1 ≤ h ≤ n - 1<br>
 
 If T is proper, then T has the following properties:<br>
 >1.2h + 1 ≤ n ≤ 2^h+1 - 1<br>
