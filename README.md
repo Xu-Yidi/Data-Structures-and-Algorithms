@@ -261,7 +261,7 @@ A binary tree is an ordered tree with the following properties:<br>
 The subtree rooted at a left or a right child of an internal node v is called a ***left subtree*** or ***right subtree***, respectively. A binary tree is ***proper*** or ***full*** if each node has either zero or two children. Thus, in a proper binary tree, every internal node has exactly two children. A binary tree that is not proper is ***improper***.
 - **Properties of Binary Tree**<br>
 
-Let T be a nonempty binary tree, and let n, n<sub>E</sub>, n<sub>I</sub>, and h denote the number of nodes, number of external nodes, number of internal nodes, and height of T, respectively. Then T has the following properties:
+Let T be a nonempty binary tree, and let n, n<sub>E</sub>, n<sub>I</sub>, and h denote the number of nodes, number of external nodes, number of internal nodes, and height of T, respectively(a binary tree with height h has h+1 levels). Then T has the following properties:
 >1.h + 1 ≤ n ≤ 2^h+1 - 1<br>
 >2.1 ≤ n<sub>E</sub> ≤ 2^h<br>
 >3.h ≤ n<sub>I</sub> ≤ 2^h - 1<br>
