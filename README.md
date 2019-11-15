@@ -311,10 +311,10 @@ If T is proper, then T has the following properties:<br>
 1.**Preorder traversal(前序)**: In preorder traversal, we first visit the node, and then traverse the nodes in its left subtree followed by the nodes in its right subtree. Since every node is the root of its own subtree, we can repeat the same process on each node, resulting in a recursive solution.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree4.jpg">
 
-2.**Inorder traversal(中序)**: In inorder traversal, we first traverse the left subtree and then visit the node followed by the traversal of the right subtree.
+2.**Inorder traversal(中序)**: In inorder traversal, we first traverse the left subtree and then visit the node followed by the traversal of the right subtree.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree5.jpg">
 
-3.**Postorder traversal(後序)**: In a postorder traversal, the left and right subtrees of each node are traversed before the node is visited.
+3.**Postorder traversal(後序)**: In a postorder traversal, the left and right subtrees of each node are traversed before the node is visited.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week8/binary_tree6.jpg">
 
 [back to content](#content)<br>
