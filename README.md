@@ -326,6 +326,7 @@ If T is proper, then T has the following properties:<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/BST4.jpg">
 
 - **Successor/Predecessor**: The successor(predecessor) of a key *k* in a search tree is the smallest(largest) key that belongs to the tree and that is strictly greater than(less than) *k*.<br>
+
 1.The idea for finding the successor of a given node *k*:<br>
 >(1)If *k* has the right child, then the successor is the minimum in the right subtree of *x*.<br>
 >(2)Otherwise, the successor is the parent of the farthest node that can be reached from *x* by following only right branches backward.<br>
