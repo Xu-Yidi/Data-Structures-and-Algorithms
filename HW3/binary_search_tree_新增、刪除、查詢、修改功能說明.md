@@ -95,5 +95,25 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
                 self.father(root, tempNode_1).right.val = tempNode_2.val
                 return 
 ```
- 
- 
+下面的程式片段為delete函數的主函數，為分別判斷欲刪除的節點屬於何種狀況並分別執行對應狀況下的delete分函數，當欲刪除的節點為根節點時，情況略有不同，但其原理仍然為三種狀況。值得注意的是，當找到對應的狀況並執行完相應的delete分函數時，應使用continue跳出此次循環，否則產生錯誤
+```Python
+    def delete(self, root, target):
+        #因為search只能尋找到具有指定值的第一個節點，故當無法再尋找到具有指定值的節點時，刪除完畢
+        while self.search(root, target) is not None:      #檢查欲刪除的節點是否為根節點     
+            if self.father(root, self.search(root, target)) is None:
+                self.delete_5(root, target)
+            else:
+                if self.search(root, target).left is None and self.search(root, target).right is None:
+                    self.delete_1(root, target)
+                    continue                              #執行相應的delete分函數後，跳出此次循環
+                if self.search(root, target).left is not None and self.search(root, target).right is None:
+                    self.delete_2(root, target)
+                    continue
+                if self.search(root, target).left is None and self.search(root, target).right is not None:
+                    self.delete_3(root, target)
+                    continue
+                if self.search(root, target).left is not None and self.search(root, target).right is not None:
+                    self.delete_4(root, target)
+                    continue
+        return root    
+  ```
