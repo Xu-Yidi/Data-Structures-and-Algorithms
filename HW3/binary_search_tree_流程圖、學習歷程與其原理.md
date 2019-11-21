@@ -46,7 +46,28 @@
                     self.insert(root, item)
                 tree_height_try.append(self.getHeight(root))
 ```
-3.熟練使用continue,break,pass非常重要
+3.熟練使用continue,break,pass非常重要，此次作業在delete的部分用了較多的條件判斷，能否在正確位置使用continue關乎程式能否正確執行，例如在delete函數中若符合一種情況並執行相應的分函數後，應使用continue跳出本次循環
+```Python
+    def delete(self, root, target):
+        #因為search只能尋找到具有指定值的第一個節點，故當無法再尋找到具有指定值的節點時，刪除完畢
+        while self.search(root, target) is not None:      #檢查欲刪除的節點是否為根節點     
+            if self.father(root, self.search(root, target)) is None:
+                self.delete_5(root, target)
+            else:
+                if self.search(root, target).left is None and self.search(root, target).right is None:
+                    self.delete_1(root, target)
+                    continue                              #執行相應的delete分函數後，跳出此次循環
+                if self.search(root, target).left is not None and self.search(root, target).right is None:
+                    self.delete_2(root, target)
+                    continue
+                if self.search(root, target).left is None and self.search(root, target).right is not None:
+                    self.delete_3(root, target)
+                    continue
+                if self.search(root, target).left is not None and self.search(root, target).right is not None:
+                    self.delete_4(root, target)
+                    continue
+        return root    
+```
 
 
 
