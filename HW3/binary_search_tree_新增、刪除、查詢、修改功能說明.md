@@ -61,10 +61,39 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
             self.father(root, self.search(root, target)).right = tempNode#則將其父節點的右子節點指定為該欲刪除節點的右子節點
             return 
 ```
-
-
-
-
->3.欲刪除的節點同時具有左子節點與右子節點
+3.欲刪除的節點同時具有左子節點與右子節點，則需要先找到該欲刪除節點successor(即為比其大的所有節點中最小的)，並將此successor的值替換欲刪除節點的值，再將successor刪除，值得注意的是，successor只可能為葉節點或只有右子節點，故可用上述兩種方法進行刪除
+```Python
+    #欲刪除的節點同時具有左子節點與右子節點
+    def delete_4(self, root, target):
+        #if self.search(root, target).left is not None and self.search(root, target).right is not None:
+        tempNode_1 = self.search(root, target)                           #使用tempNode_1暫存該欲刪除節點
+        tempNode_2 = self.successor(self.search(root, target).right)     #使用tempNode_2暫存欲刪除節點的successor
+               
+        if tempNode_2.left is None and tempNode_2.right is None:         #若successor為葉節點
+            if self.father(root, tempNode_2).val >= tempNode_2.val:      #刪除successor，即為delete_1之情形
+                self.father(root, tempNode_2).left = None
+            else:# self.father(root, tempNode_2).val < tempNode_2.val:
+                self.father(root, tempNode_2).right = None
+            
+            if self.father(root, tempNode_1).val >= target:              #若其父節點的值比該欲刪除的節點大
+                self.father(root, tempNode_1).left.val = tempNode_2.val  #則將其父節點的左子節點(其實即為該欲刪除的節點)的值賦值為successor的值
+                return           
+            if self.father(root, tempNode_1).val < target:               #若其父節點的值比該欲刪除的節點小
+                self.father(root, tempNode_1).right.val = tempNode_2.val #則將其父節點的右子節點(其實即為該欲刪除的節點)的值賦值為successor的值
+                return        
+        
+        if tempNode_2.left is None and tempNode_2.right is not None:     #若successor只有右子節點
+            if self.father(root, tempNode_2).val >= tempNode_2.val:      #刪除successor, 即為delete_3之情形
+                self.father(root, tempNode_2).left = tempNode_2.right
+            else: #self.father(root, tempNode_2).val < tempNode_2.val:
+                self.father(root, tempNode_2).right = tempNode_2.right 
+            
+            if self.father(root, tempNode_1).val > target:               #將succesor的值替代該欲刪除的節點的值，原理同上
+                self.father(root, tempNode_1).left.val = tempNode_2.val
+                return           
+            if self.father(root, tempNode_1).val < target:
+                self.father(root, tempNode_1).right.val = tempNode_2.val
+                return 
+```
  
  
