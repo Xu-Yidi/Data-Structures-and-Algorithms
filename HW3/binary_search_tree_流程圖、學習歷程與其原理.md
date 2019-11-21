@@ -68,6 +68,10 @@
                     continue
         return root    
 ```
-
+4.正確撰寫遞迴的關鍵之一在於停止條件的設立，如果使用遞迴而沒有設置停止條件，則會陷入無窮迴圈，為在練習時防止此種情況，可在程式前方加上
+```Python
+import sys
+sys.getrecursionlimit()
+```
 
 
