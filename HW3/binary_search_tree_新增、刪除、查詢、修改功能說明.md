@@ -95,7 +95,7 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
                 self.father(root, tempNode_1).right.val = tempNode_2.val
                 return 
 ```
-下面的程式片段為delete函數的主函數，為分別判斷欲刪除的節點屬於何種狀況並分別執行對應狀況下的delete分函數，當欲刪除的節點為根節點時，情況略有不同，但其原理仍然為三種狀況。值得注意的是，當找到對應的狀況並執行完相應的delete分函數時，應使用continue跳出此次循環，否則產生錯誤
+下面的程式片段為delete函數的主函數，為分別判斷欲刪除的節點屬於何種狀況並分別執行對應狀況下的delete分函數，當欲刪除的節點為根節點時，情況略有不同，但其原理仍然為三種狀況。值得注意的是，當找到對應的狀況並執行完相應的delete分函數時，應使用continue跳出此次循環，否則會產生錯誤
 ```Python
     def delete(self, root, target):
         #因為search只能尋找到具有指定值的第一個節點，故當無法再尋找到具有指定值的節點時，刪除完畢
@@ -117,3 +117,26 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
                     continue
         return root    
   ```
+ 
+ ### Search
+ Search(查詢)：返回具有欲查找的值的第一個節點，即從根節點開始不斷與目標值比較大小，目標值較小則向左走，目標值較大則向右走
+ ```Python
+     def search(self, root, target):       
+        if target == root.val:                #如果目標值與root的值一致，則回傳root節點  
+            return root
+        else:
+            if target < root.val:             #如果目標值比root的值小
+                if root.left is not None:     #如果root有左子節點，則繼續向左走
+                    root = root.left
+                else:                         #如果root沒有左子節點，則說明無法找到具有該目標值的節點，故回傳None
+                    return None
+            
+            if target > root.val:             #如果目標值比root的值大
+                if root.right is not None:    #如果root有右子節點，則繼續向右走
+                    root = root.right
+                else:
+                    return None               #否則無法找到具有該目標的節點，並回傳None      
+        return self.search(root, target)      #遞迴地呼叫search使與目標值比較的root不斷向右或向左走，直至找到具有目標值的節點或回傳None
+```
+
+ 
