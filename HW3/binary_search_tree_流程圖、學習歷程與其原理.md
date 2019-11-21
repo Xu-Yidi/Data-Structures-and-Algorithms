@@ -9,4 +9,44 @@
 3.**Postorder traversal(後序)**：先訪尋左子樹，再訪尋右子樹，最後訪尋根節點(左右中)<br>
 4.二元搜尋樹若使用中序訪尋，得到的值將為升序排列<br>
 - **Time Complexities**<br>
-二元搜尋樹的時間複雜度與其樹的高度密切相關，在最差的情況下，即二元搜尋樹退化成鏈結串列(linked list)，其查找、新增和刪除的時間複雜度為O(n)，而在較佳的情況下，即二元搜尋樹較為平衡時，其查找、新增和刪除的時間複雜度為O(logn)，故保持二元搜尋樹的平衡非常重要
+二元搜尋樹的時間複雜度與其樹的高度密切相關，在最差的情況下，即二元搜尋樹退化成鏈結串列(linked list)時，其查找、新增和刪除的時間複雜度為O(n)，而在較佳的情況下，即二元搜尋樹較為平衡時，其查找、新增和刪除的時間複雜度為O(logn)，故保持二元搜尋樹的平衡非常重要
+### Flowchart
+
+### 學習歷程
+此次作業難度較之前有大幅增加，雖然已經花費了相當的精力與時間，但仍然感覺自己撰寫的程式有許多疏漏之處，尤其是delete部分，倘若不反復嘗試不同的測值極易忽略某些特殊情況，但無論如何，在撰寫程式與不斷試錯的過程也是能力提升的過程。因為程式的詳細說明已呈現在binary_search_tree_新增、刪除、查詢、修改功能說明的文檔中，此處想對作業中遇到的錯誤進行回顧與總結<br>
+
+1.若需要回傳內容，遞迴函數前也要加return，在寫程式的過程中一度忘記加return，發現print()可以得到正確內容卻無法回傳內容，除錯很久才發現是沒有在遞迴前加return<br>
+```Python
+    def search(self, root, target):       
+        if target == root.val:                #如果目標值與root的值一致，則回傳root節點  
+            return root
+        else:
+            if target < root.val:             #如果目標值比root的值小
+                if root.left is not None:     #如果root有左子節點，則繼續向左走
+                    root = root.left
+                else:                         #如果root沒有左子節點，則說明無法找到具有該目標值的節點，故回傳None
+                    return None
+            
+            if target > root.val:             #如果目標值比root的值大
+                if root.right is not None:    #如果root有右子節點，則繼續向右走
+                    root = root.right
+                else:
+                    return None               #否則無法找到具有該目標的節點，並回傳None      
+        return self.search(root, target)      #遞迴地呼叫search使與目標值比較的root不斷向右或向左走，直至找到具有目標值的節點或回傳Non
+```
+2.當list中元素的排列組合非常多，列出全部的排列組合在進行隨機抽取非常浪費時間，可採取直接對該list進行亂序的方法。原本想用itertools.permutations()得到所有的排列組合，但實際執行時元素數目較多時筆電極易陷入故障，而採取random.shuffle()直接進行亂序以代替抽樣是非常巧妙的解決辦法
+
+```Python
+            for i in range(25):                   #隨機抽取25組排列組合     
+                random.shuffle(insert_element)    #對根節點之外的節點之插入順訊進行亂序
+                #print(insert_element)                
+                insert_order.append(insert_element)            
+                root = TreeNode(new_tree_element[0]) 
+                for item in insert_element:
+                    self.insert(root, item)
+                tree_height_try.append(self.getHeight(root))
+```
+3.熟練使用continue,break,pass非常重要
+
+
+
