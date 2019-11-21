@@ -73,5 +73,7 @@
 import sys
 sys.getrecursionlimit()
 ```
-
+### Reference
+Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. Data Structures and Algorithms in Python.(CH11 Search Trees/ Section11.1 Binary Search Tree/ Page460-465)
+Binary Search Tree: Intro(簡介) http://alrightchiu.github.io/SecondRound/binary-search-tree-introjian-jie.html
 
