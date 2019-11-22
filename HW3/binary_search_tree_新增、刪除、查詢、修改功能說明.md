@@ -1,7 +1,7 @@
 ## Binary Search Tree
 新增、刪除、查詢、修改的概念以及流程圖已呈現在binary_search_tree_流程圖、學習歷程與原理的檔案中，故在此不再重複敘述，本檔案主要對四個功能的程式進行詳細說明
 ### Insert
-Insert(新增)：在原本的binary search tree中插入新的節點，小於等於則向左走，大於則向右走，直至新節點確定正確位置<br>
+Insert(新增)：在原本的binary search tree中插入新的節點，小於等於則向左走，大於則向右走，直至確定新節點的正確位置<br>
 ```Python
 class Solution(object):    
     def __init__(self):
