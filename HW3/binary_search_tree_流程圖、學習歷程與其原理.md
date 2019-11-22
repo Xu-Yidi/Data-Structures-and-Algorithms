@@ -27,6 +27,8 @@
 
 ### Flowchart
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/binary_search_tree.png">
+因為此次作業設定的函數較多，以下為Solution物件中函數關係的簡單示意圖
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/function%20relationship.png">
 
 ### 學習歷程
 此次作業難度較之前有大幅增加，雖然已經花費了相當的精力與時間，但仍然感覺自己撰寫的程式有許多疏漏之處，尤其是delete部分，倘若不反復嘗試不同的測值極易忽略某些特殊情況，但無論如何，在撰寫程式與不斷試錯的過程也是能力提升的過程。因為程式的詳細說明已呈現在binary_search_tree_新增、刪除、查詢、修改功能說明的文檔中，此處想對作業中遇到的錯誤進行回顧與總結<br>
