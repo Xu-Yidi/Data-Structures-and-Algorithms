@@ -1,5 +1,5 @@
 ## Binary Search Tree
-新增、刪除、查詢、修改的概念以及流程圖已呈現在binary_search_tree_流程圖、學習歷程與原理的檔案中，故在此不再重複敘述，本檔案主要對四個功能的程式進行詳細說明
+新增、刪除、查詢、修改的概念以及流程圖已呈現在binary_search_tree_流程圖、學習歷程與原理的檔案中，故在此不再重複敘述，本檔案主要針對四個功能的程式進行詳細說明
 ### Insert
 Insert(新增)：在原本的binary search tree中插入新的節點，小於等於則向左走，大於則向右走，直至確定新節點的正確位置<br>
 ```Python
@@ -102,7 +102,9 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
         #因為search只能尋找到具有指定值的第一個節點，故當無法再尋找到具有指定值的節點時，刪除完畢
         while self.search(root, target) is not None:      #檢查欲刪除的節點是否為根節點     
             if self.father(root, self.search(root, target)) is None:
-                self.delete_5(root, target)
+                root = self.delete_5(root, target)
+                if root is None:
+                    return
             else:
                 if self.search(root, target).left is None and self.search(root, target).right is None:
                     self.delete_1(root, target)
@@ -179,6 +181,8 @@ Modify(修改)：將所有具有某個目標值的節點的值修改成另一給
                 self.insert(root, item)
             return root    
 ```
+### 輔助函數
+
 ### Reference
 Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python*.(CH11 Search Trees/ Section11.1 Binary Search Tree/ Page460-465)<br>
 Rance D. Necaise.*Data Structures and Algorithms using Python*.(CH14 Search Trees/ Section14.1 Binary Search Tree/ Page412-425)<br>
