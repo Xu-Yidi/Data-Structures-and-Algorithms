@@ -1,5 +1,5 @@
 ## Binary Search Tree
-事實上，在對二元搜尋樹(binary search tree)進行說明前，更為嚴謹的做法是先介紹二元樹(binary tree)的概念，但因篇幅所限，故將此部分內容整理於week8的學習筆記中，若有需要可至此處詳閱[Binary tree的概念與性質](https://github.com/Xu-Yidi/fluteanzi/blob/master/README.md#week8)<br>
+事實上，在對二元搜尋樹(binary search tree)進行說明前，更為嚴謹的做法是先介紹二元樹(binary tree)的概念，但因篇幅所限，故將此部分內容整理於week8的學習筆記中，若有需要可至此處詳閱[Binary tree的概念、性質與訪尋](https://github.com/Xu-Yidi/fluteanzi/blob/master/README.md#week8)<br>
 ### Binary Search Tree
 - **What's Binary Search Tree**<br>
 二元搜尋樹(Binary search tree, BST)是二元樹的一種，且其每個節點(node)的值(key)滿足下列特性：值比該節點的值小的節點均在該節點的左子樹，而值比該節點的值大的節點均在該節點的右子樹<br>
@@ -10,7 +10,9 @@
 4.二元搜尋樹若使用中序訪尋，得到的值將為升序排列<br>
 - **Time Complexities**<br>
 二元搜尋樹的時間複雜度與其樹的高度密切相關，在最差的情況下，即二元搜尋樹退化成鏈結串列(linked list)時，其查找、新增和刪除的時間複雜度為O(n)，而在較佳的情況下，即二元搜尋樹較為平衡時，其查找、新增和刪除的時間複雜度為O(logn)，故保持二元搜尋樹的平衡非常重要
+
 ### Flowchart
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/binary_search_tree.jpg">
 
 ### 學習歷程
 此次作業難度較之前有大幅增加，雖然已經花費了相當的精力與時間，但仍然感覺自己撰寫的程式有許多疏漏之處，尤其是delete部分，倘若不反復嘗試不同的測值極易忽略某些特殊情況，但無論如何，在撰寫程式與不斷試錯的過程也是能力提升的過程。因為程式的詳細說明已呈現在binary_search_tree_新增、刪除、查詢、修改功能說明的文檔中，此處想對作業中遇到的錯誤進行回顧與總結<br>
