@@ -164,7 +164,7 @@ Modify(修改)：將所有具有某個目標值的節點的值修改成另一給
             insert_order = []                 
             import random           
             for i in range(25):                   #隨機抽取25組排列組合     
-                random.shuffle(insert_element)    #對根節點之外的節點之插入順訊進行亂序
+                random.shuffle(insert_element)    #對根節點之外的節點之插入順序進行亂序
                 #print(insert_element)                
                 insert_order.append(insert_element)            
                 root = TreeNode(new_tree_element[0]) 
