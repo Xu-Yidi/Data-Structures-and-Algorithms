@@ -216,4 +216,5 @@ Modify(修改)：將所有具有某個目標值的節點的值修改成另一給
 1. Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python*.(CH11 Search Trees/ Section11.1 Binary Search Tree/ Page460-465)<br>
 2. D. Necaise.*Data Structures and Algorithms using Python*.(CH14 Search Trees/ Section14.1 Binary Search Tree/ Page412-425)<br>
 3. Binary Search Tree Height https://www.youtube.com/watch?v=_pnqMz5nrRs&vl=en<br>
+
 注：概念參考課本，程式為自行撰寫
