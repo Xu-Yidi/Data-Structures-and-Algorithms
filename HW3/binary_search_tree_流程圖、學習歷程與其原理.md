@@ -26,7 +26,7 @@
 二元搜尋樹的時間複雜度與其樹的高度密切相關，在最差的情況下，即二元搜尋樹退化成鏈結串列(linked list)時，其查找、新增和刪除的時間複雜度為O(n)，而在較佳的情況下，即二元搜尋樹較為平衡時，其查找、新增和刪除的時間複雜度為O(logn)，故保持二元搜尋樹的平衡非常重要
 
 ### Flowchart
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/binary_search_tree.jpg">
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week9/binary_search_tree.png">
 
 ### 學習歷程
 此次作業難度較之前有大幅增加，雖然已經花費了相當的精力與時間，但仍然感覺自己撰寫的程式有許多疏漏之處，尤其是delete部分，倘若不反復嘗試不同的測值極易忽略某些特殊情況，但無論如何，在撰寫程式與不斷試錯的過程也是能力提升的過程。因為程式的詳細說明已呈現在binary_search_tree_新增、刪除、查詢、修改功能說明的文檔中，此處想對作業中遇到的錯誤進行回顧與總結<br>
