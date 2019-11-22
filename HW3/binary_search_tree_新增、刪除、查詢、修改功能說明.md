@@ -210,7 +210,7 @@ Modify(修改)：將所有具有某個目標值的節點的值修改成另一給
             left_height = self.getHeight(root.left)
             right_height = self.getHeight(root.right)
             return max(left_height, right_height) + 1   #某一節點的高度為其左子樹高度與右子樹高度中較大者再加一
-'''
+```
 
 ### Reference
 Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python*.(CH11 Search Trees/ Section11.1 Binary Search Tree/ Page460-465)<br>
