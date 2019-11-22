@@ -62,7 +62,7 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
             self.father(root, self.search(root, target)).right = tempNode#則將其父節點的右子節點指定為該欲刪除節點的右子節點
             return 
 ```
-3.欲刪除的節點同時具有左子節點與右子節點，則需要先找到該欲刪除節點successor(即為比其大的所有節點中最小的)，並將此successor的值替換欲刪除節點的值，再將successor刪除，值得注意的是，successor只可能為葉節點或只有右子節點，故可用上述兩種方法進行刪除
+3.欲刪除的節點同時具有左子節點與右子節點，則需要先找到該欲刪除節點的successor(即為比其大的所有節點中最小的)，並將此successor的值替換欲刪除節點的值，再將successor刪除，值得注意的是，successor只可能為葉節點或只有右子節點，故可用上述兩種方法進行刪除
 ```Python
     #欲刪除的節點同時具有左子節點與右子節點
     def delete_4(self, root, target):
@@ -145,43 +145,64 @@ Delete(刪除)：在原本的binary search tree中刪除具特定值的所有節
 ### Modify
 Modify(修改)：將所有具有某個目標值的節點的值修改成另一給定的值，且修改完成後需保持binary reseach tree的形態，並使樹高小於等於原來的樹高。嚴格意義上，使樹高均衡的方法應該是採用AVLtree或是red black tree，但因為時間不充裕之故，作業中將使用反復抽取中位數的方法來盡量使所建的樹保持均衡，其主要做法為先訪尋所有的節點，對目標值進行修改，將所有的值進行排序後再不斷抽取中位數以決定insert的順序。舉例而言，修改並排序後的所有值為[17,24,26,63,65,89,93]，則root應為中位數63，第二個插入的節點為[17,24,26]的中位數24，第三個插入的節點為[65,89,93]的中位數89，以此類推，得到所有節點insert的順序為[63,24,89,17,26,65,93]。如果通過反復抽取中位數仍無法使樹高小於等於原本的樹高，則將採用隨機抽取的方法，隨機抽取25組具有[63,24,89,17,26,65,93]的值的排列組合（根節點固定），如[63,17,26,65,24,93,89]，即隨機決定除了根節點外的insert的順序，並返回25組中樹高最小的情況
 ```Python
-    def modify(self, root, target, new_val):
-        tree_height = self.getHeight(root)    #得到modify前樹的高度      
-        #print("tree_height:" + str(tree_height))        
+  def modify(self, root, target, new_val):            
+        tree_height = self.getHeight(root)        #得到modify前樹的高度             
         #排序後且進行反復抽取中位數後得到的節點插入順序
-        new_tree_element = self.order_element(self.change_element(root, target, new_val))
-        #print(new_tree_element)
-        root = TreeNode(new_tree_element[0])       #將第一個插入的值視為root        
-        for i in range(1, len(new_tree_element)):  #依序插入其餘節點
+        new_tree_element = self.order_element(self.change_element(root, target, new_val)) 
+        root = TreeNode(new_tree_element[0])      #將第一個插入的值視為root              
+        for i in range(1, len(new_tree_element)): #依序插入其餘節點
             self.insert(root, new_tree_element[i])
-        new_tree_height = self.getHeight(root)     #得到modify後樹的高度
-        #print("new_tree_height:" + str(new_tree_height))        
-        if new_tree_height <= tree_height:         #如果modify後樹的高度比modify前樹的高度小，返回新建的樹即可
+        new_tree_height = self.getHeight(root)    #得到modify後樹的高度    
+        if new_tree_height <= tree_height:        #如果modify後樹的高度比modify前樹的高度小，返回新建的樹即可
             #print("yes")
             return root
-        else:                                      #否則將採取隨機抽取的方法
-            #new_tree_element = self.order_element(self.change_element(root, target, new_val))      
-            insert_element = new_tree_element[1:]  #根節點固定，故insert順序只考慮根節點之外的值                
+        else:                                     #否則將採取隨機抽取的方法
+            insert_element = new_tree_element[1:] #根節點固定，故insert順序只考慮根節點之外的值                  
             tree_height_try = []            
-            insert_order = []                 
-            import random           
-            for i in range(25):                   #隨機抽取25組排列組合     
-                random.shuffle(insert_element)    #對根節點之外的節點之插入順序進行亂序
-                #print(insert_element)                
-                insert_order.append(insert_element)            
+            insert_order_try = []                    
+            
+            import random                        
+            for i in range(25):                    #隨機抽取25組排列組合  
+                insert_order = random.sample(insert_element, len(insert_element))           
+                insert_order_try.append(insert_order)                        
                 root = TreeNode(new_tree_element[0]) 
-                for item in insert_element:
+                for item in insert_order:
                     self.insert(root, item)
                 tree_height_try.append(self.getHeight(root))
-            #print(tree_height_try)
-            min_index = tree_height_try.index(min(tree_height_try)) #找出25組排列組合中樹高最小的狀況
+            min_index = tree_height_try.index(min(tree_height_try))  #找出25組排列組合中樹高最小的狀況
             root = TreeNode(new_tree_element[0])
-            #print(insert_order[min_index])
-            for item in insert_order[min_index]:
+            for item in insert_order_try[min_index]:
                 self.insert(root, item)
             return root    
 ```
 ### 輔助函數
+上述新增、刪除、查詢以及修改的功能在實現的過程中也呼叫了許多輔助函數，例如尋找父節點與得到二元搜尋樹的高度
+```Python
+    def father(self, root, node):
+        if node == root:               #如果輸入的節點為根節點，則其沒有父節點，返回None
+            return None       
+        
+        if node.val <= root.val:       #如果該節點的值較根節點小
+            if root.left is not None:  #且根節點有左子節點
+                if root.left == node:  #如果根節點的左子節點即為該節點，則根節點為其父節點
+                    return root
+                else:
+                    root = root.left   #否則，繼續向左走
+            else:
+                return
+        
+        if node.val > root.val:        #如果該節點的值較根節點大
+            if root.right is not None: #且根節點有右子節點
+                if root.right == node: #如果根節點的右子節點即為該節點，則根節點為其父節點
+                    return root
+                else:
+                    root = root.right  #否則，繼續向右走
+            else:
+                return
+                    
+        return self.father(root, node) #遞迴的呼叫father使與其比較的節點不斷向左走或向右走，直至找到其父節點        
+```
+
 
 ### Reference
 Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python*.(CH11 Search Trees/ Section11.1 Binary Search Tree/ Page460-465)<br>
