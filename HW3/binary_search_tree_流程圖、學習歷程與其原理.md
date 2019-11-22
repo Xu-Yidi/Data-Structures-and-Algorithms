@@ -67,7 +67,9 @@
         #因為search只能尋找到具有指定值的第一個節點，故當無法再尋找到具有指定值的節點時，刪除完畢
         while self.search(root, target) is not None:      #檢查欲刪除的節點是否為根節點     
             if self.father(root, self.search(root, target)) is None:
-                self.delete_5(root, target)
+                root = self.delete_5(root, target)
+                if root is None:
+                    return
             else:
                 if self.search(root, target).left is None and self.search(root, target).right is None:
                     self.delete_1(root, target)
