@@ -176,7 +176,7 @@ Modify(修改)：將所有具有某個目標值的節點的值修改成另一給
             return root    
 ```
 ### 輔助函數
-上述新增、刪除、查詢以及修改的功能在實現的過程中也呼叫了許多輔助函數，例如尋找父節點與得到二元搜尋樹的高度
+上述新增、刪除、查詢以及修改的功能在實現的過程中也呼叫了許多輔助函數，其中比較重要的包含尋找父節點與得到二元搜尋樹的高度
 ```Python
     def father(self, root, node):
         if node == root:               #如果輸入的節點為根節點，則其沒有父節點，返回None
@@ -202,7 +202,15 @@ Modify(修改)：將所有具有某個目標值的節點的值修改成另一給
                     
         return self.father(root, node) #遞迴的呼叫father使與其比較的節點不斷向左走或向右走，直至找到其父節點        
 ```
-
+```Python
+    def getHeight(self, root):                          #得到二元搜尋樹的高度     
+        if root is None:                                #若root為None,說明上一層遞迴已到葉節點
+            return -1                                   #葉節點的高度為0，故需返回-1而非0，因為-1+1=0
+        else:
+            left_height = self.getHeight(root.left)
+            right_height = self.getHeight(root.right)
+            return max(left_height, right_height) + 1   #某一節點的高度為其左子樹高度與右子樹高度中較大者再加一
+'''
 
 ### Reference
 Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python*.(CH11 Search Trees/ Section11.1 Binary Search Tree/ Page460-465)<br>
