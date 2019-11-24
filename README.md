@@ -1,5 +1,6 @@
 # **Data Structure and Algorithm in Python**
 此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
+[Git語言入門](https://zhuanlan.zhihu.com/p/30044692)
 ## Content
  [Week2(singly linked list)](#week2)<br>
  [Week3(stack & queue)](#week3)<br>
