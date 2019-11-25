@@ -231,6 +231,7 @@ detailed process<br>
 [back to content](#content)<br>
 
 ## Week7
+[code-merge sort自己撰寫的程式與參考程式](/week7/merge_sort_04151702.py)
 ### Merge Sort
 As quick sort, merge sort use recursion in an algorithm design called **divide-and-conquer**, so what's divide-and-conquer technique?<br>
 - **Divide-and-conque**<br>
