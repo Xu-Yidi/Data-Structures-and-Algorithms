@@ -370,3 +370,8 @@ If T is proper, then T has the following properties:<br>
 [back to content](#content)<br>
 
 ## Week10
+### Read-Black Tree
+A red-black tree is a binary search tree with nodes colored rea and black in a way that satisfies the following properties:<br>
+1.**Root Property:** The root is black<br>
+2.**Red Property:**
+
