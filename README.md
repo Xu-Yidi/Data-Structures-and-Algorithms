@@ -11,6 +11,7 @@
  [Week8(binary tree)](#week8)<br>
  [Week9(binary search tree)](#week9)<br>
  [Week10(red-black trees)](#week10)<br>
+ [Week10(hash tables)](#week11)<br>
  
 ## Week2
 ### Singly Linked List
@@ -33,10 +34,10 @@
 ### Stack
 [code-stack的array與linked list實現](/week3/handout-stack.py)<br>
 - **The Stack ADT**<br>
-1.inserted and removed sccording to the ***last-in, first-out(LIFO) principle***<br>
+1.inserted and removed according to the ***last-in, first-out(LIFO) principle***<br>
 2.***top*** of the stack/ ***base*** of the stack<br>
 3.basic operations:<br>
->>(1)**`isEmpty()`**: returna boolean value indicating if the stack is empty<br>
+>>(1)**`isEmpty()`**: return a boolean value indicating if the stack is empty<br>
 >>(2)**`getSize()`**: returns the number of items in the stack<br>
 >>(3)**`pop()`**: remove and returns the top item of the stack, if the stack is not empty, and the next item on the stack becomes the new top item<br>
 >>(4)**`push(item)`**: adds the given item to the top of the stack<br>
@@ -372,6 +373,13 @@ If T is proper, then T has the following properties:<br>
 ## Week10
 ### Read-Black Tree
 A red-black tree is a binary search tree with nodes colored rea and black in a way that satisfies the following properties:<br>
-1.**Root Property:** The root is black<br>
-2.**Red Property:**
+1.**Root Property**: The root is black<br>
+2.**Red Property**: The children of a red node(if any) are black<br>
+3.**Depth Property**: All nodes with zero or one children have the same black depth, defined as the number of black ancestors<br>
+
+[back to content](#content)<br>
+
+## Week11
+### Hash Tables
+
 
