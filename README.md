@@ -411,7 +411,8 @@ After finding the key, we cannot simply remove it by setting the corresponding t
 The reason for the unsuccessful search is due to element 6 containing a null reference from that key having been previously removed. Instead of simply setting the corresponding table entry to None, we can use a special flag to indicate the entry is now empty but it had been previously occupied. Thus, when probing to add a new key or in searching for an existing key, we know the search must continue past the slot since the target may be stored beyond this point.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash7.jpg">
 
-
+### Clustering
+As more keys are added to the hash table, more collisions are likely to occur. Since each collision requires a linear probe to find the next available slot, the keys begin to form **clusters**. As the clusters grow larger, so too does the probability that the next key added to the table will result in a collision.
 
 
 
