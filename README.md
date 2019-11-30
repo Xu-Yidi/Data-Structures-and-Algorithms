@@ -405,8 +405,16 @@ Searching a hash table for a specific key is very similar to the add operation. 
 
 - **Deletions**<br>
 
-After finding the key, we cannot simply remove it by setting the corresponding table entry to None.
->Example: Suppose we remove key 226 from our hash table and set the entry at the element 6 to None. 
+After finding the key, we cannot simply remove it by setting the corresponding table entry to None. Suppose we remove key 226 from our hash table and set the entry at the element 6 to None. And when we perform a search for key 903, the search function will return False, indicating the key is not in the table, even though it's located at element 8.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash6.jpg">
+
+The reason for the unsuccessful search is due to element 6 containing a null reference from that key having been previously removed. Instead of simply setting the corresponding table entry to None, we can use a special flag to indicate the entry is now empty but it had been previously occupied. Thus, when probing to add a new key or in searching for an existing key, we know the search must continue past the slot since the target may be stored beyond this point.<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash7.jpg">
+
+
+
+
+
 
 
 [back to content](#content)<br>
