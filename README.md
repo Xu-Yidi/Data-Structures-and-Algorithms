@@ -412,7 +412,13 @@ The reason for the unsuccessful search is due to element 6 containing a null ref
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash7.jpg">
 
 ### Clustering
-As more keys are added to the hash table, more collisions are likely to occur. Since each collision requires a linear probe to find the next available slot, the keys begin to form **clusters**. As the clusters grow larger, so too does the probability that the next key added to the table will result in a collision.
+As more keys are added to the hash table, more collisions are likely to occur. Since each collision requires a linear probe to find the next available slot, the keys begin to form **clusters**. As the clusters grow larger, so too does the probability that the next key added to the table will result in a collision.<br>
+>Example: Consider the hash table in figure 11.8, what's the probability the next key will occupy the empty slot at position 4? If the next key hashes to this position, it can be stored directly into the slot without the need to probe. This also results in a probability of 1 out of 13. But the probability the next key will occupy slot 9 is 5 out of 13. If the next key hashes to any pf the slots between 5 and 9, it will be stored in slot 9 due to the linear probe required to find the first position beyond the cluster of keys. Thus, the key is five times more likel to occupy slot 9 than slot 4.<br>
+
+This type of clustering is knowm as **primary clustering** since it occurs near the original hash position, and several different probing techniques that can be employed to reduce primary clustering.<br>
+
+
+
 
 
 
