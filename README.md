@@ -11,7 +11,7 @@
  [Week8(binary tree)](#week8)<br>
  [Week9(binary search tree)](#week9)<br>
  [Week10(red-black trees)](#week10)<br>
- [Week10(hash tables)](#week11)<br>
+ [Week11(hash tables)](#week11)<br>
  
 ## Week2
 ### Singly Linked List
