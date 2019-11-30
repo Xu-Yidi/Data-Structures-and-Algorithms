@@ -417,6 +417,7 @@ As more keys are added to the hash table, more collisions are likely to occur. S
 
 This type of clustering is knowm as **primary clustering** since it occurs near the original hash position, and several different probing techniques that can be employed to reduce primary clustering.<br>
 
+- **Modified Linear Probe**<br>
 
 
 
