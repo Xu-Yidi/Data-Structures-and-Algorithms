@@ -17,12 +17,19 @@
 >The advantage of separating the hash function into two such components is that the hash code of that computation is independent of a specific hash table size. This allows the development of a general hash code for each object that can be used for a hash table of any size; only the compression function depends upon the table size.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_homework2.gif">
 
-### Hash Codes
+### Hash Codes(哈希碼)
 The first action that a hash function performs is to take an arbitrary key *k* in our map and compute an integer that is called the **hash code** for *k*; this integer need not to be in the range [0, *N*-1], and may even be negative<br>
+- **Treating the Bit Represention as an integer**<br>
+對於數值類型的對象，可簡單的將數值X各位所表示的值作為其hash code，如314的hash code即為314；如果數值的位數超過哈希碼的長度，例如將64位浮點數轉換為32位整數，可對前後32位進行求和或異或(exclusive-or)處理
+- **Polynomial Hash Codes**<br>
+- **Cyclic-Shift Hash Codes**<br>
 
-- **Treating the Bit Represention as an integer**
-
-
+### Compression Functions(壓縮函數)
+Once we have determined an integer hash code for a key object *k*, there is still the issue of mapping that intger into the range
+[0, *N*-1]. This computation, known as a **compression function**, is the second action performed as part of an overall hash function.<br>
+- **The Division Method**<br>
+A simple compressision function is the **division method**, which maps an integer *i* to `*i* mode *N*`, where *N*, the size of the bucket, is a fixed positive integer.
+>
 
 
 
