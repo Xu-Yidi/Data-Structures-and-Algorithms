@@ -43,24 +43,19 @@ In separate chaining, the hash table is constructed as an array of linked lists.
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_homework3.jpg">
 
 ### Open Addressing(開放地址法)
+Instead of using a list to chain items whose key collide, in open-addressing we attempt to find an alternative location in the hash table for the keys that collide.
+>開放地址法的基本思想是，當鍵值key通過哈希函數轉換後得到的位址*p* = *h(key)* 出現衝突時，以*p*為基礎，產生另一個哈希位址*p1*，如果*p1*仍然衝突，再以*p1*為基礎產生另一個哈希位址*p2*，直至找到不衝突的哈希位址*pi*。其函數形式為：*h<sub>i</sub>(key)* = (*h(key)* + d<sub>i</sub>) mod *N*，其中，*N*為哈希表的表長，d<sub>i</sub>為增量序列，增量序列的取值方式不同，相應的再散列方式也不同<br>
 
+[值得注意的是，採用開放地址法時，插入，搜尋，刪除之操作與鏈地址法不同，詳見week11學習筆記之整理(以linear probing為例)](https://github.com/Xu-Yidi/fluteanzi#week11)
+- **Linear Probing**(線性探測再散列)<br>
+d<sub>i</sub> = 1, 2, 3,...,*N-1*，即衝突發生時，順序查看哈希表中的下一個位置，直至找出空位置或查遍整個表為止
+>eg. key sequence{59,31,3,14,27,41,10,95,67}, the size of hash table is 11, and the hash function is *h(key) = k mode 11*
+>*h(59)* = 59 % 11 = 4<br>
+>*h(31)* = 31 % 11 = 9<br>
+>*h(3)* = 3 % 11 = 3<br>
+>*h(14)* = 14 % 11 = 3 / *h<sub>1</sub>(14)* = (3+1) % 4 = 4 / *h<sub>2</sub>(14)* = (3+2) % 14 = 5<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Linear probing容易產生**primary clustering**的現象，即當哈希表中的某個區間已經擠滿了item，若此時某個key又
 
 
 
