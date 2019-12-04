@@ -46,7 +46,7 @@ In separate chaining, the hash table is constructed as an array of linked lists.
 Instead of using a list to chain items whose key collide, in open-addressing we attempt to find an alternative location in the hash table for the keys that collide.
 >開放地址法的基本思想是，當鍵值key通過哈希函數轉換後得到的位址*p* = *h(key)* 出現衝突時，以*p*為基礎，產生另一個哈希位址*p1*，如果*p1*仍然衝突，再以*p1*為基礎產生另一個哈希位址*p2*，直至找到不衝突的哈希位址*pi*。其函數形式為：*h<sub>i</sub>(key)* = (*h(key)* + d<sub>i</sub>) mod *N*，其中，*N*為哈希表的表長，d<sub>i</sub>為增量序列，增量序列的取值方式不同，相應的再散列方式也不同<br>
 
-[值得注意的是，採用開放地址法時，插入，搜尋，刪除之操作與鏈地址法不同，詳見week11學習筆記之整理(以linear probing為例)](https://github.com/Xu-Yidi/fluteanzi#week11)
+[值得注意的是，採用開放地址法時，插入，搜尋，刪除之操作與鏈地址法不同，詳見week11學習筆記之整理(以linear probing為例)](https://github.com/Xu-Yidi/fluteanzi#week11#Basic Procedures)
 - **Linear Probing**(線性探測再散列)<br>
 d<sub>i</sub> = 1, 2, 3,...,*N-1*，即衝突發生時，順序查看哈希表中的下一個位置，直至找出空位置或查遍整個表為止
 >eg. key sequence{59,31,3,14,27,41,10,95,67}, the size of hash table is 11, and the hash function is *h(key) = k mode 11*
@@ -68,9 +68,16 @@ Quadratic probing可以避免primary clustering的現象，但會產生**seconda
 In doublle hashing, when a collision occurs, the key is hashed by a second function *h'* and the result is used as the constant factor in the linear probe. The double hashing techinique is most commomly used to resolve collisions since it reduces both primary and secondary clustering.<br>
 >即同時使用多個哈希函數，其函數形式為*h<sub>i</sub>(key)* = (*h(key)* + *i* * *h'* ) mod *N*，其中*h'* 是另一個哈希函數
 
+### Efficiency Analysis
+The efficiency of the hash operations depends on the hash function, the size of the table, and the type of probe used to resolve collisions.
+
+
+
 
 
 
 ### Reference
 1.哈希表（散列表）原理理解 https://blog.csdn.net/duan19920101/article/details/51579136<br>
 2.Hash 算法原理詳解 https://blog.csdn.net/tanggao1314/article/details/51457585<br>
+3.Hash Tabel(Open Addressing) https://alrightchiu.github.io/SecondRound/hash-tableopen-addressing.html<br>
+
