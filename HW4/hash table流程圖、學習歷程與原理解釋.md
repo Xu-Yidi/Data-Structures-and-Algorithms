@@ -55,8 +55,18 @@ d<sub>i</sub> = 1, 2, 3,...,*N-1*，即衝突發生時，順序查看哈希表�
 >*h(3)* = 3 % 11 = 3<br>
 >*h(14)* = 14 % 11 = 3 / *h<sub>1</sub>(14)* = (3+1) % 4 = 4 / *h<sub>2</sub>(14)* = (3+2) % 14 = 5<br>
 
-Linear probing容易產生**primary clustering**的現象，即當哈希表中的某個區間已經擠滿了item，若此時某個key又
+Linear probing容易產生**primary clustering**(一次聚集)的現象，即item(key, value)不均勻地佔據hash table，使之後分配到某區塊的item的插入，搜尋，刪除等操作的時間複雜度將受到“前面擋住的item數量”的影響，即某個item需要可能多次查探才能找到對應位置<br>
 
+- **Quadratic probing**(二次探測再散列)<br>
+d<sub>i</sub> = 1<sup>2</sup>, -1<sup>2</sup>, 2<sup>2</sup>, -2<sup>2</sup>...,*k*<sup>2</sup>, *-k*<sup>2</sup>(*k*<=*N*/2)，即衝突發生時，在哈希表的前後位置進行跳躍式探測
+>eg.(cont.)<br>
+>*h(14)* = 14 % 11 = 3 / *h<sub>1</sub>(14)* = (3+1) % 4 = 4 / *h<sub>2</sub>(14)* = (3+ (-1<sup>2<\sup>)) % 14 = 5<br>
+
+Quadratic probing可以避免primary clustering的現象，但會產生**secondary clustering**(二次聚集)的現象，即item(key,value)的hash table中的分配仍然並非均勻
+
+### Double Hashing(雙重哈希)
+In doublle hashing, when a collision occurs, the key is hashed by a second function *h'* and the result is used as the constant factor in the linear probe. The double hashing techinique is most commomly used to resolve collisions since it reduces both primary and secondary clustering.<br>
+>即同時使用多個哈希函數，其函數形式為*h<sub>i</sub>(key)* = (*h(key)* + *i* * *h'* ) mod *N*，其中*h'* 是另一個哈希函數
 
 
 
