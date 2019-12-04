@@ -28,11 +28,11 @@ The first action that a hash function performs is to take an arbitrary key *k* i
 Once we have determined an integer hash code for a key object *k*, there is still the issue of mapping that intger into the range
 [0, *N*-1]. This computation, known as a **compression function**, is the second action performed as part of an overall hash function.<br>
 - **The Division Method**<br>
-A simple compressision function is the **division method**, which maps an integer *i* to *i* mode *N*, where *N*, the size of the bucket, is a fixed positive integer.
+A simple compressision function is the **division method**, which maps an integer *i* to ***i* mode *N***, where *N*, the size of the bucket, is a fixed positive integer.
 >If we take *N* to be a **prime** number, then this compression function helps spread out the distribution of hashed values. Indeed, if *N* is not prime, then there is greater risk that patterns in the distributiom of hash codes will be repeated in the dstribution of hash values, thereby causing collisions.<br>
 
 - **The MAD Method**<br>
-A more sophisticated compression function, which helps eliminate repeated patterns in a set of integer keys, is the **Multiple-Add-and-Divide(MAD)** method. This method maps an integer *i* to [(*ai* + *b*) mod *p*] mod *N*, where *N* is the size of the bucket array, *p* is a prime number larger than *N*, and *a* and *b* are integers chosen at random from the interval[0,*p*-1], with *a* > 0.
+A more sophisticated compression function, which helps eliminate repeated patterns in a set of integer keys, is the **Multiple-Add-and-Divide(MAD)** method. This method maps an integer *i* to **[(*ai* + *b*) mod *p*] mod *N***, where *N* is the size of the bucket array, *p* is a prime number larger than *N*, and *a* and *b* are integers chosen at random from the interval[0,*p*-1], with *a* > 0.
 
 
 
