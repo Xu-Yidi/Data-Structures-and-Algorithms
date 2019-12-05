@@ -166,10 +166,8 @@ class MyHashSet:
                         curNode = curNode.next    #否則，curNode與preNode均需後移一位
                         preNode = preNode.next
 ```
-
-
 ## Reference
 1.哈希表（散列表）原理理解 https://blog.csdn.net/duan19920101/article/details/51579136<br>
 2.Hash 算法原理詳解 https://blog.csdn.net/tanggao1314/article/details/51457585<br>
 3.Hash Tabel(Open Addressing) https://alrightchiu.github.io/SecondRound/hash-tableopen-addressing.html<br>
-
+4.Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. Data Structures and Algorithms in Python.(CH10.2 Hash Tables/P410-421)<br>
