@@ -4,7 +4,8 @@ Content<br>
 [Hash Functions](#Hash-Functions:-hash-codes-followed-by-compression-functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
-[Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
+[Flowchart](#Flowchart)<br>
+[Self Learning](#Self-Learning)<br>
 
 ## Hash Table
 1.The main idea of a **hash table** is to take bucket array, *A*, and a hash function, *h*, and use them to implement a map by storing each item(*key, value*) in the bucket A[*h(key)*].
@@ -14,7 +15,7 @@ Content<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_homework.jpg">
 
 ## Hash Functions: hash codes followed by compression functions
-哈希函數可視為由哈希碼與壓縮函數兩部分組成<br>
+哈希函數可視為由哈希碼與壓縮函數兩部分組成，簡單地說，哈希碼將任意類型的資料轉換為整數，而壓縮函數將這一整數壓縮至數組空間位址的區間<br>
 1.The goal of a **hash function**, *h*, is to map each key *k* to an integer in the range [0, *N*-1], where *N* is the capacity of the bucket array for a hash table. Equipped with such a hash function, *h*, the main idea of the hash table is to use the hash function value, *h(k)*, as an index into our bucket array, *A*, instead of the key *k*(which may not be appropriate for direct use as an index). That is, we store the item *(k,v)* in the bucket *A[h(k)]*.
 >(a)哈希函數將任意長度的輸入或欲映射(preimage)轉換成固定長度的輸出，即將鍵值的集合映射到某個地址集合上<br>
 >(b)此種轉換是一種壓縮映，即不同的輸入可能會散列為相同的輸出，從而造成衝突(collision)的現象<br>
@@ -80,13 +81,91 @@ The efficiency of the hash operations depends on the hash function, the size of 
 To evaluate the search performed in hashing, assume there are *n* items currently stored in the table of size *N*. If our hash function is good, then we expect the entries to be uniformly distributed in the *N* cells of the bucket array. Thus, to store *n* entries, the expected numberof keys in a bucket would be *n/N*, which is **O(1)**. In the worst case, a poor hash function could map every item to the same bucket, and this would result in linear-time performance **O(n)**.
 
 ***
-## Flowchart & Self Learning
+## Flowchart
+作業要求同時使用array與linked list的資料形態，故可得知是使用鏈地址法解決衝突，其插入，刪除，搜尋等操作皆是在linked list中完成，與開放地址法相比較為簡單，但使用較多額外空間<br>
+### Add
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_add.jpg">
 
+### Contains
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_contains.jpg">
 
+### Remove
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_remove.png">
 
+## Self Learning
+個人學習歷程的部分將對程式碼進行詳細解說
+```Python
 
+from Crypto.Hash import MD5            #MD5算法是常用的哈希算法，可視為哈希函數的哈希碼部分
 
+class ListNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+        
+class MyHashSet:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.data = [None] * capacity   #建立長度為capacity的list
+        
+    def add(self, key):
+        hash_value = self.hash_function(key)
+        index = self.add_index(key)
+        
+        if self.data[index] is None:    #如果下標為index的數組空間為空
+            self.data[index] = ListNode(hash_value)  #則將儲存hash_value值的節點直接存於該空間
+        else:                           #如果下標為index的數組空間已經有節點
+            curNode = self.data[index]  
+            while curNode.next is not None:  #不斷向後走訪節點，直至最後一個節點
+                curNode = curNode.next
+            curNode.next = ListNode(hash_value) #將儲存hash_value值的節點接在最後一個節點後
 
+    def hash_function(self, key):      #hash_function的作用為得到key通過MD5算法轉換後的hash_value
+        h = MD5.new()
+        h.update(key.encode("utf-8"))  #需指定編碼方式，否則會報錯    
+        hash_value = h.hexdigest()
+        return hash_value                  
+    
+    
+    def add_index(self, key):          #add_index的作用為得到key插入list中的index
+        hash_value = self.hash_function(key)
+        #MD5將key轉為16進制的整數，故將其轉為10進制後再對list的長度取餘數以得到index
+        index = int(hash_value, 16) % self.capacity  
+        return index
+
+    def contains(self, key):
+        hash_value = self.hash_function(key)
+        index = self.add_index(key)
+        
+        if self.data[index] is None:   #如果以index為下標的數組空間為空
+            return False               #則該key不存在，返回False
+        else:                          #如果以index為下標的數組空間不為空
+            curNode = self.data[index] 
+            while curNode is not None: #不斷向後訪尋節點
+                if curNode.val == hash_value: #如果節點的值等於hash_value
+                    return True               #則節點存在，返回True(找到第一個即返回)
+                else:
+                    curNode = curNode.next    #否則繼續向後走訪節點
+            return False               #如果走訪到最後一個節點仍未找到，則該key不存在，返回False
+            
+    def remove(self, key):
+        hash_value = self.hash_function(key)
+        index = self.add_index(key)
+                
+        while self.contains(key) is True:  #如果contains函數執行結果為True，即該key仍然存在
+            if self.data[index].val == hash_value: #如果linked list頭結點的值即為該key之hash_value
+                self.data[index] = self.data[index].next #原來頭結點的後一個節點即為新的頭結點
+            else:                          #如果linked list的頭結點與該key無關
+                preNode = self.data[index] #儲存比對節點的前一個節點
+                curNode = self.data[index].next #真正的比對從頭結點的後一個節點開始
+                while curNode is not None:   
+                    if curNode.val == hash_value: #如果該節點的值等於hash_value
+                        preNode.next = curNode.next #則將該節點前一個節點指向該節點的後一個節點
+                        curNode = curNode.next    #比對節點後移一位
+                    else:                                                
+                        curNode = curNode.next    #否則，curNode與preNode均需後移一位
+                        preNode = preNode.next
+```
 
 
 ## Reference
