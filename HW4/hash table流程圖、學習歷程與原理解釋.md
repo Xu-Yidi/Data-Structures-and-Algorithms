@@ -1,7 +1,7 @@
 # Hashing 
 Content<br>
 [Hash Table](#Hash-Table)<br>
-[Hash Functions](#Hash-Functions:-hash-codes-followed-by-compression-functions)<br>
+[Hash Functions](#Hash-Functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
 [Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
