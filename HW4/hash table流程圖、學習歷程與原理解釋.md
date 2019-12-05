@@ -1,4 +1,11 @@
 # Hashing 
+Content<br>
+[Hash Table](##Hash-Table)<br>
+[Hash Functions](##Hash-Functions:-hash-codes-followed-by-compression-functions)<br>
+[Collisions](##Collisions)<br>
+[Efficiency Analysis](##Efficiency-Analysis)<br>
+[Flowchart & Self Learning](##Flowchart-&-Self-Learning)<br>
+
 ## Hash Table
 1.The main idea of a **hash table** is to take bucket array, *A*, and a hash function, *h*, and use them to implement a map by storing each item(*key, value*) in the bucket A[*h(key)*].
 >哈希表(散列表)，是根據鍵值(key)直接進行訪問的數據結構，即其通過將鍵值映射到表中的某個位置來查找對應的記錄。在此之前，常用的搜尋方法例如線性搜尋法(linear search)或二分搜尋演算法(binary search)都是以比較為基礎的搜尋方法(comparision-based searches)，但以比較為基礎的搜尋演算法其最佳時間複雜度為O(nlogn)，而使用哈希表能提高查詢速度。<br>
@@ -73,7 +80,9 @@ The efficiency of the hash operations depends on the hash function, the size of 
 To evaluate the search performed in hashing, assume there are *n* items currently stored in the table of size *N*. If our hash function is good, then we expect the entries to be uniformly distributed in the *N* cells of the bucket array. Thus, to store *n* entries, the expected numberof keys in a bucket would be *n/N*, which is **O(1)**. In the worst case, a poor hash function could map every item to the same bucket, and this would result in linear-time performance **O(n)**.
 
 ***
-### Flowchart & 學習歷程
+## Flowchart & Self Learning
+
+
 
 
 
