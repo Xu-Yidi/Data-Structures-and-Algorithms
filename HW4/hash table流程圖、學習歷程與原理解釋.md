@@ -69,9 +69,11 @@ In doublle hashing, when a collision occurs, the key is hashed by a second funct
 >即同時使用多個哈希函數，其函數形式為*h<sub>i</sub>(key)* = (*h(key)* + *i* * *h'* ) mod *N*，其中*h'* 是另一個哈希函數
 
 ## Efficiency Analysis
-The efficiency of the hash operations depends on the hash function, the size of the table, and the type of probe used to resolve collisions. The time to perform the **search** is the main contributor to the overall time of the three hash table operations:searching, insertions, and deletions.
+The efficiency of the hash operations depends on the hash function, the size of the table, and the type of probe used to resolve collisions. The time to perform the **search** is the main contributor to the overall time of the three hash table operations:searching, insertions, and deletions.<br>
 To evaluate the search performed in hashing, assume there are *n* items currently stored in the table of size *N*. If our hash function is good, then we expect the entries to be uniformly distributed in the *N* cells of the bucket array. Thus, to store *n* entries, the expected numberof keys in a bucket would be *n/N*, which is **O(1)**. In the worst case, a poor hash function could map every item to the same bucket, and this would result in linear-time performance **O(n)**.
 
+***
+### Flowchart & 學習歷程
 
 
 
