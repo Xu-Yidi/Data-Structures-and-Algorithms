@@ -60,7 +60,7 @@ Linear probing容易產生**primary clustering**(一次聚集)的現象，即ite
 - **Quadratic probing**(二次探測再散列)<br>
 d<sub>i</sub> = 1<sup>2</sup>, -1<sup>2</sup>, 2<sup>2</sup>, -2<sup>2</sup>...,*k*<sup>2</sup>, *-k*<sup>2</sup>(*k*<=*N*/2)，即衝突發生時，在哈希表的前後位置進行跳躍式探測
 >eg.(cont.)<br>
->*h(14)* = 14 % 11 = 3 / *h<sub>1</sub>(14)* = (3+1) % 4 = 4 / *h<sub>2</sub>(14)* = (3+ (-1<sup>2<\sup>)) % 14 = 5<br>
+>*h(14)* = 14 % 11 = 3 / *h<sub>1</sub>(14)* = (3+1) % 4 = 4 / *h<sub>2</sub>(14)* = (3+ (-1<sup>2</sup>)) % 14 = 5<br>
 
 Quadratic probing可以避免primary clustering的現象，但會產生**secondary clustering**(二次聚集)的現象，即item(key,value)的hash table中的分配仍然並非均勻
 
@@ -70,6 +70,8 @@ In doublle hashing, when a collision occurs, the key is hashed by a second funct
 
 ## Efficiency Analysis
 The efficiency of the hash operations depends on the hash function, the size of the table, and the type of probe used to resolve collisions. The time to perform the **search** is the main contributor to the overall time of the three hash table operations:searching, insertions, and deletions.
+To evaluate the search performed in hashing, assume there are *n* items currently stored in the table of size *N*. If our hash function is good, then we expect the entries to be uniformly distributed in the *N* cells of the bucket array. Thus, to store *n* entries, the expected numberof keys in a bucket would be *n/N*, which is **O(1)**. In the worst case, a poor hash function could map every item to the same bucket, and this would result in linear-time performance **O(n)**.
+
 
 
 
