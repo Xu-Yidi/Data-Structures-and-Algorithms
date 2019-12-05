@@ -1,10 +1,10 @@
 # Hashing 
 Content<br>
-[Hash Table](##Hash-Table)<br>
-[Hash Functions](##Hash-Functions:-hash-codes-followed-by-compression-functions)<br>
-[Collisions](##Collisions)<br>
-[Efficiency Analysis](##Efficiency-Analysis)<br>
-[Flowchart & Self Learning](##Flowchart-&-Self-Learning)<br>
+[Hash Table](#Hash-Table)<br>
+[Hash Functions](#Hash-Functions:-hash-codes-followed-by-compression-functions)<br>
+[Collisions](#Collisions)<br>
+[Efficiency Analysis](#Efficiency-Analysis)<br>
+[Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
 
 ## Hash Table
 1.The main idea of a **hash table** is to take bucket array, *A*, and a hash function, *h*, and use them to implement a map by storing each item(*key, value*) in the bucket A[*h(key)*].
@@ -35,7 +35,7 @@ The first action that a hash function performs is to take an arbitrary key *k* i
 ### Compression Functions(壓縮函數)
 Once we have determined an integer hash code for a key object *k*, there is still the issue of mapping that intger into the range
 [0, *N*-1]. This computation, known as a **compression function**, is the second action performed as part of an overall hash function.<br>
-- **The Division Method**<br>
+- **The Division Method**<br
 A simple compressision function is the **division method**, which maps an integer *i* to ***i* mode *N***, where *N*, the size of the bucket, is a fixed positive integer.
 >If we take *N* to be a **prime** number, then this compression function helps spread out the distribution of hashed values. Indeed, if *N* is not prime, then there is greater risk that patterns in the distributiom of hash codes will be repeated in the dstribution of hash values, thereby causing collisions.<br>
 
