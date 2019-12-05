@@ -68,7 +68,7 @@ Quadratic probing可以避免primary clustering的現象，但會產生**seconda
 In doublle hashing, when a collision occurs, the key is hashed by a second function *h'* and the result is used as the constant factor in the linear probe. The double hashing techinique is most commomly used to resolve collisions since it reduces both primary and secondary clustering.<br>
 >即同時使用多個哈希函數，其函數形式為*h<sub>i</sub>(key)* = (*h(key)* + *i* * *h'* ) mod *N*，其中*h'* 是另一個哈希函數
 
-### Efficiency Analysis
+## Efficiency Analysis
 The efficiency of the hash operations depends on the hash function, the size of the table, and the type of probe used to resolve collisions. The time to perform the **search** is the main contributor to the overall time of the three hash table operations:searching, insertions, and deletions.
 
 
@@ -76,7 +76,7 @@ The efficiency of the hash operations depends on the hash function, the size of 
 
 
 
-### Reference
+## Reference
 1.哈希表（散列表）原理理解 https://blog.csdn.net/duan19920101/article/details/51579136<br>
 2.Hash 算法原理詳解 https://blog.csdn.net/tanggao1314/article/details/51457585<br>
 3.Hash Tabel(Open Addressing) https://alrightchiu.github.io/SecondRound/hash-tableopen-addressing.html<br>
