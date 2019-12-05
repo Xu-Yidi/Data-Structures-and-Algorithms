@@ -1,7 +1,7 @@
 # Hashing 
 Content<br>
 [Hash Table](#Hash-Table)<br>
-[Hash Functions](#Hash-Functions:-hash-codes-followed-by-compression-functions)<br>
+[Hash Functions](#Hash-Functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
 [Flowchart](#Flowchart)<br>
@@ -14,8 +14,8 @@ Content<br>
 2.哈希表 hash table(key, value)將key通過哈希函數(hash function)轉換為儲存數組的index(H(key) = index)，並將對應的key-value pairs儲存於以index為下標的數組空間中，當使用哈希表進行查詢時，則再次使用哈希函數將key轉換為對應的index，並定位到該空間獲取value。<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_homework.jpg">
 
-## Hash Functions: hash codes followed by compression functions
-哈希函數可視為由哈希碼與壓縮函數兩部分組成，簡單地說，哈希碼將任意類型的資料轉換為整數，而壓縮函數將這一整數壓縮至數組空間位址的區間<br>
+## Hash Functions
+哈希函數可視為由哈希碼(hash code)與壓縮函數(compression function)兩部分組成，簡單地說，哈希碼將任意類型的資料轉換為整數，而壓縮函數將這一整數壓縮至數組空間位址的區間<br>
 1.The goal of a **hash function**, *h*, is to map each key *k* to an integer in the range [0, *N*-1], where *N* is the capacity of the bucket array for a hash table. Equipped with such a hash function, *h*, the main idea of the hash table is to use the hash function value, *h(k)*, as an index into our bucket array, *A*, instead of the key *k*(which may not be appropriate for direct use as an index). That is, we store the item *(k,v)* in the bucket *A[h(k)]*.
 >(a)哈希函數將任意長度的輸入或欲映射(preimage)轉換成固定長度的輸出，即將鍵值的集合映射到某個地址集合上<br>
 >(b)此種轉換是一種壓縮映，即不同的輸入可能會散列為相同的輸出，從而造成衝突(collision)的現象<br>
