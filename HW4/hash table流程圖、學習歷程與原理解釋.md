@@ -4,7 +4,7 @@ Content<br>
 [Hash Functions](#Hash-Functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
-[Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
+[Flowchart & Self Learning](#Flowchart & Self-Learning)<br>
 [Self Learning](#Self-Learning)<br>
 
 ## Hash Table
