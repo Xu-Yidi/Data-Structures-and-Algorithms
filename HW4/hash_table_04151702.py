@@ -89,4 +89,6 @@ class MyHashSet:
             index_value.append(curNode.val)
             return [curNode, index_value]
 
-#Reference:無任何參考資料
+#Reference:
+#linked list之概念參考week2自行整理之資料https://github.com/Xu-Yidi/fluteanzi/blob/master/week2/handout-singly%20linked%20list.py
+#程式為自行撰寫
