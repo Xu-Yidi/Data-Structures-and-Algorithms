@@ -4,7 +4,7 @@ Content<br>
 [Hash Functions](#Hash-Functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
-[Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
+[Flowchart and Self Learning](#Flowchart-and-Self-Learning)<br>
 
 ## Hash Table
 1.The main idea of a **hash table** is to take bucket array, *A*, and a hash function, *h*, and use them to implement a map by storing each item(*key, value*) in the bucket A[*h(key)*].
@@ -80,7 +80,7 @@ The efficiency of the hash operations depends on the hash function, the size of 
 To evaluate the search performed in hashing, assume there are *n* items currently stored in the table of size *N*. If our hash function is good, then we expect the entries to be uniformly distributed in the *N* cells of the bucket array. Thus, to store *n* entries, the expected numberof keys in a bucket would be *n/N*, which is **O(1)**. In the worst case, a poor hash function could map every item to the same bucket, and this would result in linear-time performance **O(n)**.
 
 ***
-## Flowchart & Self Learning
+## Flowchart and Self Learning
 作業要求同時使用array與linked list的資料形態，故可得知是使用鏈地址法解決衝突，其插入，刪除，搜尋等操作皆是在linked list中完成，與開放地址法相比較為簡單，但使用較多額外空間<br>
 ### Add
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_add.jpg">
