@@ -84,6 +84,7 @@ To evaluate the search performed in hashing, assume there are *n* items currentl
 作業要求同時使用array與linked list的資料形態，故可得知是使用鏈地址法解決衝突，其插入，刪除，搜尋等操作皆是在linked list中完成，與開放地址法相比較為簡單，但使用較多額外空間<br>
 ### Add
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_add.jpg">
+
 ```Python
 from Crypto.Hash import MD5            #MD5算法是常用的哈希算法，可視為哈希函數的哈希碼部分
 
@@ -125,6 +126,7 @@ class MyHashSet:
 
 ### Contains
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_contains.jpg">
+
 ```Python
     def contains(self, key):
         hash_value = self.hash_function(key)
@@ -144,6 +146,7 @@ class MyHashSet:
 
 ### Remove
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_remove.png">
+
 ```Python
     def remove(self, key):
         hash_value = self.hash_function(key)
