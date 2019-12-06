@@ -73,4 +73,6 @@ class MyHashSet:
         index = int(hash_value, 16) % self.capacity
         return index
 
-#Reference:無任何參考資料
+#Reference:
+#linked list的概念參考自己整理之week2的資料 https://github.com/Xu-Yidi/fluteanzi/blob/master/week2/handout-singly%20linked%20list.py
+#程式為自行撰寫
