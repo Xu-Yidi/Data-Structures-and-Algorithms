@@ -4,7 +4,7 @@ Content<br>
 [Hash Functions](#Hash-Functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
-[Flowchart](#Flowchart)<br>
+[Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
 [Self Learning](#Self-Learning)<br>
 
 ## Hash Table
@@ -81,20 +81,10 @@ The efficiency of the hash operations depends on the hash function, the size of 
 To evaluate the search performed in hashing, assume there are *n* items currently stored in the table of size *N*. If our hash function is good, then we expect the entries to be uniformly distributed in the *N* cells of the bucket array. Thus, to store *n* entries, the expected numberof keys in a bucket would be *n/N*, which is **O(1)**. In the worst case, a poor hash function could map every item to the same bucket, and this would result in linear-time performance **O(n)**.
 
 ***
-## Flowchart
+## Flowchart & Self Learning
 作業要求同時使用array與linked list的資料形態，故可得知是使用鏈地址法解決衝突，其插入，刪除，搜尋等操作皆是在linked list中完成，與開放地址法相比較為簡單，但使用較多額外空間<br>
 ### Add
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_add.jpg">
-
-### Contains
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_contains.jpg">
-
-### Remove
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_remove.png">
-
-## Self Learning
-### 程式說明
-[程式hash_table.py](https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table.py)
 ```Python
 from Crypto.Hash import MD5            #MD5算法是常用的哈希算法，可視為哈希函數的哈希碼部分
 
@@ -132,7 +122,11 @@ class MyHashSet:
         #MD5將key轉為16進制的整數，故將其轉為10進制後再對list的長度取餘數以得到index
         index = int(hash_value, 16) % self.capacity  
         return index
+```
 
+### Contains
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_contains.jpg">
+```Python
     def contains(self, key):
         hash_value = self.hash_function(key)
         index = self.add_index(key)
@@ -147,7 +141,11 @@ class MyHashSet:
                 else:
                     curNode = curNode.next    #否則繼續向後走訪節點
             return False               #如果走訪到最後一個節點仍未找到，則該key不存在，返回False
-            
+```
+
+### Remove
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_remove.png">
+```Python
     def remove(self, key):
         hash_value = self.hash_function(key)
         index = self.add_index(key)
