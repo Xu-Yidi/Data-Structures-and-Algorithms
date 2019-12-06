@@ -93,7 +93,7 @@ To evaluate the search performed in hashing, assume there are *n* items currentl
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table_remove.png">
 
 ## Self Learning
-個人學習歷程的部分將對程式碼進行詳細解說
+### 程式說明
 ```Python
 
 from Crypto.Hash import MD5            #MD5算法是常用的哈希算法，可視為哈希函數的哈希碼部分
@@ -166,6 +166,10 @@ class MyHashSet:
                         curNode = curNode.next    #否則，curNode與preNode均需後移一位
                         preNode = preNode.next
 ```
+### 思考
+1.MD5算法的原理<br>
+2.使用開放地址法時如何撰寫刪除程式<br>
+
 ## Reference
 1.哈希表（散列表）原理理解 https://blog.csdn.net/duan19920101/article/details/51579136<br>
 2.Hash 算法原理詳解 https://blog.csdn.net/tanggao1314/article/details/51457585<br>
