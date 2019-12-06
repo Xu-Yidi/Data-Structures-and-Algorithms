@@ -4,8 +4,7 @@ Content<br>
 [Hash Functions](#Hash-Functions)<br>
 [Collisions](#Collisions)<br>
 [Efficiency Analysis](#Efficiency-Analysis)<br>
-[Flowchart & Self Learning](#Flowchart & Self-Learning)<br>
-[Self Learning](#Self-Learning)<br>
+[Flowchart & Self Learning](#Flowchart-&-Self-Learning)<br>
 
 ## Hash Table
 1.The main idea of a **hash table** is to take bucket array, *A*, and a hash function, *h*, and use them to implement a map by storing each item(*key, value*) in the bucket A[*h(key)*].
