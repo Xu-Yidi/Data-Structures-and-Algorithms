@@ -94,8 +94,8 @@ To evaluate the search performed in hashing, assume there are *n* items currentl
 
 ## Self Learning
 ### 程式說明
+[程式hash_table.py](https://github.com/Xu-Yidi/fluteanzi/blob/master/week11/hash_table.py)
 ```Python
-
 from Crypto.Hash import MD5            #MD5算法是常用的哈希算法，可視為哈希函數的哈希碼部分
 
 class ListNode:
