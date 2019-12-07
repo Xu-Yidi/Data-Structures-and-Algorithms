@@ -69,12 +69,12 @@ class MyHashSet:
     def hash_function(self, key):
         h = MD5.new()
         h.update(key.encode("utf-8"))      
-        hash_value = h.hexdigest()
+        hash_value = int(h.hexdigest(), 16)
         return hash_value                  
        
     def add_index(self, key):
         hash_value = self.hash_function(key)
-        index = int(hash_value, 16) % self.capacity
+        index = hash_value % self.capacity
         return index
         
     def find_last_node(self, index):
