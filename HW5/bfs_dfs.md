@@ -1,6 +1,7 @@
+# Graph
 在介紹BFS與DFS的定義前，首先應對圖(Graph)的概念有所了解，故本文會首先說明資料結構中的圖形結構與其基本表達方式<br>
 
-Content<br>
+**Content**<br>
 [Graphs](#Graphs)<br>
 [Some Concepts](#Some-Concepts)<br>
 [Data Structures for Graphs](#Data-Structures-for-Graphs)<br>
