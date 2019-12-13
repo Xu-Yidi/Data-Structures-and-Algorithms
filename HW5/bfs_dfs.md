@@ -92,8 +92,8 @@ The (vertex-edge) **incidence matrix** *I(G)* of a grapg *G = (E, V)*, is a *n Ã
 $$
 I[i,j]=
 \begin{cases}
-1, & if \ v_i \ is \ the \ origin \ of \ e_j,\\
--1, & if \ v_i \ is \ the \ destination \ of \ e_j,\\
+1, & if \ v_i \ is \ the \ origin \ of \ e_j,\\\\\\
+-1, & if \ v_i \ is \ the \ destination \ of \ e_j,\\\\\\
 0, & if \ e_i \ and \ v_i \ are \ not \ destination
 \end{cases}
 $$
