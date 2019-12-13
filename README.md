@@ -12,6 +12,7 @@
  [Week9(binary search tree)](#week9)<br>
  [Week10(red-black trees)](#week10)<br>
  [Week11(hash tables)](#week11)<br>
+ [Week12&13(breadth-first search/depth-first search)](#week12&13)<br>
  
 ## Week2
 ### Singly Linked List
@@ -416,5 +417,8 @@ As more keys are added to the hash table, more collisions are likely to occur. S
 >Example: Consider the hash table in figure 11.8, what's the probability the next key will occupy the empty slot at position 4? If the next key hashes to this position, it can be stored directly into the slot without the need to probe. This also results in a probability of 1 out of 13. But the probability the next key will occupy slot 9 is 5 out of 13. If the next key hashes to any pf the slots between 5 and 9, it will be stored in slot 9 due to the linear probe required to find the first position beyond the cluster of keys. Thus, the key is five times more likel to occupy slot 9 than slot 4.<br>
 
 This type of clustering is knowm as **primary clustering** since it occurs near the original hash position, and several different probing techniques that can be employed to reduce primary clustering.<br>
+[自行整理之hash table說明，可詳閱](/HW4/hash%20table%E6%B5%81%E7%A8%8B%E5%9C%96%E3%80%81%E5%AD%B8%E7%BF%92%E6%AD%B7%E7%A8%8B%E8%88%87%E5%8E%9F%E7%90%86%E8%A7%A3%E9%87%8B.md)
 
 [back to content](#content)<br>
+
+## Week12&13
