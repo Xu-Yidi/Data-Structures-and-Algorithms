@@ -50,6 +50,8 @@ $$
 
 Ex:<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/graph_1.png" width="75%" height="75%">
+
+
 $$
 A(directed)=
 \left[ \begin{matrix}
