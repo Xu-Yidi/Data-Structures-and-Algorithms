@@ -43,30 +43,29 @@ The **adjacency matrix** *A(G)* for a graph *G = (E, V)* with n vertices is a *n
 $$
 A[i,j]=
 \begin{cases}
-1, & if (V_i,V_j)\in E(G),\\
+1, & if (V_i,V_j)\in E(G),\\\\\\
 0, & if (V_i,V_j)\notin E(G)
 \end{cases}
 $$
 
 Ex:<br>
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/graph_1.png" width="75%" height="75%">
-
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/graph_1.png" width="75%" height="75%"><br>
 
 $$
 A(directed)=
 \left[ \begin{matrix}
-	0 & 1 & 0 & 0 & 1 \\
-	0 & 0 & 1 & 0 & 1 \\ 
-	1 & 0 & 0 & 1 & 0 \\
-	0 & 0 & 1 & 0 & 0 \\
+	0 & 1 & 0 & 0 & 1 \\\\\\
+	0 & 0 & 1 & 0 & 1 \\\\\\
+	1 & 0 & 0 & 1 & 0 \\\\\\
+	0 & 0 & 1 & 0 & 0 \\\\\\
 	1 & 0 & 0 & 0 & 0
 \end{matrix}\right]
 A(undirected) =
 \left[ \begin{matrix}
-	0 & 1 & 1 & 0 & 1 \\
-	1 & 0 & 1 & 0 & 1 \\ 
-	1 & 1 & 0 & 1 & 0 \\
-	0 & 0 & 1 & 0 & 0 \\
+	0 & 1 & 1 & 0 & 1 \\\\\\
+	1 & 0 & 1 & 0 & 1 \\\\\\ 
+	1 & 1 & 0 & 1 & 0 \\\\\\
+	0 & 0 & 1 & 0 & 0 \\\\\\
 	1 & 1 & 0 & 0 & 0
 \end{matrix}\right]
 $$
@@ -104,10 +103,10 @@ Ex.
 $$
 I(G)=
 \left[ \begin{matrix}
-    -1 & 1 & -1 & 0 & 0 & 0 \\
-	1 & 0 & 0 & -1 & 0 & 0 \\ 
-	0 & -1 & 0 & 0 & 1 & 0 \\
-	0 & 0 & 1 & 0 & 0 & -1 \\
+    -1 & 1 & -1 & 0 & 0 & 0 \\\\\\
+	1 & 0 & 0 & -1 & 0 & 0 \\\\\\ 
+	0 & -1 & 0 & 0 & 1 & 0 \\\\\\
+	0 & 0 & 1 & 0 & 0 & -1 \\\\\\
 	0 & 0 & 0 & 1 & -1 & 1
 \end{matrix}\right]
 $$
