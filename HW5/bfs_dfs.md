@@ -99,7 +99,7 @@ I[i,j]=
 \end{cases}
 $$
 
-Ex.
+Ex.<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/graph_2.jpg">
 $$
 I(G)=
