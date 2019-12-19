@@ -6,12 +6,12 @@
 [Graphs](#Graphs)<br>
 [Some Concepts](#Some-Concepts)<br>
 [Data Structures for Graphs](#Data-Structures-for-Graphs)<br>
-&#160; &#160; &#160;[Adjacency Matrix(鄰接矩陣)](#Adjacency-Matrix)<br>
-&#160; &#160; &#160;[Adjacency List(鄰接表)](#Adjacency-List)<br>
-&#160; &#160; &#160;[Incidence Matrix(關聯矩陣)](#Incidence-Matrix)<br>
+&#160; &#160; &#160;[Adjacency Matrix](#Adjacency-Matrix)<br>
+&#160; &#160; &#160;[Adjacency List](#Adjacency-List)<br>
+&#160; &#160; &#160;[Incidence Matrix](#Incidence-Matrix)<br>
 [Graph Traversal](#Graph-Traversal)<br>
-&#160; &#160; &#160;[Breadth-First Search(廣度優先搜尋)](#Breadth-First-Search)<br>
-&#160; &#160; &#160;[Depth-First Search(深度優先搜尋)](#Depth-First-Search)
+&#160; &#160; &#160;[Breadth-First Search](#Breadth-First-Search)<br>
+&#160; &#160; &#160;[Depth-First Search](Depth-First-Search)
 
 ## Graphs(圖)
 A **graph** *G = (V, E)* is simply a set *V* of **vertices**（頂點) and a collection *E* of pairs of vertices from *V*, called **edges**(邊). Thus, a graph is a way of represnting connections or relationships between pairs of objects from some set *V*<br>
@@ -49,7 +49,7 @@ A graph that has both directed and undirected edges is often called a **mixed gr
 
 ## Data Structures for Graphs
 ### Adjacency Matrix
-The **adjacency matrix** *A(G)* for a graph *G = (E, V)* with n vertices is a *n × n* matrix whose *A(i,j)* entry is 1 if the *i<sup>th</sup>* vertex and *j<sup>th</sup>* vertex are connected, and 0 if they are not. Note that matrix *A* is symmetric if graph *G* is undirected, as *A(i,j)* = *A(j,i)* for all pairs of *i* and *j*.
+The **adjacency matrix**(鄰接矩陣) *A(G)* for a graph *G = (E, V)* with n vertices is a *n × n* matrix whose *A(i,j)* entry is 1 if the *i<sup>th</sup>* vertex and *j<sup>th</sup>* vertex are connected, and 0 if they are not. Note that matrix *A* is symmetric if graph *G* is undirected, as *A(i,j)* = *A(j,i)* for all pairs of *i* and *j*.
 
 $$
 A[i,j]=
@@ -62,7 +62,6 @@ $$
 Ex:<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/graph1.jpg">
 
-
 $$
 A(G_1) =
 \left[ \begin{matrix}
@@ -72,7 +71,6 @@ A(G_1) =
 	0 & 0 & 1 & 0 & 0 \\\\
 	1 & 1 & 0 & 0 & 0
 \end{matrix}\right]
-
 A(G_2)=
 \left[ \begin{matrix}
 	0 & 1 & 0 & 0 & 1 \\\\
@@ -84,7 +82,7 @@ A(G_2)=
 $$
 
 ### Adjacency List
-The **adjacency list** structure groups the edges of a graph by storing them in smaller, secondary containers that are associated with each individual vertex.<br>
+The **adjacency list**(鄰接表) structure groups the edges of a graph by storing them in smaller, secondary containers that are associated with each individual vertex.<br>
 當頂點個數很多而邊數較少時，鄰接矩陣的儲存方式將造成儲存空間的浪費，而鄰接表使用數組與鏈結串列結合的方式，將頂點儲存在一維數組中，並將頂點的鄰接點儲存在鏈結串列中
 >Ex: undirected graph(cont.)<br>
 >[1]→[2]→[3]→[5]<br>
@@ -99,7 +97,7 @@ The **adjacency list** structure groups the edges of a graph by storing them in 
 >[4]→[3]<br>
 >[5]→[1]
 ### Incidence Matrix
-The (vertex-edge) **incidence matrix** *I(G)* of a grapg *G = (E, V)*, is a *n × m* matrix defined as follows. The rows and columns of *I(G)* are indexed by *V(G)* and *E(G)*, respectively. The *A(i,j)* entry of *I(G)* is 0 if vertex v<sub>i</sub> and and edge e<sub>j</sub> are not incident, and otherwise it is 1 or -1 according as e<sub>j</sub> originates or terminates at i, respectively.<br>
+The (vertex-edge) **incidence matrix**(關聯矩陣) *I(G)* of a grapg *G = (E, V)*, is a *n × m* matrix defined as follows. The rows and columns of *I(G)* are indexed by *V(G)* and *E(G)*, respectively. The *A(i,j)* entry of *I(G)* is 0 if vertex v<sub>i</sub> and and edge e<sub>j</sub> are not incident, and otherwise it is 1 or -1 according as e<sub>j</sub> originates or terminates at i, respectively.<br>
 
 $$
 I[i,j]=
