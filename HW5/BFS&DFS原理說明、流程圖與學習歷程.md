@@ -11,7 +11,7 @@
 &#160; &#160; &#160;[Incidence Matrix](#Incidence-Matrix)<br>
 [Graph Traversal](#Graph-Traversal)<br>
 &#160; &#160; &#160;[Breadth-First Search](#Breadth-First-Search)<br>
-&#160; &#160; &#160;[Depth-First Search](Depth-First-Search)
+&#160; &#160; &#160;[Depth-First Search](#Depth-First-Search)
 
 ## Graphs(圖)
 A **graph** *G = (V, E)* is simply a set *V* of **vertices**（頂點) and a collection *E* of pairs of vertices from *V*, called **edges**(邊). Thus, a graph is a way of represnting connections or relationships between pairs of objects from some set *V*<br>
