@@ -1,6 +1,6 @@
 # Graph
 在介紹BFS與DFS的定義前，首先應對圖(Graph)的概念有所了解，故本文會首先說明資料結構中的圖形結構與其基本表達方式，可從目錄直接閱讀圖的訪尋部分<br>
-
+### PS:因文中在鄰接矩陣等處使用了LATEX公式，故若要顯示公式請先安裝[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima)
 
 **Content**<br>
 [Graphs](#Graphs)<br>
