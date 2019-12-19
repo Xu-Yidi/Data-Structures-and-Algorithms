@@ -54,7 +54,7 @@ The **adjacency matrix** *A(G)* for a graph *G = (E, V)* with n vertices is a *n
 $$
 A[i,j]=
 \begin{cases}
-1, & if (V_i,V_j)\in E(G),\\
+1, & if (V_i,V_j)\in E(G),\\\\
 0, & if (V_i,V_j)\notin E(G)
 \end{cases}
 $$
@@ -65,19 +65,19 @@ Ex:<br>
 $$
 A(G_1) =
 \left[ \begin{matrix}
-	0 & 1 & 1 & 0 & 1 \\
-	1 & 0 & 1 & 0 & 1 \\ 
-	1 & 1 & 0 & 1 & 0 \\
-	0 & 0 & 1 & 0 & 0 \\
+	0 & 1 & 1 & 0 & 1 \\\\
+	1 & 0 & 1 & 0 & 1 \\\\
+	1 & 1 & 0 & 1 & 0 \\\\
+	0 & 0 & 1 & 0 & 0 \\\\
 	1 & 1 & 0 & 0 & 0
 \end{matrix}\right]
 
 A(G_2)=
 \left[ \begin{matrix}
-	0 & 1 & 0 & 0 & 1 \\
-	0 & 0 & 1 & 0 & 1 \\ 
-	1 & 0 & 0 & 1 & 0 \\
-	0 & 0 & 1 & 0 & 0 \\
+	0 & 1 & 0 & 0 & 1 \\\\
+	0 & 0 & 1 & 0 & 1 \\\\
+	1 & 0 & 0 & 1 & 0 \\\\
+	0 & 0 & 1 & 0 & 0 \\\\
 	1 & 0 & 0 & 0 & 0
 \end{matrix}\right]
 $$
@@ -103,8 +103,8 @@ The (vertex-edge) **incidence matrix** *I(G)* of a grapg *G = (E, V)*, is a *n Ã
 $$
 I[i,j]=
 \begin{cases}
-1, & if \ v_i \ is \ the \ origin \ of \ e_j,\\
--1, & if \ v_i \ is \ the \ destination \ of \ e_j,\\
+1, & if \ v_i \ is \ the \ origin \ of \ e_j,\\\\
+-1, & if \ v_i \ is \ the \ destination \ of \ e_j,\\\\
 0, & if \ e_i \ and \ v_i \ are \ not \ incident
 \end{cases}
 $$
@@ -114,10 +114,10 @@ Ex.<br>
 $$
 I(G)=
 \left[ \begin{matrix}
-    -1 & 1 & -1 & 0 & 0 & 0 \\
-	1 & 0 & 0 & -1 & 0 & 0 \\ 
-	0 & -1 & 0 & 0 & 1 & 0 \\
-	0 & 0 & 1 & 0 & 0 & -1 \\
+    -1 & 1 & -1 & 0 & 0 & 0 \\\\
+	1 & 0 & 0 & -1 & 0 & 0 \\\\
+	0 & -1 & 0 & 0 & 1 & 0 \\\\
+	0 & 0 & 1 & 0 & 0 & -1 \\\\
 	0 & 0 & 0 & 1 & -1 & 1
 \end{matrix}\right]
 $$
