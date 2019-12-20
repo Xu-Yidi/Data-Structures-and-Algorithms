@@ -167,7 +167,6 @@ DFS<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/DFS_flowchart.png">
 
 ### Code
-### Code
 ```Python
 from collections import defaultdict
 
