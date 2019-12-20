@@ -12,7 +12,7 @@
 [Graph Traversal](#Graph-Traversal)<br>
 &#160; &#160; &#160;[Breadth-First Search](#Breadth-First-Search)<br>
 &#160; &#160; &#160;[Depth-First Search](#Depth-First-Search)<br>
-&#160; &#160; &#160;[BFS V.S. DFS](#BFS-V.S.-DFS)<br>
+&#160; &#160; &#160;[BFS V.S. DFS](#41)<br>
 [Self Learning](#Self-Learning)
 
 ## Graphs(圖)
@@ -138,7 +138,8 @@ DFS的實作則需要使用**堆疊(stack)** 的資料結構，同時也需記�
 #### 圖示
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/dfs.jpg">
 
-### BFS V.S. DFS
+<h3 id="41">BFS V.S. DFS</h3>
+
 #### Time Complexity
 BFS: O(V+E)<br>
 DFS: O(V+E)<br>
@@ -171,5 +172,5 @@ DFS<br>
 ## Reference
 1.Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python.*<br>
 2.http://wayne.cif.takming.edu.tw/datastru/graphs.pdf<br>
-3.https://www.quora.com/Why-is-the-complexity-of-DFS-O-V+E
+3.https://www.quora.com/Why-is-the-complexity-of-DFS-O-V+E<br>
 4.https://www.geeksforgeeks.org/applications-of-depth-first-search/<br>
