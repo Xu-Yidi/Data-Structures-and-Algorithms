@@ -14,9 +14,9 @@ class Graph():
     def addEdge(self, u, v):
         self.graph[u].append(v)
         
-    #def addEdge_1(self, u):
-        #self.graph[u]
- 
+    def addEdge_1(self, u):
+        self.graph[u]
+    
     def BFS(self, s):
         vertices = list(self.graph.keys())
         status_dict = dict.fromkeys(vertices,1) 
@@ -62,3 +62,6 @@ class Graph():
                     status_dict[item] = 2
                     
         return result
+    
+    
+ #Reference: 程式為理解概念後，自行撰寫，無參考他人程式
