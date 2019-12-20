@@ -13,12 +13,23 @@ class Graph():
     
     def addEdge(self, u, v):
         self.graph[u].append(v)
-        
+    
     def addEdge_1(self, u):
         self.graph[u]
     
-    def BFS(self, s):
-        vertices = list(self.graph.keys())
+    def BFS(self, s):        
+        vertices_1 = list(self.graph.keys())
+        vertices_2 = list(self.graph.values())  
+        #print(vertices_2)
+        vertices_3 = []  
+        for item in vertices_2 :
+            for temp in item:
+                vertices_3.append(temp)
+        #print(vertices_3)
+        
+        vertices = list(set(vertices_1 + vertices_3))
+        #print(vertices)
+                
         status_dict = dict.fromkeys(vertices,1) 
         
         queue = []
@@ -41,7 +52,18 @@ class Graph():
         return result
     
     def DFS(self, s):
-        vertices = list(self.graph.keys())
+        vertices_1 = list(self.graph.keys())
+        vertices_2 = list(self.graph.values())  
+        #print(vertices_2)
+        vertices_3 = []  
+        for item in vertices_2 :
+            for temp in item:
+                vertices_3.append(temp)
+        #print(vertices_3)
+        
+        vertices = list(set(vertices_1 + vertices_3))
+        #print(vertices)
+        
         status_dict = dict.fromkeys(vertices,1) 
         
         stack = []
