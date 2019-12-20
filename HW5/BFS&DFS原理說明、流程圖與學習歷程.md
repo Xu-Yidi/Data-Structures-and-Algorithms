@@ -139,15 +139,19 @@ DFS的實作則需要使用**堆疊(stack)** 的資料結構，同時也需記�
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/dfs.jpg">
 
 <h3 id="41">BFS V.S. DFS</h3>
-### Data Struture
+
+#### Data Struture
 BFS: Queue<br>
 DFS: Stack<br>
+
 #### Time Complexity
 BFS: O(V+E)<br>
 DFS: O(V+E)<br>
 事實上，BFS和DFS的時間複雜度與儲存圖的所資料結構有關，如果使用鄰接表(adjacency list)儲存，則時間複雜度為O(V+E),如果使用鄰接矩陣(adjacency matrix)儲存，則時間複雜度為O(V<sup>2</sup>)
+
 #### Space Complexity
 一般而言，BFS較DFS的空間複雜度更高(此點許多網路資料並未給出清楚的解釋)
+
 #### Application
 - **BFS**<br>
 Shortest path in an unweighted graph<br>
