@@ -1,6 +1,6 @@
 # Graph
 在介紹BFS與DFS的定義前，首先應對圖(Graph)的概念有所了解，故本文會首先說明資料結構中的圖形結構與其基本表達方式，可從目錄直接閱讀圖的訪尋部分<br>
-### PS:因文中在鄰接矩陣等處使用了LATEX公式，故若要顯示公式請先安裝[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima)
+#### PS:因文中在鄰接矩陣等處使用了LATEX公式，故請先安裝[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima)
 
 **Content**<br>
 [Graphs](#Graphs)<br>
@@ -11,7 +11,9 @@
 &#160; &#160; &#160;[Incidence Matrix](#Incidence-Matrix)<br>
 [Graph Traversal](#Graph-Traversal)<br>
 &#160; &#160; &#160;[Breadth-First Search](#Breadth-First-Search)<br>
-&#160; &#160; &#160;[Depth-First Search](#Depth-First-Search)
+&#160; &#160; &#160;[Depth-First Search](#Depth-First-Search)<br>
+&#160; &#160; &#160;[BFS V.S. DFS](#BFS-V.S.-DFS)<br>
+[Self Learning](#Self-Learning)
 
 ## Graphs(圖)
 A **graph** *G = (V, E)* is simply a set *V* of **vertices**（頂點) and a collection *E* of pairs of vertices from *V*, called **edges**(邊). Thus, a graph is a way of represnting connections or relationships between pairs of objects from some set *V*<br>
@@ -136,23 +138,38 @@ DFS的實作則需要使用**堆疊(stack)** 的資料結構，同時也需記�
 #### 圖示
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/dfs.jpg">
 
+### BFS V.S. DFS
+#### Time Complexity
+BFS: O(V+E)<br>
+DFS: O(V+E)<br>
+事實上，BFS和DFS的時間複雜度與儲存圖的所資料結構有關，如果使用鄰接表(adjacency list)儲存，則時間複雜度為O(V+E),如果使用鄰接矩陣(adjacency matrix)儲存，則時間複雜度為O(V<sup>2</sup>)
 
+#### Space Complexity
 
+#### Application
+- **BFS**<br>
+Shortest path in an unweighted graph<br>
+Garbage collection<br>
+Web crawler<br>
+- **DFS**<br>
+Detecting a cycle<br>
+Topology sort(拓撲排序) for DAG(directed acyclic graph)<br>
+Strongly connected component(強連通元件): Kosaraju's algorithm/Tarjan's algorithm<br>
+Path finding
 
+## Self Learning
+### Flowchart
+BFS<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/BFS_flowchart.jpg">
 
+DFS<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/DFS_flowchart.png">
 
-
-
-
-
-
-
-
-
-
-
+### Code
 
 
 ## Reference
-1.https://www.bookofproofs.org/branches/examples-of-adjacency-matrices/<br>
+1.Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python.*<br>
 2.http://wayne.cif.takming.edu.tw/datastru/graphs.pdf<br>
+3.https://www.quora.com/Why-is-the-complexity-of-DFS-O-V+E
+4.https://www.geeksforgeeks.org/applications-of-depth-first-search/<br>
