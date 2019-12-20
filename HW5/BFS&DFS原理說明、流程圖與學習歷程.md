@@ -167,7 +167,65 @@ DFS<br>
 <img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week12%2613/DFS_flowchart.png">
 
 ### Code
+### Code
+```Python
+from collections import defaultdict
 
+class Graph():
+    def __init__(self):
+        self.graph = defaultdict(list)
+    
+    def addEdge(self, u, v):
+        self.graph[u].append(v)
+    
+    def BFS(self, s):
+        #adjacency list使用dictionary的結構實現，故其keys為頂點
+		vertices = list(self.graph.keys())  
+		#初始化所有的頂點狀態為1，以dictionary的形式記錄
+        status_dict = dict.fromkeys(vertices,1) 
+        
+        queue = []           #建立queue以記錄待訪尋的頂點
+        result = []          #建立result以記錄已訪尋的頂點
+        
+        queue.append(s)      #將起始頂點加入queue
+        status_dict[s] = 2   #更改起始頂點狀態為2
+
+        while queue != []:
+            vertex = queue.pop(0)   #依照queue先進先出的特性，移除第一個元素
+            result.append(vertex)   #將其放入result
+            status_dict[vertex] = 3 #更改其狀態為3
+            
+            adj_vertices = self.graph[vertex]  #adj_vertices為移除頂點的鄰接點
+            for item in adj_vertices:
+                if status_dict[item] == 1:     #如果鄰接點的狀態為1
+                    queue.append(item)         #則放入queue中
+                    status_dict[item] = 2      #更改其狀態為2
+                    
+        return result
+	
+	def DFS(self, s):
+        vertices = list(self.graph.keys())
+        status_dict = dict.fromkeys(vertices,1) 
+        
+        stack = []    #建立stack以記錄待訪尋的頂點  
+        result = []
+        
+        stack.append(s)
+        status_dict[s] = 2
+
+        while stack != []:
+            vertex = stack.pop()    #依照stack後進先出的特性，移除最後一個元素             
+            result.append(vertex)
+            status_dict[vertex] = 3
+            
+            adj_vertices = self.graph[vertex]
+            for item in adj_vertices:
+                if status_dict[item] == 1:
+                    stack.append(item)
+                    status_dict[item] = 2
+                    
+        return result
+```
 
 ## Reference
 1.Michael T. Goodrich & Roberto Tamassia &Michael H. Goldwasser. *Data Structures and Algorithms in Python.*<br>
