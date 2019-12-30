@@ -13,7 +13,14 @@
  [Week10(red-black trees)](#week10)<br>
  [Week11(hash tables)](#week11)<br>
  [Week12&13(breadth-first search/depth-first search)](#week12&13)<br>
- 
+### Linear Data Structures
+
+Data Structures|Handout| Code | Other Materials |
+-------------- |:-----:|:-----:|:---------------|
+Array|   |   |   |
+Linked List|[Singly_Linked_List](/week2/singly_linked_list.md)|[Singly Linked List.py](/week2/handout-singly%20linked%20list.py)|[Leetcode#206 Reverse Linked List](/week2/%23206%20reverse%20linked%20list.py)<br>[Leetcode#707 Design Linked List](/week2/%23707%20design%20linked%20list.py)|
+Stack|[Stack](/week3/stack%26queue.md)|[Stack.py](/week3/handout-stack.py)|[Leetcode#155 Min Stack](/week3/%23155%20min%20stack.py)|
+Queue|[Stack](/week3/stack%26queue.md#queue)|[Queue.py](/week3/handout-queue.py)|[Leetcode#232 Implementing Queue Using Stacks](/master/week3/%23232%20implement%20queue%20using%20stacks.py)<br>[Leeccode#622 Design Circular Queue](/week3/%23622%20design%20circular%20queue.py)| 
 ## Week2
 ### Singly Linked List
 [code-linked list的基本操作](/week2/handout-singly%20linked%20list.py)<br>
