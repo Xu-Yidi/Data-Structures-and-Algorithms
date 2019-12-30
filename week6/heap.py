@@ -66,27 +66,3 @@ class MaxHeap:
 heap = MaxHeap()
 for i in [-1,54,85,26,24,93,63,63,17,45]:
     heap.add(i)
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    
-        
-
-
-
-
