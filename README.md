@@ -22,8 +22,6 @@ PS. The formulas in handouts is probably in Latex grammer, please intall [mathja
 |Heap Sort|[Heap Data Structure & Heap Sort](/week6/heap%26heap_sort.md)|[Heap_Sort.py](/week6/heap_sort_04151702.py)|[Max_Heap.py](/week6/heap.py)<br>[HW2](/HW2)|
 |Merge Sort|[Merge Sort](/week7/merge_sort.md)|[Merge_Sort.py](/week7/merge_sort_04151702.py)|[HW2](/HW2)|
 
-*The descriptions of bubble sort, insertion sort, selection sort and time complexities are in the same markdown document, and thire Python codes are also in the same .py document.<br>
-
 ### Trees
 |Data Structures/<br>Algorithms|Handout|Code|Other Materials|
 |:----------------------------:|:-----:|:--:|:-------------:|
@@ -48,10 +46,9 @@ PS. The formulas in handouts is probably in Latex grammer, please intall [mathja
 |Minimum Spanning Tree|Prim's Algorithm<br>[Kruskal's Algorithm](/HW6/Dijkstra%26Kruskal原理說明、流程圖與學習歷程.md#minimum-spanning-tree最小生成樹)|[Kruskal.py](/HW6/Dijkstra_04151702.py)||
 |Topological Ordering||||
 
-
-
-
-
-
-
+### Text Processing
+|Algorithms|Handout|Code|Other Materials|
+|:--------:|:-----:|:--:|:-------------:|
+|Pattern-Matching|Brute Force<br>Boyer-Moore Algorithm<br>Knuth-Morris-Pratt Algorithm|||
+|Text Compression|Huffman Coding Algorithm|||
 
