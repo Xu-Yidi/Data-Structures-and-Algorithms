@@ -1,6 +1,15 @@
-# **Data Structure and Algorithm in Python**
+## Data Structure and Algorithm in Python
 此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
 [Git語言入門](https://zhuanlan.zhihu.com/p/30044692)
+
+### Linear Data Structures
+
+|Data Structures|Handout| Code | Other Materials |
+|:--------------:|:-----:|:-----:|:--------------|
+|Array|   |   |   |
+|Linked List|[Singly_Linked_List](/week2/singly_linked_list.md)|[Singly Linked List.py](/week2/handout-singly%20linked%20list.py)|[Leetcode#206 Reverse Linked List](/week2/%23206%20reverse%20linked%20list.py)<br>[Leetcode#707 Design Linked List](/week2/%23707%20design%20linked%20list.py)|
+|Stack|[Stack](/week3/stack%26queue.md)|[Stack.py](/week3/handout-stack.py)|[Leetcode#155 Min Stack](/week3/%23155%20min%20stack.py)|
+|Queue|[Queue](/week3/stack%26queue.md#queue)|[Queue.py](/week3/handout-queue.py)|[Leetcode#232 Implementing Queue Using Stacks](/master/week3/%23232%20implement%20queue%20using%20stacks.py)<br>[Leeccode#622 Design Circular Queue](/week3/%23622%20design%20circular%20queue.py)|
 
 ### Sorting Algorithms
 |Algorithms|Handout|Code|Other Materials|
