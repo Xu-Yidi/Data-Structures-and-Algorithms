@@ -44,7 +44,7 @@
 |Data Structures for Graphs|[Adjacency Matrix<br>Adjacency List<br>Incidence Matrix](/HW5/BFS%26DFS原理說明、流程圖與學習歷程.md#data-structures-for-graphs)|||
 |Graph Traversals|[Breadth-first Search<br>Depth First Search](/HW5/BFS%26DFS原理說明、流程圖與學習歷程.md#graph-traversal)|[BFS/DFS.py](/HW5/BFS_04151702.py)||
 |Shortest Path|[Dijkstra's Algorithm](/HW6/Dijkstra%26Kruskal原理說明、流程圖與學習歷程.md#shortest-path最短路徑)|[Dijkstra.py](/HW6/Dijkstra_04151702.py)||
-|Minimum Spanning Tree|Prim-Jarn´ık Algorithm<br>[Kruskal's Algorithm](/HW6/Dijkstra%26Kruskal原理說明、流程圖與學習歷程.md#minimum-spanning-tree最小生成樹)|[Kruskal.py](/HW6/Dijkstra_04151702.py)||
+|Minimum Spanning Tree|Prim's Algorithm<br>[Kruskal's Algorithm](/HW6/Dijkstra%26Kruskal原理說明、流程圖與學習歷程.md#minimum-spanning-tree最小生成樹)|[Kruskal.py](/HW6/Dijkstra_04151702.py)||
 |Topological Ordering||||
 
 
