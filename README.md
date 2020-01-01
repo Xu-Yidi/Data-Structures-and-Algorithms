@@ -1,9 +1,10 @@
-## Data Structure and Algorithm in Python
-此處文件包含自行整理之資料結構的handout與Leetcode的程式，handout包含資料結構的基本特性的描述（以註解方式給出）以及基本操作的Python程式<br>
-[Git語言入門](https://zhuanlan.zhihu.com/p/30044692)
+## Data Structures and Algorithms in Python
+This repository provides some learning materials about data structures and algorithms. The handouts include descriptions and examples of each topic, and the code is written in Python. 
+
+PS. The formulas in handouts is probably in Latex grammer, please intall [mathjax plugin for github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en).
+
 
 ### Linear Data Structures
-
 |Data Structures|Handout| Code | Other Materials |
 |:--------------:|:-----:|:-----:|:--------------|
 |Array|   |   |   |
