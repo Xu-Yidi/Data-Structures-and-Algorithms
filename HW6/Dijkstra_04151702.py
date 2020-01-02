@@ -28,9 +28,10 @@ class Graph():
         #print(dis_dict)
         add_vertex = [str(s)]
         
+
         while True:
             vertex = self.getKey(dis_dict, add_vertex)  
-            #print(vertex)
+            #print(vertex)            
             if vertex is False:
                 break
           
@@ -54,16 +55,17 @@ class Graph():
         for i in range(self.V):
             if str(i) not in add_vertex:
                 value.append(dis_dict[str(i)])
-       
+      
         while 0 in value:
             value.remove(0)
         
         if value == []:
             return False
         
-        for key in dis_dict.keys():     
-            if dis_dict[key] == min(value):
-                return key
+        for key in dis_dict.keys():
+            if key not in add_vertex:
+                if dis_dict[key] == min(value):
+                    return key
  
            
     def Kruskal(self):
