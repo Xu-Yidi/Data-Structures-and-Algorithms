@@ -72,6 +72,8 @@ class Stack:
         return node.item
     #pushes an item onto the top of the stack
     def push(self, item):
-        self._top = StackNode(item)
+        newNode = StackNode(item)
+        newNode.next = self._top
+        self._top = newNode        
         self._size += 1
       
