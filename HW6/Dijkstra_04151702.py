@@ -28,7 +28,7 @@ class Graph():
         #print(dis_dict)
         add_vertex = [str(s)]
         
-
+        time = 1
         while True:
             vertex = self.getKey(dis_dict, add_vertex)  
             #print(vertex)            
@@ -46,6 +46,9 @@ class Graph():
                     if dis_dict[vertex] + self.graph[int(vertex)][int(i)] < dis_dict[i]:
                         dis_dict[i] = dis_dict[vertex] + self.graph[int(vertex)][int(i)]
             #print(dis_dict)
+            time += 1
+            if time == 50000:
+                break
         
         return dis_dict
   
