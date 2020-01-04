@@ -75,18 +75,13 @@ public class MethodTest{
 ```
 
 ### Constructors(建構函數/建構方法)
+#### Key Points
 1.A construtor is the code that runs when somebody says **new** on a class type.<br>
 2.A constructor must have the **same name** as the class, and **no** return type.<br>
 3.If you don't put a constructor in your class, the compiler puts in a **default constructor**. The default constructor is always a no-arg constructor.<br>
 4.You can have more than one constructor in your class, as long as the argument lists are different. Having more than one constructor in a class means you have **overload** constructors.<br>
 
-### Methods  V.S. Constructors
-1.一般函數用於定義對象應該具備的功能，而構造函數定義對象建立時應該具備的內容，即初始化對象內容;<br>
-2.一般函數可以多次調用，構造函數只在創建對象時調用;<br>
-3.構造函數的函數名稱需與class名稱一致，一般函數的函數名稱只需符合命名規則即可;<br>
-4.構造函數不需返回值類型.<br>
-
-### Example
+#### Example
 
 ```java
 public class TestDuck {
@@ -125,6 +120,12 @@ class Duck{
 	}
 }
 ```
+### Methods  V.S. Constructors
+1.一般函數用於定義對象應該具備的功能，而構造函數定義對象建立時應該具備的內容，即初始化對象內容;<br>
+2.一般函數可以多次調用，構造函數只在創建對象時調用;<br>
+3.構造函數的函數名稱需與class名稱一致，一般函數的函數名稱只需符合命名規則即可;<br>
+4.構造函數不需返回值類型.<br>
+
 Reference:<br>
 https://blog.csdn.net/qq_33642117/article/details/51909346<br>
 https://blog.csdn.net/HoHiuChing/article/details/77480471<br>
