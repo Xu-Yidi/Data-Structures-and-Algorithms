@@ -118,7 +118,7 @@ public class ArrayTest{
         System.out.println(Arrays.binarySearch(array, 0)); //-1 將數組視為{0,1,3,5,7,9}，index為-(0+1)=-1
         System.out.println(Arrays.binarySearch(array, 11)); //-6 將數組視為{1,3,5,6,9,11}，index為-(5+1)=-6
         System.out.println(Arrays.binarySearch(array, 4)); //-3 將數組視為{1,3,4,5,6,9}，index為-(2+1)=-3
-        System.out.println(Arrays.binarySearch(array, 1, 3, 3)); 
+        System.out.println(Arrays.binarySearch(array, 1, 3, 3)); //1 
     }
 }
 ```
