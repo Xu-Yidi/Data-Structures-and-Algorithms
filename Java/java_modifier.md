@@ -179,7 +179,7 @@ class PrintTest{
 }
 //result: /MethodTest.java:3: error: non-static method show() cannot be referenced from a static context
 ```
-### Variable Modifiers
+### Variable Modifiers(變量修飾符)
 #### Access Modifiers: public/default/private/protected
 與Method部分相似
 ```java
