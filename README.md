@@ -5,7 +5,7 @@ PS. The formulas in handouts is probably in Latex grammer, please intall [mathja
 
 ### Weekly Learning 
 |Week|Topic|Handout|Code|Other Materials|
-|:--:|:---:|:-----:|:--:|:-------------:|
+|:--:|:---:|:-----:|:--:|:--------------|
 |W1|Introduction||||
 |W2|Linked List|[Singly Linked List](/week2/singly_linked_list.md)|[Singly Linked List.py](/week2/handout-singly%20linked%20list.py)|[Leetcode#206 Reverse Linked List](/week2/%23206%20reverse%20linked%20list.py)<br>[Leetcode#707 Design Linked List](/week2/%23707%20design%20linked%20list.py)|
 |W3|Stack<br>Queue|[Stack/Queue](/week3/stack%26queue.md)|[Stack.py](/week3/handout-stack.py)<br>[Queue.py](/week3/handout-queue.py)|[Leetcode#155 Min Stack](/week3/%23155%20min%20stack.py)<br>[Leetcode#232 Implementing Queue Using Stacks](/master/week3/%23232%20implement%20queue%20using%20stacks.py)<br>[Leeccode#622 Design Circular Queue](/week3/%23622%20design%20circular%20queue.py)|
