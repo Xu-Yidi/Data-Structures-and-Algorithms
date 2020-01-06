@@ -9,7 +9,7 @@ PS. The formulas in handouts is probably in Latex grammer, please intall [mathja
 |W1|Introduction||||
 |W2|Linked List|[Singly Linked List](/week2/singly_linked_list.md)|[Singly Linked List.py](/week2/handout-singly%20linked%20list.py)|[Leetcode#206 Reverse Linked List](/week2/%23206%20reverse%20linked%20list.py)<br>[Leetcode#707 Design Linked List](/week2/%23707%20design%20linked%20list.py)|
 |W3|Stack<br>Queue|[Stack/Queue](/week3/stack%26queue.md)|[Stack.py](/week3/handout-stack.py)<br>[Queue.py](/week3/handout-queue.py)|[Leetcode#155 Min Stack](/week3/%23155%20min%20stack.py)<br>[Leetcode#232 Implementing Queue Using Stacks](/master/week3/%23232%20implement%20queue%20using%20stacks.py)<br>[Leeccode#622 Design Circular Queue](/week3/%23622%20design%20circular%20queue.py)|
-|W4|Bubble Sort<br>Insertion Sort<br>Selection Sort|[Sorting](/week4/insertion%26bubble%26selection_sort.md#bubble-sort)|[Basic_Sorting.py](/week4/handout-sorting.py)|[Leetcode#147 Insertion Sort List](/week4/%23147%20insertion%20sort%20list.py)|
+|W4|Bubble Sort<br>Insertion Sort<br>Selection Sort|[Sorting](/week4/insertion%26bubble%26selection_sort.md#insertion-sort)|[Basic_Sorting.py](/week4/handout-sorting.py)|[Leetcode#147 Insertion Sort List](/week4/%23147%20insertion%20sort%20list.py)|
 |W5|Quick Sort|[Quick Sort](/week5/quick_sort.md)|[Quick_Sort.py](/week5/handout-quick_sort.py)|[HW1](/HW1%20Quick%20Sort)|
 |W6|Heap Sort|[Heap Data Structure & Heap Sort](/week6/heap%26heap_sort.md)|[Heap_Sort.py](/week6/heap_sort_04151702.py)|[HW2](/HW2)|
 |W7|Merge Sort|[Merge Sort](/week7/merge_sort.md)|[Merge_Sort.py](/week7/merge_sort_04151702.py)|[HW2](/HW2)|
