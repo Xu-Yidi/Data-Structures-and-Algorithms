@@ -5,10 +5,7 @@
 #         self.next = None
 
 class Solution:
-    def swapPairs(self, head: ListNode) -> ListNode:
-        preNode = ListNode(0)
-        preNode.next = head
-        
+    def swapPairs(self, head: ListNode) -> ListNode:        
         if head is None:
             return 
         
@@ -21,4 +18,4 @@ class Solution:
             curNode.val = curNode.next.val
             curNode.next.val = tempVal
             curNode = curNode.next.next
-        return preNode.next
+        return head
