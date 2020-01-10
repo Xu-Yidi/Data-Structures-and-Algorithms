@@ -15,7 +15,6 @@ class Solution:
         curNode = head
         if curNode.next is None:
             return curNode
-        
         while curNode is not None and curNode.next is not None:
             tempVal = curNode.val
             curNode.val = curNode.next.val
