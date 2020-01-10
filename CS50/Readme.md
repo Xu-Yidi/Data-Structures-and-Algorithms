@@ -6,7 +6,7 @@
 - Notes:
   - [Java modifies](/CS50/Java_modifies.md)
   - [Java methods & constructures](/CS50/Java%20methods_construtors.md)
-  [Java arrays](/CS50/java_array.md)
+  - [Java arrays](/CS50/java_array.md)
 
 ### Lecture: C
 - [Viedo](https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW)
