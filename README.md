@@ -13,7 +13,7 @@ PS. The formulas in handouts are probably in Latex grammer, please intall [mathj
 - **Interest**: Financial Engineering 
 
 ### 修課心得
-如果說程式設計是教同學如何寫出程式，資料結構與演算法則是鍛煉同學如何寫好程式的能力，開始因為不熟悉class的用法及物件導向的概念覺得有點困難，但熟悉概念後寫作業就較為輕鬆了(因為同時有學習Java，Java物件導向的特性就明顯很多)。當然，因為半學期的課程時間是較為有限的，所以一些重要的議題如動態規劃和文本處理的一些重要的演算法就沒有介紹，期許以後自己可以讀完吧:smiley:。當然，在此非常感謝老師與助教認真回答同學問題以及批改作業，也希望自己持續努力。
+作為經濟系雙主席的同學(其實之前也是文科生)，因為之後想往財工的方向發展，所以演算法也算是基礎課程。如果說程式設計是教同學如何寫出程式，資料結構與演算法則是鍛煉同學如何寫好程式的能力，開始因為不熟悉class的用法及物件導向的概念覺得有點困難，但熟悉概念後寫作業就較為輕鬆了(因為同時有學習Java，Java物件導向的特性就明顯很多, 也因為在作業中已經思考過作業的邏輯，用Java實現算法的過程中就輕鬆了很多)。當然，因為半學期的課程時間是較為有限的，所以一些重要的議題如動態規劃和文本處理的一些重要的演算法就沒有介紹，期許以後自己可以讀完吧:smiley:。當然，在此非常感謝老師與助教認真批改作業以及回答同學問題，也希望自己持續努力學好python與Java，以及繼續努力自學數統和高微。
 
 ### Weekly Learning 
 |Week|Topic|Handout|Code|Other Materials|
@@ -36,6 +36,12 @@ PS. The formulas in handouts are probably in Latex grammer, please intall [mathj
 |W16|Review||||
 |W17|Final Exam||||
 |W18|No Class||||
+
+### CS50
+[CS50 Note](/CS50)
+
+### CodeSignal
+[CodeSignal Note](/Codesignal)
 
 ------------------------------------------------------
 
