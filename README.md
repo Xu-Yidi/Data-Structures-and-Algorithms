@@ -1,7 +1,19 @@
 ## Data Structures and Algorithms in Python
-This repository provides some learning materials about data structures and algorithms. The handouts include descriptions and examples of each topic, and the code is written in Python. 
+This repository provides some learning materials about data structures and algorithms. The handouts include descriptions and examples of each topic, and the code is written in Python. **In the weekly learning part, each topic is arranged in the order of teaching time, and I also divied these weekly topics into six main topics for a more clear review**.
 
-PS. The formulas in handouts is probably in Latex grammer, please intall [mathjax plugin for github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en).
+PS. The formulas in handouts are probably in Latex grammer, please intall [mathjax plugin for github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en).
+
+### About Me
+- **Name**: Xu Yi-di
+- **Photo**:<br>
+<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week2/121_1024.jpg" heigth=30% width=30%>
+
+- **Major**: Economics & Big Data Management(Soochow University, Taiwan)
+- **Programming language**: Python/Java(learning now)
+- **Interest**: Financial Engineering 
+
+### 修課心得
+如果說程式設計是教同學如何寫出程式，資料結構與演算法則是鍛煉同學如何寫好程式的能力，開始因為不熟悉class的用法及物件導向的概念覺得有點困難，但熟悉概念後寫作業就較為輕鬆了(因為同時有學習Java，Java物件導向的特性就明顯很多)。當然，因為半學期的課程時間是較為有限的，所以一些重要的議題如動態規劃和文本處理的一些重要的演算法就沒有介紹，期許以後自己可以讀完吧:smiley:。當然，在此非常感謝老師與助教認真回答同學問題以及批改作業，也希望自己持續努力。
 
 ### Weekly Learning 
 |Week|Topic|Handout|Code|Other Materials|
@@ -24,6 +36,8 @@ PS. The formulas in handouts is probably in Latex grammer, please intall [mathja
 |W16|Review||||
 |W17|Final Exam||||
 |W18|No Class||||
+
+------------------------------------------------------
 
 ### Linear Data Structures
 |Data Structures|Handout| Code | Other Materials |
