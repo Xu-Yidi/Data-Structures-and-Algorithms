@@ -5,9 +5,6 @@ PS. The formulas in handouts are probably in Latex grammer, please intall [mathj
 
 ### About Me
 - **Name**: Xu Yi-di
-- **Photo**:<br>
-<img src="https://github.com/Xu-Yidi/fluteanzi/blob/master/week2/121_1024.jpg" heigth=30% width=30%>
-
 - **Major**: Economics & Big Data Management(Soochow University, Taiwan)
 - **Programming language**: Python/Java(learning now)
 - **Interest**: Financial Engineering 
